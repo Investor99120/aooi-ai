@@ -1,0 +1,84 @@
+{
+  "Metadata": {
+    "title": "aooi.ai — AI pet portraits",
+    "description": "Simple, beautiful AI pet portraits for subscribers. Upload a photo, pick a style, download high-resolution art."
+  },
+  "Nav": {
+    "brand": "aooi.ai",
+    "generate": "Generate",
+    "pricing": "Pricing & add-ons"
+  },
+  "Home": {
+    "title": "AI pet portrait SaaS",
+    "lead": "Start with <fast>fast previews</fast> to reduce wait time. Need print-ready quality? <pricing>Add HD packs</pricing>. Queue, fal.ai, and Stripe wiring completes the full loop.",
+    "lead_fast": "fast previews",
+    "lead_pricing": "Add HD packs",
+    "ctaGenerate": "Generate",
+    "ctaPricing": "Pricing"
+  },
+  "Pricing": {
+    "title": "Pricing & add-ons",
+    "intro": "Lead with <fast>fast generation</fast> to lower friction, then unlock HD and top-ups via <addon>add-ons</addon>. Fill in amounts and Stripe Price IDs before launch.",
+    "intro_fast": "fast generation",
+    "intro_addon": "add-ons",
+    "addonSectionTitle": "Add-on packs",
+    "addonSectionBody": "When users don’t want to change tiers, packs improve ARPU. Use Stripe Checkout or the Customer Portal and bind credits on the server.",
+    "addonPlaceholder": "Placeholder · show price and buy button after Stripe",
+    "backToGenerate": "Back to generate",
+    "tiers": {
+      "fast": {
+        "name": "Fast generation",
+        "model": "Banana",
+        "badge": "Default experience",
+        "price": "Within free quota",
+        "blurb": "Quick previews for onboarding and playtests. Lower compute cost.",
+        "cta": "Go to fast generate"
+      },
+      "standard": {
+        "name": "Standard HD",
+        "model": "FLUX dev",
+        "badge": "Main paid tier",
+        "price": "TBD · Stripe",
+        "blurb": "Everyday sharing quality. Balanced cost and fidelity.",
+        "cta": "Add this tier"
+      },
+      "premium": {
+        "name": "Premium HD",
+        "model": "FLUX pro",
+        "badge": "On demand",
+        "price": "TBD",
+        "blurb": "Gifts and print-grade memorial portraits.",
+        "cta": "Contact to enable"
+      }
+    },
+    "addons": {
+      "fastTopUp": {
+        "name": "Fast top-up pack",
+        "desc": "After free quota runs out, keep low-cost fast generations."
+      },
+      "hdPack": {
+        "name": "HD credit pack",
+        "desc": "Buy FLUX dev credits per image without an annual commitment."
+      }
+    }
+  },
+  "Generate": {
+    "title": "Generate",
+    "intro": "Default to <fast>fast generation</fast> (low cost, quick preview). For poster quality, <pricing>add an HD pack</pricing>.",
+    "intro_fast": "fast generation",
+    "intro_pricing": "add an HD pack",
+    "tierFastTitle": "Fast generation",
+    "tierFastBody": "Speed first for drafts and try-outs. Uses the Banana route.",
+    "tierHdTitle": "HD quality",
+    "tierHdBody": "FLUX tier. Requires purchased credits or an active subscription.",
+    "hdPanelTitle": "HD requires an add-on first",
+    "hdPanelBody": "After you buy an HD pack or upgrade, we verify credits before calling FLUX. You can still use Fast generation to test the flow.",
+    "hdCta": "Buy HD",
+    "promptLabel": "Prompt",
+    "promptPlaceholder": "e.g. Golden retriever, royal oil portrait, soft key light…",
+    "submit": "Start fast generation",
+    "submitting": "Submitting…",
+    "networkError": "Network error. Try again.",
+    "backHome": "Back to home"
+  }
+}

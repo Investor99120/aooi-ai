@@ -1,36 +1,46 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+**aooi.ai** — subscription AI pet portrait SaaS (US/EU). Product milestones: **[docs/milestones-v1.md](./docs/milestones-v1.md)**.
 
-First, run the development server:
+## Monorepo layout
+
+| Path | Role |
+|------|------|
+| Repo root (`app/`, `components/`, …) | **Next.js 16** web app (MVP). |
+| `apps/api/` | **FastAPI** billing core — Stripe first, Creem-ready adapter layer (Batch 1 skeleton). |
+| `messages/` | **next-intl** copy: `en` (default), `de`, `fr`, `es`. |
+| `i18n/` | Routing + `request` config for next-intl. |
+| `proxy.ts` | Locale negotiation + `/` → `/[locale]…` (Next.js “Proxy” convention). |
+
+## Web — i18n
+
+- Public URLs are prefixed: `/en`, `/de`, `/fr`, `/es` (e.g. `/en/pricing`).
+- Visiting `/` redirects to the negotiated locale (cookie → `Accept-Language` → default `en`).
+- Edit UI strings in `messages/*.json`; use `Link` / `useRouter` from `@/i18n/navigation` so the locale prefix is preserved.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — you should land on `/en` (or another locale).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API (FastAPI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+cd apps/api
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+See **[apps/api/README.md](./apps/api/README.md)**.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs)
+- [next-intl](https://next-intl.dev/docs/getting-started/app-router)
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy the Next.js app is the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Deploy the Python API separately (e.g. Railway, Fly, or a container).

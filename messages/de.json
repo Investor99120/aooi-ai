@@ -1,0 +1,84 @@
+{
+  "Metadata": {
+    "title": "aooi.ai — KI-Haustierporträts",
+    "description": "Einfache, schöne KI-Haustierporträts für Abonnenten. Foto hochladen, Stil wählen, hochauflösend herunterladen."
+  },
+  "Nav": {
+    "brand": "aooi.ai",
+    "generate": "Generieren",
+    "pricing": "Preise & Add-ons"
+  },
+  "Home": {
+    "title": "KI-Haustierportrait-SaaS",
+    "lead": "Starte mit <fast>schnellen Vorschauen</fast>, um Wartezeit zu reduzieren. Druckfertige Qualität? <pricing>HD-Pakete hinzufügen</pricing>. Warteschlange, fal.ai und Stripe schließen die Kette.",
+    "lead_fast": "schnellen Vorschauen",
+    "lead_pricing": "HD-Pakete hinzufügen",
+    "ctaGenerate": "Generieren",
+    "ctaPricing": "Preise"
+  },
+  "Pricing": {
+    "title": "Preise & Add-ons",
+    "intro": "Beginne mit <fast>schneller Generierung</fast>, dann HD und Top-ups per <addon>Add-ons</addon>. Beträge und Stripe-Price-IDs vor Launch eintragen.",
+    "intro_fast": "schneller Generierung",
+    "intro_addon": "Add-ons",
+    "addonSectionTitle": "Add-on-Pakete",
+    "addonSectionBody": "Wer nicht wechseln will, steigert ARPU mit Paketen. Stripe Checkout oder Portal, Credits serverseitig binden.",
+    "addonPlaceholder": "Platzhalter · Preis und Kaufen nach Stripe",
+    "backToGenerate": "Zurück zur Generierung",
+    "tiers": {
+      "fast": {
+        "name": "Schnelle Generierung",
+        "model": "Banana",
+        "badge": "Standard-Erlebnis",
+        "price": "Im Freikontingent",
+        "blurb": "Schnelle Vorschau für Onboarding. Geringere Rechenkosten.",
+        "cta": "Zur schnellen Generierung"
+      },
+      "standard": {
+        "name": "Standard-HD",
+        "model": "FLUX dev",
+        "badge": "Haupt-Stufe",
+        "price": "TBD · Stripe",
+        "blurb": "Qualität für den Alltag. Balance aus Kosten und Qualität.",
+        "cta": "Diese Stufe hinzufügen"
+      },
+      "premium": {
+        "name": "Premium-HD",
+        "model": "FLUX pro",
+        "badge": "Nach Bedarf",
+        "price": "TBD",
+        "blurb": "Geschenke und druckfertige Erinnerungsporträts.",
+        "cta": "Kontakt für Freischaltung"
+      }
+    },
+    "addons": {
+      "fastTopUp": {
+        "name": "Schnell-Top-up",
+        "desc": "Nach Freikontingent weiter günstig schnell generieren."
+      },
+      "hdPack": {
+        "name": "HD-Credit-Paket",
+        "desc": "FLUX-dev pro Bild, ohne Jahresbindung."
+      }
+    }
+  },
+  "Generate": {
+    "title": "Generieren",
+    "intro": "Standard: <fast>schnelle Generierung</fast> (günstig, Vorschau). Poster-Qualität: <pricing>HD-Paket</pricing>.",
+    "intro_fast": "schnelle Generierung",
+    "intro_pricing": "HD-Paket",
+    "tierFastTitle": "Schnelle Generierung",
+    "tierFastBody": "Geschwindigkeit zuerst. Route Banana.",
+    "tierHdTitle": "HD-Qualität",
+    "tierHdBody": "FLUX-Stufe. Credits oder Abo nötig.",
+    "hdPanelTitle": "HD zuerst kaufen",
+    "hdPanelBody": "Nach HD-Paket oder Upgrade prüfen wir Credits vor FLUX. Schnell-Generierung zum Testen nutzen.",
+    "hdCta": "HD kaufen",
+    "promptLabel": "Prompt",
+    "promptPlaceholder": "z. B. Golden Retriever, königliches Ölporträt, weiches Licht…",
+    "submit": "Schnellstart",
+    "submitting": "Senden…",
+    "networkError": "Netzwerkfehler. Bitte erneut.",
+    "backHome": "Zur Startseite"
+  }
+}
