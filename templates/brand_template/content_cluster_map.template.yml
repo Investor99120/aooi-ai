@@ -1,0 +1,50 @@
+schema_version: 1
+template_type: content_cluster_map
+template_status: generic
+
+brand: "{{BRAND_NAME}}"
+source_status: strategy_template
+
+clusters:
+  foundation:
+    purpose: Define the brand and make it AI-readable.
+    assets:
+      - brand profile
+      - product facts
+      - claim rules
+      - localisation rules
+      - semantic map
+  tofu:
+    purpose: Capture early emotional, lifestyle or problem-aware intent.
+    content_types:
+      - educational article
+      - lifestyle guide
+      - explainer
+  mofu:
+    purpose: Build understanding and trust.
+    content_types:
+      - category guide
+      - FAQ page
+      - usage guide
+      - safety guide
+  bofu:
+    purpose: Support evaluation and conversion using verified facts.
+    content_types:
+      - product support page
+      - comparison page
+      - policy page
+      - buying guide
+
+internal_link_rules:
+  tofu_to_mofu:
+    - Link emotional or lifestyle content to educational guides and FAQ.
+  mofu_to_bofu:
+    - Link guides to product facts, policy pages and reviewed product pages.
+  bofu_to_support:
+    - Link product pages to usage guidance, FAQs, delivery, returns and warranty.
+
+review_rules:
+  - Claim blacklist scan required.
+  - Product facts source-status check required.
+  - Localisation check required.
+  - Fake-review and invented-evidence check required.

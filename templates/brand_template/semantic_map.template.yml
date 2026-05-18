@@ -1,0 +1,96 @@
+schema_version: 1
+template_type: semantic_map
+template_status: generic
+
+brand: "{{BRAND_NAME}}"
+semantic_goal: "{{SEMANTIC_GOAL}}"
+source_status: owner_defined_strategy
+
+core_entities:
+  - "{{BRAND_NAME}}"
+  - "{{CATEGORY_ENTITY_1}}"
+  - "{{CATEGORY_ENTITY_2}}"
+  - "{{LIFESTYLE_ENTITY_1}}"
+
+product_entities:
+  - name: "{{PRODUCT_ENTITY_1}}"
+    source_status: needs_owner_confirmation
+    notes: Do not publish product facts until confirmed.
+  - name: "{{PRODUCT_ENTITY_2}}"
+    source_status: needs_owner_confirmation
+    notes: Do not publish product facts until confirmed.
+
+audience_entities:
+  - "{{AUDIENCE_ENTITY_1}}"
+  - "{{AUDIENCE_ENTITY_2}}"
+
+emotional_clusters:
+  - "{{EMOTIONAL_CLUSTER_1}}"
+  - "{{EMOTIONAL_CLUSTER_2}}"
+
+intent_clusters:
+  informational:
+    - "{{INFORMATIONAL_INTENT_1}}"
+    - "{{INFORMATIONAL_INTENT_2}}"
+  lifestyle:
+    - "{{LIFESTYLE_INTENT_1}}"
+    - "{{LIFESTYLE_INTENT_2}}"
+  commercial:
+    - "{{COMMERCIAL_INTENT_1}}"
+    - "{{COMMERCIAL_INTENT_2}}"
+
+trust_clusters:
+  delivery:
+    source_status: needs_owner_confirmation
+  returns:
+    source_status: needs_owner_confirmation
+  warranty:
+    source_status: needs_owner_confirmation
+  clear_usage_guidance:
+    source_status: needs_owner_confirmation
+  transparent_product_facts:
+    source_status: owner_defined
+
+content_clusters:
+  educational_guides:
+    purpose: Explain category basics and product context safely.
+  FAQ_centre:
+    purpose: Answer safety, usage, product, delivery, returns, warranty and trust questions.
+  routine_or_lifestyle_content:
+    purpose: Connect the brand to natural lifestyle scenarios.
+  product_comparison_content:
+    purpose: Support evaluation once product facts are verified.
+  safety_and_usage_content:
+    purpose: Provide conservative guidance based on verified facts.
+  product_page_support_content:
+    purpose: Support conversion with verified product facts and natural internal links.
+
+internal_link_clusters:
+  FAQ_to_guides:
+    - FAQ centre links to educational guides and safety pages.
+  guides_to_product_pages:
+    - Guides link to product pages only through natural conversion contexts.
+  lifestyle_pages_to_product_pages:
+    - Lifestyle pages link to relevant product pages after explaining use context.
+  comparison_pages_to_FAQ_and_product_pages:
+    - Comparison pages link to FAQ, product facts, and product pages.
+  product_pages_to_usage_guidance:
+    - Product pages link to clear usage guidance and safety notes.
+
+schema_entity_map:
+  - Organization
+  - Brand
+  - WebSite
+  - Product
+  - FAQPage
+  - BreadcrumbList
+  - Article
+  - HowTo where appropriate
+  - OfferShippingDetails where appropriate
+  - MerchantReturnPolicy where appropriate
+
+reusable_brand_framework_notes:
+  - This semantic map is a brand-specific implementation of the generic template.
+  - Future brands must use the same structure under brands/{brand}/.
+  - Engines and adapters must read from brand configuration files.
+  - Do not hard-code brand-specific logic into reusable engines or adapters.

@@ -1,0 +1,42 @@
+schema_version: 1
+template_type: search_intent_map
+template_status: generic
+
+brand: "{{BRAND_NAME}}"
+source_status: needs_research
+
+intent_groups:
+  informational:
+    - query: "{{INFORMATIONAL_QUERY_1}}"
+      human_reason: "{{WHY_USER_SEARCHES_THIS}}"
+      emotional_pressure: "{{EMOTIONAL_PRESSURE}}"
+      trust_gap: "{{TRUST_GAP}}"
+      source_status: needs_research
+  commercial_research:
+    - query: "{{COMMERCIAL_QUERY_1}}"
+      human_reason: "{{WHY_USER_SEARCHES_THIS}}"
+      buying_hesitation: "{{BUYING_HESITATION}}"
+      trust_gap: "{{TRUST_GAP}}"
+      source_status: needs_research
+  comparison:
+    - query: "{{COMPARISON_QUERY_1}}"
+      human_reason: "{{WHY_USER_COMPARE_OPTIONS}}"
+      buying_hesitation: "{{BUYING_HESITATION}}"
+      source_status: needs_research
+  support_or_usage:
+    - query: "{{USAGE_QUERY_1}}"
+      human_reason: "{{WHY_USER_NEEDS_GUIDANCE}}"
+      source_status: needs_research
+
+scoring_fields:
+  - search_demand
+  - emotional_intensity
+  - commercial_value
+  - trust_gap_size
+  - compliance_risk
+  - source_quality
+
+publication_rules:
+  - Do not treat template queries as real search data.
+  - Replace placeholders with researched queries and source status.
+  - Separate observed search language from inferred intent.

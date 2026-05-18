@@ -1,0 +1,38 @@
+schema_version: 1
+template_type: faq_bank
+template_status: generic
+
+brand: "{{BRAND_NAME}}"
+source_status: template_only
+
+faqs:
+  - question: "{{QUESTION_1}}"
+    answer_draft: "{{ANSWER_DRAFT_1}}"
+    intent_cluster: "{{INTENT_CLUSTER}}"
+    funnel_stage: "{{TOFU|MOFU|BOFU|SUPPORT}}"
+    claim_risk_level: "{{low|medium|high}}"
+    source_status: "{{verified|owner_defined|needs_owner_confirmation|needs_research}}"
+    schema_eligible: false
+    review_required:
+      - claim_check
+      - source_status_check
+      - localisation_check
+  - question: "{{QUESTION_2}}"
+    answer_draft: "{{ANSWER_DRAFT_2}}"
+    intent_cluster: "{{INTENT_CLUSTER}}"
+    funnel_stage: "{{TOFU|MOFU|BOFU|SUPPORT}}"
+    claim_risk_level: "{{low|medium|high}}"
+    source_status: "{{verified|owner_defined|needs_owner_confirmation|needs_research}}"
+    schema_eligible: false
+    review_required:
+      - claim_check
+      - source_status_check
+      - localisation_check
+
+schema_rules:
+  FAQPage_eligible_when:
+    - answer is reviewed
+    - claim risk is low or approved
+    - source status is verified or owner_defined
+    - no fake evidence
+    - no unverified product facts

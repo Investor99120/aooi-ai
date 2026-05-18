@@ -1,0 +1,100 @@
+schema_version: 1
+template_type: brand_profile
+template_status: generic
+
+brand_name: "{{BRAND_NAME}}"
+brand_domain: "{{BRAND_DOMAIN}}"
+platform:
+  aooi_role: "{{BRAND_CASE_ROLE}}" # example: serviced_brand, first_case, pilot_brand
+  publishing_adapters:
+    - shopify
+    - wordpress
+    - webflow
+    - static_export
+  primary_adapter: "{{PRIMARY_ADAPTER}}"
+  auto_publish_allowed: false
+  core_logic_location: "brands/{{BRAND_ID}}"
+  generated_output_location: "outputs/{{BRAND_ID}}"
+
+market_focus:
+  primary_market: "{{PRIMARY_MARKET}}"
+  language: "{{LANGUAGE_CODE}}" # example: en-GB
+  localisation_priority: "{{LOW_MEDIUM_HIGH}}"
+
+brand_positioning:
+  canonical: "{{CANONICAL_BRAND_POSITIONING}}"
+  short: "{{SHORT_POSITIONING}}"
+  long: "{{LONG_POSITIONING}}"
+
+brand_entity_definition:
+  entity_type: independent_commerce_brand
+  category: "{{BRAND_CATEGORY}}"
+  core_identity:
+    - "{{IDENTITY_ENTITY_1}}"
+    - "{{IDENTITY_ENTITY_2}}"
+  ai_summary_target: "{{ONE_SENTENCE_AI_SUMMARY_TARGET}}"
+
+audience_profile:
+  geography: "{{AUDIENCE_GEOGRAPHY}}"
+  likely_segments:
+    - "{{AUDIENCE_SEGMENT_1}}"
+    - "{{AUDIENCE_SEGMENT_2}}"
+  search_behaviours:
+    - "{{SEARCH_BEHAVIOUR_1}}"
+    - "{{SEARCH_BEHAVIOUR_2}}"
+  buying_context:
+    - "{{BUYING_CONTEXT_1}}"
+    - "{{BUYING_CONTEXT_2}}"
+
+core_emotional_jobs:
+  - "{{EMOTIONAL_JOB_1}}"
+  - "{{EMOTIONAL_JOB_2}}"
+
+trust_positioning:
+  principles:
+    - transparent product facts
+    - clear source status for unverified information
+    - no fake reviews or invented social proof
+    - owner confirmation before publishing product claims
+  trust_topics:
+    - delivery
+    - returns
+    - warranty
+    - product guidance
+    - support route
+
+differentiation:
+  - "{{DIFFERENTIATOR_1}}"
+  - "{{DIFFERENTIATOR_2}}"
+
+ai_visibility_goal:
+  primary_goal: Make the brand understandable, citable, comparable, recommendable, and conversion-ready by search engines and AI answer systems.
+  target_systems:
+    - Google
+    - ChatGPT
+    - Gemini
+    - Perplexity
+    - future AI shopping agents
+  desired_association:
+    - "{{DESIRED_ASSOCIATION_1}}"
+    - "{{DESIRED_ASSOCIATION_2}}"
+
+primary_use_cases:
+  - "{{USE_CASE_1}}"
+  - "{{USE_CASE_2}}"
+
+prohibited_positioning:
+  - "{{PROHIBITED_POSITIONING_1}}"
+  - "{{PROHIBITED_POSITIONING_2}}"
+
+claim_policy:
+  medical_claims_allowed: false
+  fake_reviews_allowed: false
+  invented_product_specs_allowed: false
+  public_copy_language: "{{LANGUAGE_CODE}}"
+  owner_review_required: true
+
+reusable_framework_notes:
+  - This file is a brand-specific configuration generated from a generic template.
+  - Future engines and adapters must read from this file rather than hard-code brand logic.
+  - Publishing adapters are output channels only.
