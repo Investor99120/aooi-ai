@@ -1,0 +1,46 @@
+brand: FriendRedLight
+source_status: phase_1_tbc_safe
+last_updated: 2026-05-19
+
+product:
+  name: FriendRedLight Home Red Light Therapy Device
+  url: /products/friendredlight-red-light-therapy-device
+  status: working_name_confirm_before_launch
+
+specifications:
+  wavelengths: TBC
+  led_quantity: TBC
+  dimensions: TBC
+  weight: TBC
+  plug: UK plug TBC
+
+usage:
+  contexts:
+    - home wellness
+    - evening recovery routine
+    - after-work routine
+    - winter wellness
+    - screen-heavy day decompression
+    - modern self-care
+  suggested_usage_time: Follow the product manual. Begin with a short, comfortable routine and use consistently.
+  safety_notes:
+    - For home wellness use only.
+    - Follow the product manual.
+    - Do not stare directly into LEDs.
+    - Stop use if discomfort occurs.
+    - Speak to a qualified professional before use if pregnant, photosensitive, taking photosensitising medication, or managing a medical condition.
+
+commerce:
+  delivery: TBC
+  returns: TBC
+  warranty: TBC
+
+claim_status:
+  medical_claims_allowed: false
+  fake_reviews_allowed: false
+  invented_specifications_allowed: false
+
+publication_rules:
+  - Do not publish fields marked TBC as confirmed facts.
+  - Do not use naked product URLs in customer-facing copy.
+  - Use natural conversion language such as "View the home wellness device" or "Explore the FriendRedLight device".

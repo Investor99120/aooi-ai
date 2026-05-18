@@ -1,0 +1,37 @@
+brand:
+  id: friendredlight
+  name: FriendRedLight
+  website: https://friendredlight.com
+  market_focus: United Kingdom
+  language: en-GB
+  category: Home red light therapy wellness brand
+  platform_role: First serviced brand case for aooi.com
+
+positioning:
+  short: UK-focused home red light therapy wellness brand
+  long: FriendRedLight is a UK-focused home wellness brand centred on gentle red and near-infrared light therapy devices for modern self-care, evening recovery routines, after-work decompression, winter wellness, and calm home routines.
+
+brand_personality:
+  - calm
+  - gentle
+  - practical
+  - trustworthy
+  - science-aware
+  - UK-localised
+  - home-wellness-first
+
+core_entities:
+  - FriendRedLight
+  - UK home red light therapy
+  - home wellness
+  - evening recovery routine
+  - red and near-infrared light therapy
+  - modern self-care
+  - after-work routine
+  - winter wellness
+  - screen-heavy day decompression
+
+publishing:
+  primary_adapter: shopify
+  auto_publish: false
+  review_required: true

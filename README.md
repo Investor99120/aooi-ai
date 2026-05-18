@@ -1,46 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aooi.com AI SEO/GEO Automation Platform
 
-**aooi.ai** — subscription AI pet portrait SaaS (US/EU). Product milestones: **[docs/milestones-v1.md](./docs/milestones-v1.md)**.
+Aooi is a platform for building reusable AI SEO/GEO systems for independent commerce websites.
 
-## Monorepo layout
+## Core Positioning
 
-| Path | Role |
-|------|------|
-| Repo root (`app/`, `components/`, …) | **Next.js 16** web app (MVP). |
-| `apps/api/` | **FastAPI** billing core — Stripe first, Creem-ready adapter layer (Batch 1 skeleton). |
-| `messages/` | **next-intl** copy: `en` (default), `de`, `fr`, `es`. |
-| `i18n/` | Routing + `request` config for next-intl. |
-| `proxy.ts` | Locale negotiation + `/` → `/[locale]…` (Next.js “Proxy” convention). |
+- `aooi.com` is the AI SEO/GEO automation platform.
+- `FriendRedLight` is the first serviced Shopify independent-store case.
+- Shopify is only a publishing adapter, not the core system.
+- The core system must be platformised and reusable for other independent sites.
+- The platform must not generate medicalised claims or fake reviews.
 
-## Web — i18n
+## First-Stage Scope
 
-- Public URLs are prefixed: `/en`, `/de`, `/fr`, `/es` (e.g. `/en/pricing`).
-- Visiting `/` redirects to the negotiated locale (cookie → `Accept-Language` → default `en`).
-- Edit UI strings in `messages/*.json`; use `Link` / `useRouter` from `@/i18n/navigation` so the locale prefix is preserved.
+This repository currently contains documentation, brand configuration, claim rules, localisation rules, semantic maps, adapter notes, and output folders. It intentionally does not contain complex application code yet.
 
-```bash
-npm install
-npm run dev
-```
+## Repository Map
 
-Open [http://localhost:3000](http://localhost:3000) — you should land on `/en` (or another locale).
-
-## API (FastAPI)
-
-```bash
-cd apps/api
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-
-See **[apps/api/README.md](./apps/api/README.md)**.
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [next-intl](https://next-intl.dev/docs/getting-started/app-router)
-
-## Deploy on Vercel
-
-The easiest way to deploy the Next.js app is the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Deploy the Python API separately (e.g. Railway, Fly, or a container).
+- `docs/` - platform context, architecture, rules, and deployment SOP.
+- `brands/friendredlight/` - first brand profile and source-of-truth files.
+- `adapters/shopify/` - Shopify publishing adapter notes.
+- `outputs/friendredlight/` - generated-output holding area for FriendRedLight.

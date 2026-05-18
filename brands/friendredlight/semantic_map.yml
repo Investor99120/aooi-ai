@@ -1,0 +1,58 @@
+brand: FriendRedLight
+semantic_goal: Trusted UK home red light therapy wellness brand
+
+primary_entity_cluster:
+  - FriendRedLight
+  - UK home red light therapy
+  - home wellness device
+  - red and near-infrared light therapy
+  - evening recovery routine
+  - modern self-care
+
+human_feeling_clusters:
+  after_work_fatigue:
+    user_language:
+      - tired after work
+      - drained after work
+      - screen-heavy day
+      - cannot switch off
+    brand_bridge:
+      - after-work routine
+      - calmer evening transition
+      - consistent home wellness moment
+  winter_wellness:
+    user_language:
+      - dark winter evenings
+      - low energy in winter
+      - staying well at home
+    brand_bridge:
+      - winter wellness
+      - cosy home routine
+      - gentle self-care consistency
+  evening_recovery:
+    user_language:
+      - evening routine
+      - unwind at night
+      - self-care before bed
+    brand_bridge:
+      - evening recovery routine
+      - red and near-infrared light
+      - calm home wellness
+
+content_layers:
+  tofu_emotional_entry:
+    purpose: Help users feel understood.
+  mofu_education:
+    purpose: Build trust and understanding.
+  bofu_trust:
+    purpose: Help users evaluate FriendRedLight.
+
+schema_priorities:
+  - Organization
+  - Brand
+  - WebSite
+  - Product
+  - FAQPage
+  - BreadcrumbList
+  - MerchantReturnPolicy
+  - OfferShippingDetails
