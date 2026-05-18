@@ -2,151 +2,230 @@ schema_version: 1
 brand: FriendRedLight
 source_status: needs_owner_confirmation
 last_updated: 2026-05-19
-verification_policy:
-  rule: Do not publish unverified product facts as confirmed public claims.
-  unverified_values:
-    - TBC
-    - unknown
-    - needs_owner_confirmation
-  allowed_internal_statuses:
-    - verified
+
+source_of_truth_notice:
+  rule: This file is the product facts source of truth for FriendRedLight. Do not publish or generate customer-facing claims from unverified fields.
+  no_invented_specs: true
+  owner_confirmation_required_before_publication: true
+  unverified_statuses:
     - unverified
     - needs_owner_confirmation
-    - not_applicable
+  placeholder_values:
+    - TBC
+    - unknown
 
-product:
-  id: friendredlight-home-device
-  name:
-    value: FriendRedLight Home Red Light Therapy Device
-    source_status: needs_owner_confirmation
-    notes: Working product name. Confirm final Shopify product title before publication.
-  product_type:
+verified_product_facts:
+  brand_position:
+    value: UK-focused Shopify independent store for home red light therapy wellness.
+    source_status: owner_defined
+    schema_ready: false
+  product_category:
     value: home red light therapy wellness device
     source_status: owner_defined
-  url:
-    value: /products/friendredlight-red-light-therapy-device
-    source_status: needs_owner_confirmation
-    notes: Working Shopify handle. Confirm before adapter output is treated as final.
-  market:
-    value: United Kingdom
-    source_status: owner_defined
-
-technical_specifications:
-  wavelengths:
-    value: TBC
-    unit: nm
-    source_status: needs_owner_confirmation
-    publish: false
-  led_quantity:
-    value: TBC
-    source_status: needs_owner_confirmation
-    publish: false
-  irradiance:
-    value: TBC
-    unit: mW/cm2
-    source_status: needs_owner_confirmation
-    publish: false
-  power_consumption:
-    value: TBC
-    unit: W
-    source_status: needs_owner_confirmation
-    publish: false
-  dimensions:
-    value: TBC
-    unit: cm
-    source_status: needs_owner_confirmation
-    publish: false
-  weight:
-    value: TBC
-    unit: kg
-    source_status: needs_owner_confirmation
-    publish: false
-  plug:
-    value: UK plug TBC
-    source_status: needs_owner_confirmation
-    publish: false
-  certifications:
-    ce:
-      value: TBC
-      source_status: needs_owner_confirmation
-      publish: false
-    ukca:
-      value: TBC
-      source_status: needs_owner_confirmation
-      publish: false
-    rohs:
-      value: TBC
-      source_status: needs_owner_confirmation
-      publish: false
-
-usage:
-  positioning_contexts:
-    source_status: owner_defined
-    values:
+    schema_ready: true
+  usage_positioning:
+    value:
       - home wellness
       - evening recovery routine
       - after-work routine
       - winter wellness
       - screen-heavy day decompression
       - modern self-care
-  suggested_usage_time:
-    value: Follow the product manual. Begin with a short, comfortable routine and use consistently.
-    source_status: conservative_placeholder
-    publish: true
-  distance_guidance:
-    value: TBC
-    source_status: needs_owner_confirmation
-    publish: false
-  frequency_guidance:
-    value: Follow the product manual.
-    source_status: conservative_placeholder
-    publish: true
-
-safety:
-  source_status: conservative_placeholder
-  publish: true
-  notes:
-    - For home wellness use only.
-    - Follow the product manual.
-    - Do not stare directly into LEDs.
-    - Stop use if discomfort occurs.
-    - Speak to a qualified professional before use if pregnant, photosensitive, taking photosensitising medication, or managing a medical condition.
-  not_for:
-    - healthcare advice
-    - diagnosis
-    - disease treatment
-    - promised clinical outcomes
-
-commerce:
-  delivery:
-    value: TBC
-    market: GB
-    source_status: needs_owner_confirmation
-    publish: false
-  returns:
-    value: TBC
-    market: GB
-    source_status: needs_owner_confirmation
-    publish: false
-  warranty:
-    value: TBC
-    market: GB
-    source_status: needs_owner_confirmation
-    publish: false
+    source_status: owner_defined
+    schema_ready: false
   currency:
     value: GBP
-    source_status: inferred_from_market
-    publish: true
+    source_status: inferred_from_uk_market
+    schema_ready: true
 
-claim_status:
+unverified_fields:
+  wavelengths:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  led_quantity:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  irradiance:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  power_consumption:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  dimensions:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  weight:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  uk_plug_included:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  certifications:
+    ce:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+    ukca:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+    rohs:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+  delivery_timeline:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  returns_window:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+  warranty_length:
+    value: TBC
+    source_status: needs_owner_confirmation
+    schema_ready: false
+
+owner_confirmation_required:
+  - final product names
+  - final Shopify product URLs
+  - wavelength specifications
+  - LED count
+  - irradiance
+  - dimensions and weight
+  - UK plug inclusion
+  - CE, UKCA, RoHS or other certification status
+  - UK delivery timeline and cost
+  - returns window and conditions
+  - warranty length and coverage
+  - product manual usage distance and session time
+
+product_catalog:
+  - product_id: full_body_red_light_therapy_mat
+    product_name: Full-body red light therapy mat
+    source_status: needs_owner_confirmation
+    product_url: TBC
+    status_notes: Mentioned as a planned/possible product entity. Do not publish specifications until owner confirms.
+    schema_ready: false
+  - product_id: seven_wavelength_red_light_therapy_device
+    product_name: 7-wavelength red light therapy device
+    source_status: needs_owner_confirmation
+    product_url: TBC
+    status_notes: Product name and wavelength count require owner confirmation before publication.
+    schema_ready: false
+  - product_id: mini_red_light_therapy_panel
+    product_name: Mini red light therapy panel
+    source_status: needs_owner_confirmation
+    product_url: TBC
+    status_notes: Product entity requires owner confirmation before publication.
+    schema_ready: false
+  - product_id: red_near_infrared_light_device
+    product_name: Red and near-infrared light device
+    source_status: needs_owner_confirmation
+    product_url: TBC
+    status_notes: Generic category entity; exact product details require owner confirmation.
+    schema_ready: false
+
+usage_contexts:
+  source_status: owner_defined
+  values:
+    - evening recovery routine
+    - after-work decompression
+    - home self-care
+    - winter wellness
+    - screen fatigue context
+    - calm at-home routine
+
+conversion_contexts:
+  allowed_link_language:
+    - View the home wellness device
+    - Explore the FriendRedLight device
+    - Build your evening recovery routine
+    - See how it fits into home wellness
+  disallowed:
+    - naked product URLs in customer-facing copy
+    - fake discounts
+    - unverified delivery promises
+    - unverified warranty promises
+
+schema_ready_fields:
+  Organization:
+    name:
+      value: FriendRedLight
+      source_status: owner_defined
+    url:
+      value: https://friendredlight.com
+      source_status: owner_defined
+  Brand:
+    name:
+      value: FriendRedLight
+      source_status: owner_defined
+  Product:
+    name:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+    category:
+      value: home red light therapy wellness device
+      source_status: owner_defined
+      schema_ready: true
+    description:
+      value: Conservative wellness description only; exact product description needs owner approval.
+      source_status: needs_owner_confirmation
+      schema_ready: false
+  OfferShippingDetails:
+    shipping_destination:
+      value: GB
+      source_status: inferred_from_market
+      schema_ready: true
+    delivery_time:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+  MerchantReturnPolicy:
+    applicable_country:
+      value: GB
+      source_status: inferred_from_market
+      schema_ready: true
+    return_window:
+      value: TBC
+      source_status: needs_owner_confirmation
+      schema_ready: false
+
+delivery_policy:
+  value: TBC
+  source_status: needs_owner_confirmation
+  schema_ready: false
+
+returns_policy:
+  value: TBC
+  source_status: needs_owner_confirmation
+  schema_ready: false
+
+warranty_policy:
+  value: TBC
+  source_status: needs_owner_confirmation
+  schema_ready: false
+
+trust_notes:
+  - UK delivery, returns, warranty and plug information are trust-critical, but must be owner-confirmed before publication.
+  - Do not use fake reviews, fake Reddit mentions, fake Trustpilot content, or invented customer testimonials.
+  - Product facts should be transparent even when incomplete.
+
+compliance_notes:
   medical_claims_allowed: false
   fake_reviews_allowed: false
   invented_specifications_allowed: false
   automatic_shopify_publish_allowed: false
-
-publication_rules:
-  - Do not publish fields with source_status needs_owner_confirmation as confirmed facts.
-  - Do not publish fields where publish is false.
-  - Do not use naked product URLs in customer-facing copy.
-  - Use natural conversion language such as "View the home wellness device" or "Explore the FriendRedLight device".
-  - Shopify adapter output must remain reviewable until owner approval.
+  customer_facing_copy_requires:
+    - source-status check
+    - claim blacklist scan
+    - UK English check
+    - owner confirmation for product specifications

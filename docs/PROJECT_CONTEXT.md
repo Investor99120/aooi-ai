@@ -1,35 +1,80 @@
 # Project Context
 
-## What Aooi Is
+## Positioning
 
-`aooi.com` is an AI SEO/GEO automation platform for independent commerce websites. Its job is to help brands become easier for Google, ChatGPT, Gemini, Perplexity, and future AI shopping agents to understand, cite, compare, and recommend.
+`aooi.com` is an AI SEO/GEO Operating System for Independent Commerce Brands.
 
-Aooi is not a Shopify theme. Aooi is not a single-brand content folder. Aooi is the operating system that manages brand facts, claim rules, data-source judgement, semantic maps, structured-data outputs, and publishing adapters.
+It is not just an AI writing tool, not a Shopify theme, and not a single-brand content generator. Its purpose is to turn independent-store execution into reusable brand-intelligence, search-intent, claim-control, content-architecture, schema, publishing-adapter and feedback-loop systems.
+
+## Commercial Goal
+
+The commercial goal is to abstract reusable SEO/GEO growth knowledge from real independent-store execution.
+
+FriendRedLight is the first serviced brand case. The value is not merely writing SEO content for FriendRedLight; the value is learning from the FriendRedLight implementation and converting that knowledge into a repeatable AI SEO/GEO growth system for future independent commerce brands.
+
+## Core Methodology
+
+```text
+Brand Facts
+↓
+Product Facts
+↓
+Claim Boundaries
+↓
+Human Intent
+↓
+Emotional Scenarios
+↓
+Trust Objections
+↓
+Search Demand
+↓
+Content Architecture
+↓
+Schema Structure
+↓
+Publishing Targets
+↓
+Feedback Loop
+```
 
 ## First Serviced Brand
 
-FriendRedLight is the first brand case.
+FriendRedLight is the first case implementation, not hard-coded platform logic.
 
-FriendRedLight should be understood as a UK-focused home red light therapy wellness brand. Its content should emphasise home wellness, evening recovery routines, gentle red and near-infrared light therapy, modern self-care, after-work routines, winter wellness, and UK-localised lifestyle context.
+FriendRedLight should be understood as a UK-focused home red light therapy wellness brand. Its content should help UK users and AI systems understand who the brand is, what the products are, what lifestyle scenarios they fit, what can and cannot be claimed, why the brand can be trusted, and how red and near-infrared light exposure can fit into non-medical home wellness routines.
 
-## Strategic Principle
+## Shopify Role
 
-The system must separate core intelligence from publishing channels.
+Shopify is a publishing adapter only.
 
-- Core platform: brand facts, human intent, claim safety, semantic architecture, content briefs, schema logic, data-source rules.
-- Publishing adapters: Shopify, WordPress, Webflow, static export, or manual handoff.
+Shopify may receive generated page briefs, FAQ structures, JSON-LD snippets, product-page support content and internal-link recommendations. Shopify must not own the core logic. Aooi's reusable engines and adapters must read from `brands/{brand}/` configuration files rather than hard-code FriendRedLight logic.
 
-Shopify must never become the centre of the system. It is only one output target.
+## What Aooi Must Understand
+
+AI content production is not scarce. What is scarce is structured understanding of:
+
+- human search intent
+- emotional pressure
+- identity signals
+- trust objections
+- buying hesitation
+- product-fit moments
+- claim boundaries
+- schema-ready facts
+- feedback loops from real performance
 
 ## Non-Negotiables
 
-- Do not generate medicalised claims.
-- Do not generate fake reviews, fake Reddit references, fake Trustpilot content, or fake testimonials.
-- Do not invent product specifications.
-- Do not hard-code FriendRedLight logic into Shopify adapter code.
-- Do not publish automatically to Shopify during first-stage work.
-- Keep all FriendRedLight public-facing copy in UK English.
+- No fake reviews.
+- No fake Reddit, Trustpilot, YouTube, TikTok or social proof.
+- No invented product facts.
+- No medicalised claims.
+- No automatic Shopify publishing in Phase 1.
+- No hard-coded FriendRedLight logic in reusable engines or adapters.
+- Uncertain product parameters must be marked `unverified` or `needs_owner_confirmation`.
+- Keep FriendRedLight customer-facing outputs in UK English.
 
 ## First-Stage Outcome
 
-The first-stage outcome is a clean platform skeleton with documented operating rules and a FriendRedLight brand profile that can later drive generators and publishing adapters.
+The current stage should produce documentation and configuration only: brand facts, product facts, claim rules, UK localisation rules, semantic maps, reusable framework documents, and platform architecture notes.

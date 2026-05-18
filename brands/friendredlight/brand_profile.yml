@@ -2,75 +2,119 @@ schema_version: 1
 source_status: owner_defined
 last_updated: 2026-05-19
 
-brand:
-  id: friendredlight
-  name: FriendRedLight
-  website: https://friendredlight.com
-  market_focus: United Kingdom
-  language: en-GB
-  category: UK-focused home red light therapy wellness brand
-  platform_role: first_serviced_brand_case
-  platform_owner: aooi.com
+brand_name: FriendRedLight
+brand_domain: https://friendredlight.com
+platform:
+  aooi_role: first_serviced_brand_case
+  publishing_adapter: shopify
+  adapter_role: publishing_adapter_only
+  auto_publish_allowed: false
+  core_logic_location: brands/friendredlight
+  generated_output_location: outputs/friendredlight
 
-positioning:
+market_focus:
+  primary_market: United Kingdom
+  language: en-GB
+  localisation_priority: high
+
+brand_positioning:
   canonical: UK-focused home red light therapy wellness brand
   short: UK home red light therapy for modern self-care routines
   long: FriendRedLight is a UK-focused home wellness brand centred on gentle red and near-infrared light therapy devices for modern self-care, evening recovery routines, after-work decompression, winter wellness, and calm home routines.
-  not_positioned_as:
-    - medical treatment provider
-    - clinical service
-    - disease-care brand
-    - cheap LED marketplace seller
-    - biohacker-only device brand
-    - Amazon-style parameter page
 
-brand_personality:
-  primary_traits:
-    - calm
-    - gentle
-    - practical
-    - trustworthy
-    - science-aware
-    - UK-localised
-    - home-wellness-first
-  tone:
-    - understated
-    - warm
-    - clear
-    - safety-conscious
-    - non-hype
-
-audience:
-  geography: United Kingdom
-  likely_contexts:
-    - screen-heavy working adults
-    - home-office users
-    - people building calmer evening routines
-    - wellness buyers comparing home red light therapy devices
-    - users seeking practical self-care during darker UK evenings
-  emotional_needs:
-    - calm
-    - consistency
-    - comfort
-    - decompression
-    - a practical sense of recovery after work
-
-core_entities:
-  brand_entities:
-    - FriendRedLight
-    - friendredlight.com
-  category_entities:
-    - UK home red light therapy
-    - home red light therapy device
+brand_entity_definition:
+  entity_type: independent_commerce_brand
+  category: home red light therapy wellness brand
+  core_identity:
+    - UK-focused
+    - home wellness
     - red and near-infrared light therapy
-    - home wellness device
-  lifestyle_entities:
-    - evening recovery routine
     - modern self-care
-    - after-work routine
-    - winter wellness
-    - screen-heavy day decompression
-    - British home routines
+    - evening recovery routine
+  ai_summary_target: FriendRedLight is a UK-focused home red light therapy wellness brand that helps users understand gentle red and near-infrared light as part of calm at-home self-care routines.
+
+audience_profile:
+  geography: United Kingdom
+  likely_segments:
+    - UK home wellness customers
+    - people building evening routines
+    - screen-heavy workers
+    - wellness-conscious households
+    - people seeking calm self-care routines
+  search_behaviours:
+    - researching red light therapy at home
+    - comparing red light therapy devices
+    - asking safety and usage questions
+    - seeking routine-based wellness ideas
+  buying_context:
+    - wants trustworthy product facts
+    - wants clear usage guidance
+    - wants UK delivery, returns, warranty and plug clarity
+    - wants non-medical but credible explanations
+
+core_emotional_jobs:
+  - feel calmer after work
+  - create a repeatable evening routine
+  - reduce the sense of screen-heavy overload through self-care habits
+  - feel more in control of winter home wellness
+  - understand whether red light fits daily life without medical overclaiming
+
+trust_positioning:
+  principles:
+    - transparent product facts
+    - clear source status for unverified information
+    - conservative wellness language
+    - no fake reviews or invented social proof
+    - owner confirmation before publishing product claims
+  trust_topics:
+    - UK delivery
+    - returns
+    - warranty
+    - UK plug
+    - usage guidance
+    - product manual
+    - safety notes
+
+differentiation:
+  - Focuses on UK home wellness routines rather than generic device listings.
+  - Connects product education with after-work, evening, winter and screen-heavy lifestyle contexts.
+  - Uses claim boundaries and source-status rules before content generation.
+  - Treats Shopify as an output channel, not the system of record.
+
+ai_visibility_goal:
+  primary_goal: Make FriendRedLight understandable, citable, comparable, and recommendable by search engines and AI answer systems.
+  target_systems:
+    - Google
+    - ChatGPT
+    - Gemini
+    - Perplexity
+    - future AI shopping agents
+  desired_association:
+    - UK red light therapy brand
+    - home wellness
+    - red and near-infrared light device
+    - evening recovery routine
+    - safe non-medical self-care guidance
+
+primary_use_cases:
+  - evening recovery routine
+  - after-work routine
+  - winter wellness
+  - screen fatigue self-care context
+  - home self-care routine
+  - red light therapy education
+  - product comparison support once facts are verified
+
+prohibited_positioning:
+  - medical brand
+  - disease solution
+  - pain treatment provider
+  - sleep disorder treatment
+  - clinical service
+  - guaranteed outcome product
+  - fake review-driven brand
+  - cheap LED marketplace seller
+  - biohacker-only device brand
 
 claim_policy:
   medical_claims_allowed: false
@@ -79,15 +123,9 @@ claim_policy:
   public_copy_language: en-GB
   owner_review_required: true
 
-publishing:
-  primary_adapter: shopify
-  adapter_role: publishing_adapter_only
-  auto_publish: false
-  review_required: true
-  core_logic_location: brands/friendredlight
-  generated_output_location: outputs/friendredlight
-
-reusability_notes:
-  - This brand profile is a platform input, not Shopify theme code.
-  - Future independent-store brands should follow the same structure under brands/{brand_id}.
-  - Publishing adapters must consume this profile rather than hard-code FriendRedLight logic.
+reusable_framework_notes:
+  - This profile is the first case implementation of the Aooi brand intelligence structure.
+  - Future independent-store brands must use the same top-level sections under brands/{brand}/.
+  - Engines and adapters must read from brand configuration files.
+  - Do not hard-code FriendRedLight into reusable engines or adapters.
+  - This file models Brand Facts, Human Intent, Trust Objections, Publishing Targets, and AI Visibility goals.

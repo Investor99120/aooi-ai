@@ -2,6 +2,8 @@
 
 Do not use these claims in generated copy, schema, product pages, FAQs, ads, email, social, comparison content, or Shopify adapter outputs unless future legal and regulatory review explicitly approves them.
 
+The categories below are reusable for future independent-store brands. Brand-specific examples may be added under the same headings.
+
 ## Banned Medical Claim Verbs
 
 - cure
@@ -30,16 +32,16 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 
 ## Banned Condition Claims
 
-- sleep disorder treatment
 - insomnia treatment
 - arthritis treatment
 - eczema treatment
-- acne cure
 - chronic pain treatment
-- injury healing
-- wound healing
 - depression treatment
 - anxiety treatment
+- injury healing
+- wound healing
+- sleep disorder treatment
+- acne cure
 - hormonal treatment
 - anti-inflammatory cure
 - chronic fatigue treatment
@@ -60,6 +62,7 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 - unverified UK warehouse claims
 - unverified delivery timelines
 - unverified warranty promises
+- unverified UK plug claims
 
 ## Banned Tone And Positioning
 
@@ -71,16 +74,20 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 - biohacker secret
 - guaranteed transformation
 - no-risk health outcome
+- disease solution
+- medical brand
 
 ## Rewrite Rules
 
-- Replace "treats pain" with "can be part of a gentle comfort-focused routine".
-- Replace "cures insomnia" with "can support a calmer evening routine".
-- Replace "heals inflammation" with "is designed for non-invasive home wellness".
-- Replace "guaranteed results" with "consistent use, following the product manual, is recommended".
+- Replace "treats pain" with "supports a calming self-care routine".
+- Replace "cures insomnia" with "can be used as part of an evening wind-down routine".
+- Replace "heals inflammation" with "designed for gentle red and near-infrared light exposure".
+- Replace "guaranteed results" with "results may vary depending on consistency and individual use".
 - Replace "clinically proven to fix" with "explained in conservative, evidence-aware wellness language".
-- Replace unverified product specifications with `TBC` and `needs_owner_confirmation`.
+- Replace unverified product specifications with `TBC`, `unverified`, or `needs_owner_confirmation`.
 
 ## Platform Enforcement
 
 If any generated output includes a banned phrase or an equivalent medicalised claim, it must be blocked before adapter export.
+
+No engine or adapter should hard-code FriendRedLight-specific blacklist logic. Reusable systems must read blacklist files from `brands/{brand}/`.
