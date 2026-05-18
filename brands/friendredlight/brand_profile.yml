@@ -1,37 +1,93 @@
+schema_version: 1
+source_status: owner_defined
+last_updated: 2026-05-19
+
 brand:
   id: friendredlight
   name: FriendRedLight
   website: https://friendredlight.com
   market_focus: United Kingdom
   language: en-GB
-  category: Home red light therapy wellness brand
-  platform_role: First serviced brand case for aooi.com
+  category: UK-focused home red light therapy wellness brand
+  platform_role: first_serviced_brand_case
+  platform_owner: aooi.com
 
 positioning:
-  short: UK-focused home red light therapy wellness brand
+  canonical: UK-focused home red light therapy wellness brand
+  short: UK home red light therapy for modern self-care routines
   long: FriendRedLight is a UK-focused home wellness brand centred on gentle red and near-infrared light therapy devices for modern self-care, evening recovery routines, after-work decompression, winter wellness, and calm home routines.
+  not_positioned_as:
+    - medical treatment provider
+    - clinical service
+    - disease-care brand
+    - cheap LED marketplace seller
+    - biohacker-only device brand
+    - Amazon-style parameter page
 
 brand_personality:
-  - calm
-  - gentle
-  - practical
-  - trustworthy
-  - science-aware
-  - UK-localised
-  - home-wellness-first
+  primary_traits:
+    - calm
+    - gentle
+    - practical
+    - trustworthy
+    - science-aware
+    - UK-localised
+    - home-wellness-first
+  tone:
+    - understated
+    - warm
+    - clear
+    - safety-conscious
+    - non-hype
+
+audience:
+  geography: United Kingdom
+  likely_contexts:
+    - screen-heavy working adults
+    - home-office users
+    - people building calmer evening routines
+    - wellness buyers comparing home red light therapy devices
+    - users seeking practical self-care during darker UK evenings
+  emotional_needs:
+    - calm
+    - consistency
+    - comfort
+    - decompression
+    - a practical sense of recovery after work
 
 core_entities:
-  - FriendRedLight
-  - UK home red light therapy
-  - home wellness
-  - evening recovery routine
-  - red and near-infrared light therapy
-  - modern self-care
-  - after-work routine
-  - winter wellness
-  - screen-heavy day decompression
+  brand_entities:
+    - FriendRedLight
+    - friendredlight.com
+  category_entities:
+    - UK home red light therapy
+    - home red light therapy device
+    - red and near-infrared light therapy
+    - home wellness device
+  lifestyle_entities:
+    - evening recovery routine
+    - modern self-care
+    - after-work routine
+    - winter wellness
+    - screen-heavy day decompression
+    - British home routines
+
+claim_policy:
+  medical_claims_allowed: false
+  fake_reviews_allowed: false
+  invented_product_specs_allowed: false
+  public_copy_language: en-GB
+  owner_review_required: true
 
 publishing:
   primary_adapter: shopify
+  adapter_role: publishing_adapter_only
   auto_publish: false
   review_required: true
+  core_logic_location: brands/friendredlight
+  generated_output_location: outputs/friendredlight
+
+reusability_notes:
+  - This brand profile is a platform input, not Shopify theme code.
+  - Future independent-store brands should follow the same structure under brands/{brand_id}.
+  - Publishing adapters must consume this profile rather than hard-code FriendRedLight logic.

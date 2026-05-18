@@ -1,46 +1,152 @@
+schema_version: 1
 brand: FriendRedLight
-source_status: phase_1_tbc_safe
+source_status: needs_owner_confirmation
 last_updated: 2026-05-19
+verification_policy:
+  rule: Do not publish unverified product facts as confirmed public claims.
+  unverified_values:
+    - TBC
+    - unknown
+    - needs_owner_confirmation
+  allowed_internal_statuses:
+    - verified
+    - unverified
+    - needs_owner_confirmation
+    - not_applicable
 
 product:
-  name: FriendRedLight Home Red Light Therapy Device
-  url: /products/friendredlight-red-light-therapy-device
-  status: working_name_confirm_before_launch
+  id: friendredlight-home-device
+  name:
+    value: FriendRedLight Home Red Light Therapy Device
+    source_status: needs_owner_confirmation
+    notes: Working product name. Confirm final Shopify product title before publication.
+  product_type:
+    value: home red light therapy wellness device
+    source_status: owner_defined
+  url:
+    value: /products/friendredlight-red-light-therapy-device
+    source_status: needs_owner_confirmation
+    notes: Working Shopify handle. Confirm before adapter output is treated as final.
+  market:
+    value: United Kingdom
+    source_status: owner_defined
 
-specifications:
-  wavelengths: TBC
-  led_quantity: TBC
-  dimensions: TBC
-  weight: TBC
-  plug: UK plug TBC
+technical_specifications:
+  wavelengths:
+    value: TBC
+    unit: nm
+    source_status: needs_owner_confirmation
+    publish: false
+  led_quantity:
+    value: TBC
+    source_status: needs_owner_confirmation
+    publish: false
+  irradiance:
+    value: TBC
+    unit: mW/cm2
+    source_status: needs_owner_confirmation
+    publish: false
+  power_consumption:
+    value: TBC
+    unit: W
+    source_status: needs_owner_confirmation
+    publish: false
+  dimensions:
+    value: TBC
+    unit: cm
+    source_status: needs_owner_confirmation
+    publish: false
+  weight:
+    value: TBC
+    unit: kg
+    source_status: needs_owner_confirmation
+    publish: false
+  plug:
+    value: UK plug TBC
+    source_status: needs_owner_confirmation
+    publish: false
+  certifications:
+    ce:
+      value: TBC
+      source_status: needs_owner_confirmation
+      publish: false
+    ukca:
+      value: TBC
+      source_status: needs_owner_confirmation
+      publish: false
+    rohs:
+      value: TBC
+      source_status: needs_owner_confirmation
+      publish: false
 
 usage:
-  contexts:
-    - home wellness
-    - evening recovery routine
-    - after-work routine
-    - winter wellness
-    - screen-heavy day decompression
-    - modern self-care
-  suggested_usage_time: Follow the product manual. Begin with a short, comfortable routine and use consistently.
-  safety_notes:
+  positioning_contexts:
+    source_status: owner_defined
+    values:
+      - home wellness
+      - evening recovery routine
+      - after-work routine
+      - winter wellness
+      - screen-heavy day decompression
+      - modern self-care
+  suggested_usage_time:
+    value: Follow the product manual. Begin with a short, comfortable routine and use consistently.
+    source_status: conservative_placeholder
+    publish: true
+  distance_guidance:
+    value: TBC
+    source_status: needs_owner_confirmation
+    publish: false
+  frequency_guidance:
+    value: Follow the product manual.
+    source_status: conservative_placeholder
+    publish: true
+
+safety:
+  source_status: conservative_placeholder
+  publish: true
+  notes:
     - For home wellness use only.
     - Follow the product manual.
     - Do not stare directly into LEDs.
     - Stop use if discomfort occurs.
     - Speak to a qualified professional before use if pregnant, photosensitive, taking photosensitising medication, or managing a medical condition.
+  not_for:
+    - healthcare advice
+    - diagnosis
+    - disease treatment
+    - promised clinical outcomes
 
 commerce:
-  delivery: TBC
-  returns: TBC
-  warranty: TBC
+  delivery:
+    value: TBC
+    market: GB
+    source_status: needs_owner_confirmation
+    publish: false
+  returns:
+    value: TBC
+    market: GB
+    source_status: needs_owner_confirmation
+    publish: false
+  warranty:
+    value: TBC
+    market: GB
+    source_status: needs_owner_confirmation
+    publish: false
+  currency:
+    value: GBP
+    source_status: inferred_from_market
+    publish: true
 
 claim_status:
   medical_claims_allowed: false
   fake_reviews_allowed: false
   invented_specifications_allowed: false
+  automatic_shopify_publish_allowed: false
 
 publication_rules:
-  - Do not publish fields marked TBC as confirmed facts.
+  - Do not publish fields with source_status needs_owner_confirmation as confirmed facts.
+  - Do not publish fields where publish is false.
   - Do not use naked product URLs in customer-facing copy.
   - Use natural conversion language such as "View the home wellness device" or "Explore the FriendRedLight device".
+  - Shopify adapter output must remain reviewable until owner approval.

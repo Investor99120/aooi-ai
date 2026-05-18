@@ -12,6 +12,8 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 - reverse disease
 - medically proven to fix
 - clinically guaranteed
+- clinically proven to cure
+- prescribed for
 
 ## Banned Result Claims
 
@@ -23,6 +25,8 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 - guaranteed skin cure
 - guaranteed anxiety relief
 - guaranteed depression relief
+- instant results
+- permanent results
 
 ## Banned Condition Claims
 
@@ -38,12 +42,45 @@ Do not use these claims in generated copy, schema, product pages, FAQs, ads, ema
 - anxiety treatment
 - hormonal treatment
 - anti-inflammatory cure
+- chronic fatigue treatment
+- seasonal affective disorder treatment
 
-## Banned Trust Claims
+## Banned Trust And Evidence Claims
 
 - fake Trustpilot reviews
 - fake Reddit mentions
 - fake YouTube reviews
+- fake TikTok testimonials
 - fake customer testimonials
 - invented before-and-after claims
 - invented clinical endorsements
+- invented doctor recommendations
+- invented NHS association
+- unverified certification claims
+- unverified UK warehouse claims
+- unverified delivery timelines
+- unverified warranty promises
+
+## Banned Tone And Positioning
+
+- miracle device
+- medical breakthrough
+- pain-fixing device
+- hospital-grade cure
+- cheap LED cure
+- biohacker secret
+- guaranteed transformation
+- no-risk health outcome
+
+## Rewrite Rules
+
+- Replace "treats pain" with "can be part of a gentle comfort-focused routine".
+- Replace "cures insomnia" with "can support a calmer evening routine".
+- Replace "heals inflammation" with "is designed for non-invasive home wellness".
+- Replace "guaranteed results" with "consistent use, following the product manual, is recommended".
+- Replace "clinically proven to fix" with "explained in conservative, evidence-aware wellness language".
+- Replace unverified product specifications with `TBC` and `needs_owner_confirmation`.
+
+## Platform Enforcement
+
+If any generated output includes a banned phrase or an equivalent medicalised claim, it must be blocked before adapter export.

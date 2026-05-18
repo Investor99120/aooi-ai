@@ -1,16 +1,33 @@
+schema_version: 1
 brand: FriendRedLight
-semantic_goal: Trusted UK home red light therapy wellness brand
+semantic_goal: Trusted UK-focused home red light therapy wellness brand
+source_status: owner_defined_strategy
 
 primary_entity_cluster:
-  - FriendRedLight
-  - UK home red light therapy
-  - home wellness device
-  - red and near-infrared light therapy
-  - evening recovery routine
-  - modern self-care
+  brand:
+    - FriendRedLight
+    - friendredlight.com
+  category:
+    - UK home red light therapy
+    - home red light therapy device
+    - red and near-infrared light therapy
+    - home wellness device
+  lifestyle:
+    - evening recovery routine
+    - modern self-care
+    - after-work routine
+    - winter wellness
+    - screen-heavy day decompression
+    - British home routines
+  safety:
+    - conservative wellness language
+    - product manual
+    - home use safety
+    - non-medical positioning
 
 human_feeling_clusters:
   after_work_fatigue:
+    intent_type: emotional_entry
     user_language:
       - tired after work
       - drained after work
@@ -20,7 +37,11 @@ human_feeling_clusters:
       - after-work routine
       - calmer evening transition
       - consistent home wellness moment
+    avoid_claims:
+      - fatigue treatment
+      - guaranteed recovery
   winter_wellness:
+    intent_type: seasonal_entry
     user_language:
       - dark winter evenings
       - low energy in winter
@@ -29,7 +50,11 @@ human_feeling_clusters:
       - winter wellness
       - cosy home routine
       - gentle self-care consistency
+    avoid_claims:
+      - seasonal affective disorder treatment
+      - mood disorder treatment
   evening_recovery:
+    intent_type: routine_entry
     user_language:
       - evening routine
       - unwind at night
@@ -38,21 +63,113 @@ human_feeling_clusters:
       - evening recovery routine
       - red and near-infrared light
       - calm home wellness
+    avoid_claims:
+      - insomnia treatment
+      - guaranteed better sleep
+  product_research:
+    intent_type: commercial_research
+    user_language:
+      - red light therapy device UK
+      - home red light therapy panel
+      - red light therapy before bed
+      - 660nm 850nm red light
+    brand_bridge:
+      - product facts
+      - safety notes
+      - verified specifications
+      - UK delivery and returns once confirmed
+    avoid_claims:
+      - unverified wavelength claims
+      - unverified certification claims
 
-content_layers:
+content_cluster_map:
+  foundation:
+    purpose: Define the brand and make it AI-readable.
+    assets:
+      - brand profile
+      - product facts
+      - claim rules
+      - FAQ structure
+      - organisation and product schema plan
   tofu_emotional_entry:
-    purpose: Help users feel understood.
+    purpose: Help users feel understood before product comparison.
+    topics:
+      - tired after work
+      - screen fatigue after work
+      - winter tiredness UK
+      - how to unwind after work
+      - modern self-care at home
   mofu_education:
-    purpose: Build trust and understanding.
+    purpose: Explain the category without medical overclaiming.
+    topics:
+      - what is red light therapy
+      - red vs near-infrared light
+      - home use safety
+      - how often to use red light therapy
+      - red light therapy before bed
+  routine_content:
+    purpose: Make FriendRedLight part of natural UK home routines.
+    topics:
+      - evening recovery routine
+      - after-work decompression routine
+      - Sunday reset routine
+      - winter evening wellness routine
+      - screen-heavy day wind-down routine
   bofu_trust:
-    purpose: Help users evaluate FriendRedLight.
+    purpose: Help users evaluate FriendRedLight with verified facts.
+    topics:
+      - why choose FriendRedLight
+      - UK delivery returns and warranty
+      - product specifications once verified
+      - safety and home use FAQ
+      - comparison briefs once facts are verified
+
+internal_link_logic:
+  emotional_pages:
+    link_to:
+      - routine_content
+      - safety_faq
+      - product_facts
+  education_pages:
+    link_to:
+      - product_facts
+      - routine_content
+      - claim_safe_faq
+  routine_pages:
+    link_to:
+      - product_page_adapter_output
+      - safety_faq
+      - UK_delivery_returns_warranty_once_verified
+  trust_pages:
+    link_to:
+      - product_facts
+      - claim_rules
+      - verified_specifications
 
 schema_priorities:
-  - Organization
-  - Brand
-  - WebSite
-  - Product
-  - FAQPage
-  - BreadcrumbList
-  - MerchantReturnPolicy
-  - OfferShippingDetails
+  brand_level:
+    - Organization
+    - Brand
+    - WebSite
+    - BreadcrumbList
+  product_level:
+    - Product
+    - Offer
+    - OfferShippingDetails
+    - MerchantReturnPolicy
+  content_level:
+    - FAQPage
+    - Article
+    - HowTo
+
+compliance_notes:
+  medical_claims_allowed: false
+  fake_reviews_allowed: false
+  publish_unverified_specs: false
+  automatic_shopify_publish_allowed: false
+  required_review_before_adapter_export:
+    - claim blacklist scan
+    - product facts verification
+    - UK English check
+    - fake social proof check
+    - source-status check
