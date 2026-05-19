@@ -1,0 +1,12 @@
+[
+  {
+    "name": "friendredlight current facts are conservatively blocked",
+    "brand_id": "friendredlight",
+    "expected_decisions": ["blocked"]
+  },
+  {
+    "name": "missing brand requires review",
+    "brand_id": "missing_brand",
+    "expected_decisions": ["needs_review"]
+  }
+]
