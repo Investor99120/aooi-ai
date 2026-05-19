@@ -90,6 +90,21 @@ It does not generate new FAQ drafts, FAQPage Schema, Shopify FAQ Block, auto-pub
 中文描述：
 它不会生成新的 FAQ 草稿、FAQPage Schema、Shopify FAQ Block，不会自动发布，也不会连接 Shopify API。
 
+FAQ Export Candidate Builder is implemented in Phase 5C.
+
+中文描述：
+FAQ Export Candidate Builder 在 Phase 5C 实现。
+
+Its role is to read FAQ review drafts, read FAQ draft reports, build clean export candidate markdown, build bilingual review candidate markdown, generate export candidate reports, keep `publish_ready` false, keep `shopify_block_ready` false and keep `faqpage_schema_ready` false.
+
+中文描述：
+它的作用是读取 FAQ review drafts、读取 FAQ draft reports、生成 clean export candidate Markdown、生成双语 review candidate Markdown、生成 export candidate reports，并保持 `publish_ready`、`shopify_block_ready` 和 `faqpage_schema_ready` 全部为 false。
+
+It does not generate a final FAQ page, FAQPage Schema, Shopify FAQ Block, auto-publish, or connect to Shopify API.
+
+中文描述：
+它不会生成最终 FAQ 页面、FAQPage Schema、Shopify FAQ Block，不会自动发布，也不会连接 Shopify API。
+
 FriendRedLight is only the first case, not hard-coded logic.
 
 中文描述：
@@ -131,4 +146,13 @@ Run the FAQ Draft Review Gate:
 
 ```bash
 node engines/faq_generator/faq_draft_review_gate.js friendredlight
+```
+
+Run the FAQ Export Candidate Builder:
+
+中文描述：
+运行 FAQ Export Candidate Builder：
+
+```bash
+node engines/faq_generator/faq_export_candidate_builder.js friendredlight
 ```

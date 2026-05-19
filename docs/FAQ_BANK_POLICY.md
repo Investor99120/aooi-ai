@@ -152,6 +152,8 @@ FAQ Draft Generator
 ↓
 FAQ Draft Review Gate
 ↓
+FAQ Export Candidate Builder
+↓
 Claim Validator
 ↓
 Source Status Validator
@@ -160,7 +162,7 @@ Publishing Safety Policy
 ↓
 Manual Review
 ↓
-Future Export
+Future Shopify Adapter / FAQPage Schema
 ```
 
 In Phase 5A.1, FAQ Bank Validator only checks structure, source status, claim risk, eligibility conflicts, manual review requirements and decision values. It does not generate FAQ drafts, FAQPage Schema, Shopify FAQ blocks or final customer-facing FAQ output.
@@ -177,3 +179,8 @@ In Phase 5B.1, FAQ Draft Review Gate only checks review-mode FAQ drafts and repo
 
 中文描述：
 Phase 5B.1 中，FAQ Draft Review Gate 只检查 review-mode FAQ 草稿和报告。它不会生成新的 FAQ 草稿、FAQPage Schema、Shopify FAQ 模块、最终 FAQ 页面或自动发布。
+
+In Phase 5C, FAQ Export Candidate Builder creates an export candidate pack only. It does not generate final FAQ pages, FAQPage Schema or Shopify FAQ Blocks.
+
+中文描述：
+Phase 5C 中，FAQ Export Candidate Builder 只创建 FAQ Export Candidate Pack，不生成最终 FAQ 页面、FAQPage Schema 或 Shopify FAQ 模块。
