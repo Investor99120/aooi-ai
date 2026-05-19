@@ -1,0 +1,207 @@
+schema_version: 1
+brand_id: friendredlight
+source_status: owner_defined
+publishing_mode: review_mode
+auto_publish_allowed: false
+manual_review_required: true
+
+faqs:
+  - id: frl_faq_001
+    question: What is red light therapy?
+    answer_draft: Red light therapy is commonly used to describe exposure to visible red light as part of a non-medical wellness routine. This draft should stay educational and avoid healthcare outcome claims.
+    intent_cluster: what_is_red_light_therapy
+    emotional_cluster: beginner_uncertainty
+    trust_objection: wants_plain_language_explanation
+    funnel_stage: TOFU
+    claim_risk_level: medium
+    source_status: owner_defined
+    source_notes: Educational positioning only; no product specification or health outcome included.
+    schema_eligible: candidate
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: draft_candidate
+    last_reviewed_at: null
+    owner_notes: Review language before any customer-facing use.
+
+  - id: frl_faq_002
+    question: What is near-infrared light?
+    answer_draft: Near-infrared light refers to light outside the visible red range. Any explanation should remain general until specific device wavelengths are verified in product facts.
+    intent_cluster: near_infrared_light_explainer
+    emotional_cluster: technical_confusion
+    trust_objection: wants_simple_science_context
+    funnel_stage: TOFU
+    claim_risk_level: medium
+    source_status: owner_defined
+    source_notes: General educational context only; exact wavelengths require verified product facts.
+    schema_eligible: candidate
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Confirm wording before draft generation.
+
+  - id: frl_faq_003
+    question: Can I use red light therapy at home?
+    answer_draft: At-home red light routines should be based on clear product guidance, comfortable use and the product manual. Specific safety instructions must come from verified product documentation.
+    intent_cluster: red_light_therapy_at_home
+    emotional_cluster: safety_concern
+    trust_objection: wants_home_use_confidence
+    funnel_stage: MOFU
+    claim_risk_level: medium
+    source_status: needs_owner_confirmation
+    source_notes: Home-use guidance depends on verified manual and safety notes.
+    schema_eligible: false
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Confirm manual guidance before any export.
+
+  - id: frl_faq_004
+    question: How long should a red light session be?
+    answer_draft: Session length should follow the product manual. Do not publish a specific duration until FriendRedLight confirms product guidance.
+    intent_cluster: session_length
+    emotional_cluster: usage_uncertainty
+    trust_objection: wants_clear_usage_guidance
+    funnel_stage: MOFU
+    claim_risk_level: medium
+    source_status: needs_owner_confirmation
+    source_notes: Session duration is a product usage detail and requires owner confirmation.
+    schema_eligible: false
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Do not add minutes until verified.
+
+  - id: frl_faq_005
+    question: Can red light be part of an evening routine?
+    answer_draft: Red and near-infrared light exposure can be described as part of a calm evening self-care routine, provided the wording avoids promised outcomes and follows product guidance.
+    intent_cluster: red_light_evening_routine
+    emotional_cluster: evening_decompression
+    trust_objection: wants_routine_fit
+    funnel_stage: MOFU
+    claim_risk_level: low
+    source_status: owner_defined
+    source_notes: Brand positioning supports evening routine language without outcome promises.
+    schema_eligible: candidate
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: draft_candidate
+    last_reviewed_at: null
+    owner_notes: Keep wording conservative.
+
+  - id: frl_faq_006
+    question: What is the difference between red light and near-infrared light?
+    answer_draft: Red light is visible, while near-infrared light is outside the visible range. Exact device details should wait for verified wavelength information.
+    intent_cluster: red_vs_near_infrared
+    emotional_cluster: technical_confusion
+    trust_objection: wants_clear_comparison
+    funnel_stage: MOFU
+    claim_risk_level: medium
+    source_status: needs_owner_confirmation
+    source_notes: General distinction is educational; exact wavelength claims require verified product facts.
+    schema_eligible: false
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Confirm wavelength facts before export.
+
+  - id: frl_faq_007
+    question: Is FriendRedLight a medical device?
+    answer_draft: FriendRedLight should be positioned as a home wellness brand, not as a medical device or healthcare service. Any final answer should avoid disease or outcome claims.
+    intent_cluster: medical_device_status
+    emotional_cluster: safety_concern
+    trust_objection: wants_positioning_clarity
+    funnel_stage: BOFU
+    claim_risk_level: high
+    source_status: owner_defined
+    source_notes: Brand claim policy states medical claims are not allowed.
+    schema_eligible: false
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Review carefully because this is compliance-sensitive.
+
+  - id: frl_faq_008
+    question: Do results vary between users?
+    answer_draft: Any final answer should state that experiences may vary and should avoid promised outcomes.
+    intent_cluster: results_may_vary
+    emotional_cluster: expectation_setting
+    trust_objection: wants_realistic_expectations
+    funnel_stage: BOFU
+    claim_risk_level: medium
+    source_status: owner_defined
+    source_notes: Conservative expectation-setting language only.
+    schema_eligible: candidate
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: draft_candidate
+    last_reviewed_at: null
+    owner_notes: Avoid outcome promises.
+
+  - id: frl_faq_009
+    question: What should I check before using a red light device?
+    answer_draft: Before use, customers should review the product manual, comfort guidance and relevant safety notes. Specific warnings must be confirmed from verified product documentation.
+    intent_cluster: pre_use_safety_check
+    emotional_cluster: safety_concern
+    trust_objection: wants_safe_use_guidance
+    funnel_stage: SUPPORT
+    claim_risk_level: medium
+    source_status: needs_owner_confirmation
+    source_notes: Safety notes require verified manual or owner-provided documentation.
+    schema_eligible: false
+    shopify_block_eligible: candidate
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: needs_review
+    last_reviewed_at: null
+    owner_notes: Confirm exact safety notes before export.
+
+  - id: frl_faq_010
+    question: Does FriendRedLight ship in the UK?
+    answer_draft: Delivery information should be confirmed from FriendRedLight current store policy before publication. Do not state delivery timelines, costs or availability until verified.
+    intent_cluster: uk_delivery
+    emotional_cluster: purchase_confidence
+    trust_objection: wants_delivery_clarity
+    funnel_stage: BOFU
+    claim_risk_level: high
+    source_status: needs_owner_confirmation
+    source_notes: UK delivery policy is not verified in product_facts.yml.
+    schema_eligible: false
+    shopify_block_eligible: false
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: blocked
+    last_reviewed_at: null
+    owner_notes: Confirm delivery policy before any customer-facing use.

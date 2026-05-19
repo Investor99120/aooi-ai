@@ -1,0 +1,21 @@
+schema_version: 1
+entry:
+  id: "{{FAQ_ID}}"
+  question: "{{QUESTION}}"
+  answer_draft: "{{ANSWER_DRAFT}}"
+  intent_cluster: "{{INTENT_CLUSTER}}"
+  emotional_cluster: "{{EMOTIONAL_CLUSTER}}"
+  trust_objection: "{{TRUST_OBJECTION}}"
+  funnel_stage: "{{TOFU|MOFU|BOFU|SUPPORT}}"
+  claim_risk_level: "{{low|medium|high}}"
+  source_status: "{{verified|owner_defined|unverified|needs_owner_confirmation|needs_research}}"
+  source_notes: "{{SOURCE_NOTES}}"
+  schema_eligible: "{{candidate|false}}"
+  shopify_block_eligible: "{{candidate|false}}"
+  requires_claim_validator: true
+  requires_source_status_validator: true
+  manual_review_required: true
+  publishing_mode: review_mode
+  decision: "{{draft_candidate|needs_review|blocked|approved_for_draft|approved_for_export}}"
+  last_reviewed_at: null
+  owner_notes: "{{OWNER_NOTES}}"

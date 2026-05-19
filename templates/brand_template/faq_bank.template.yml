@@ -2,37 +2,43 @@ schema_version: 1
 template_type: faq_bank
 template_status: generic
 
-brand: "{{BRAND_NAME}}"
+brand_id: "{{BRAND_ID}}"
 source_status: template_only
+publishing_mode: review_mode
+auto_publish_allowed: false
+manual_review_required: true
 
 faqs:
-  - question: "{{QUESTION_1}}"
-    answer_draft: "{{ANSWER_DRAFT_1}}"
+  - id: "{{FAQ_ID}}"
+    question: "{{QUESTION}}"
+    answer_draft: "{{ANSWER_DRAFT}}"
     intent_cluster: "{{INTENT_CLUSTER}}"
+    emotional_cluster: "{{EMOTIONAL_CLUSTER}}"
+    trust_objection: "{{TRUST_OBJECTION}}"
     funnel_stage: "{{TOFU|MOFU|BOFU|SUPPORT}}"
     claim_risk_level: "{{low|medium|high}}"
-    source_status: "{{verified|owner_defined|needs_owner_confirmation|needs_research}}"
-    schema_eligible: false
-    review_required:
-      - claim_check
-      - source_status_check
-      - localisation_check
-  - question: "{{QUESTION_2}}"
-    answer_draft: "{{ANSWER_DRAFT_2}}"
-    intent_cluster: "{{INTENT_CLUSTER}}"
-    funnel_stage: "{{TOFU|MOFU|BOFU|SUPPORT}}"
-    claim_risk_level: "{{low|medium|high}}"
-    source_status: "{{verified|owner_defined|needs_owner_confirmation|needs_research}}"
-    schema_eligible: false
-    review_required:
-      - claim_check
-      - source_status_check
-      - localisation_check
+    source_status: "{{verified|owner_defined|unverified|needs_owner_confirmation|needs_research}}"
+    source_notes: "{{SOURCE_NOTES}}"
+    schema_eligible: "{{candidate|false}}"
+    shopify_block_eligible: "{{candidate|false}}"
+    requires_claim_validator: true
+    requires_source_status_validator: true
+    manual_review_required: true
+    publishing_mode: review_mode
+    decision: "{{draft_candidate|needs_review|blocked|approved_for_draft|approved_for_export}}"
+    last_reviewed_at: null
+    owner_notes: "{{OWNER_NOTES}}"
 
 schema_rules:
-  FAQPage_eligible_when:
-    - answer is reviewed
-    - claim risk is low or approved
-    - source status is verified or owner_defined
-    - no fake evidence
-    - no unverified product facts
+  FAQPage_schema_generated_in_current_phase: false
+  FAQPage_eligible_after:
+    - claim_validator_pass
+    - source_status_validator_pass
+    - manual_review_complete
+    - publishing_safety_policy_allows_export
+
+shopify_rules:
+  shopify_block_generated_in_current_phase: false
+  future_output_directory: "outputs/{{BRAND_ID}}/shopify/"
+  auto_publish_allowed: false
+  manual_review_required: true
