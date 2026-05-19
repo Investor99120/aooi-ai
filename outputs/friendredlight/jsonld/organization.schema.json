@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FriendRedLight",
+  "url": "https://friendredlight.com",
+  "description": "FriendRedLight is a UK-focused home wellness brand centred on gentle red and near-infrared light therapy devices for modern self-care, evening recovery routines, after-work decompression, winter wellness, and calm home routines.",
+  "brand": {
+    "@type": "Brand",
+    "name": "FriendRedLight",
+    "url": "https://friendredlight.com"
+  }
+}

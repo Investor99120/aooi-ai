@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "name": "Example Brand",
+  "url": "https://example.com",
+  "description": "Example Brand is an independent commerce brand with conservative, verified brand-level information."
+}
