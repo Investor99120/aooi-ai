@@ -70,9 +70,10 @@ AI content production is not scarce. What is scarce is structured understanding 
 - No fake Reddit, Trustpilot, YouTube, TikTok or social proof.
 - No invented product facts.
 - No medicalised claims.
-- No automatic Shopify publishing in Phase 1.
+- No automatic Shopify publishing.
 - No hard-coded FriendRedLight logic in reusable engines or adapters.
 - Uncertain product parameters must be marked `unverified` or `needs_owner_confirmation`.
+- `unverified` and `needs_owner_confirmation` fields cannot become customer-facing outputs.
 - Keep FriendRedLight customer-facing outputs in UK English.
 
 ## Bilingual Review Output Rule
@@ -97,6 +98,6 @@ Important exceptions:
 - Do not add Chinese text to customer-facing export files unless the output mode is explicitly set to bilingual review.
 - For adapter outputs, use Chinese descriptions only in internal review notes, not in final customer-facing copy by default.
 
-## First-Stage Outcome
+## Current Stage
 
-The current stage should produce documentation and configuration only: brand facts, product facts, claim rules, UK localisation rules, semantic maps, reusable framework documents, and platform architecture notes.
+Phase 3B is in progress. The project has completed Phase 1, Phase 1.5, Phase 2, Phase 2.1 and Phase 3A. The current focus is the Claim Validator as the first lightweight executable compliance checker.

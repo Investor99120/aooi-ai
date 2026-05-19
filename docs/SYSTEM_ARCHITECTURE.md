@@ -83,13 +83,9 @@ No adapter should own brand truth. No reusable engine should hard-code FriendRed
 
 ## Output Review Boundary
 
-The project follows the Bilingual Review Output Rule for human-readable review materials.
+The project follows the Bilingual Review Output Rule for human-readable review materials. The full rule is defined in `docs/PROJECT_CONTEXT.md`.
 
-When engines or adapters generate English customer-facing copy, strategy text, documentation summaries, SEO/GEO explanations, page copy, FAQ drafts, brand descriptions, content briefs, or adapter output previews, they should place a Chinese explanation immediately after the English text for owner review clarity.
-
-This rule must not be applied inside code files, JSON, YAML, JavaScript, TypeScript, Liquid, HTML, CSS, schema JSON-LD, CLI output, test cases, or other machine-readable files. Structured data formats must remain clean and valid.
-
-Adapter outputs should use Chinese descriptions only in internal review notes unless an output mode is explicitly set to bilingual review. Final customer-facing exports should remain in the target market language by default.
+In architecture terms, bilingual explanations are allowed only for human-readable owner review materials. They must not be added to code, structured data, CLI output, test cases or machine-readable files. Final customer-facing exports should remain in the target market language by default unless an output mode is explicitly set to bilingual review.
 
 ## Brand Onboarding Flow
 
@@ -112,17 +108,17 @@ FriendRedLight is the first serviced brand case. It demonstrates how a Shopify i
 
 Shopify is a publishing adapter only.
 
-Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, product-page copy suggestions, and internal-link recommendations. It must not publish automatically in Phase 1.
+Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, product-page copy suggestions, and internal-link recommendations. It must not publish automatically.
 
 ## Prohibited System Behaviour
 
 - No fake reviews.
 - No invented product facts.
 - No medicalised claims.
-- No automatic Shopify publishing in Phase 1.
+- No automatic Shopify publishing.
 - No hard-coded FriendRedLight logic in reusable engines or adapters.
 - No customer-facing output from `unverified` or `needs_owner_confirmation` fields.
 
 ## Current Stage
 
-Phase 1.5 is documentation and configuration only. Complex application code, scraping pipelines, generated Shopify pages and live theme changes are intentionally out of scope.
+Phase 3B is in progress. The project has completed Phase 1, Phase 1.5, Phase 2, Phase 2.1 and Phase 3A. The current focus is the Claim Validator as the first lightweight executable compliance checker.
