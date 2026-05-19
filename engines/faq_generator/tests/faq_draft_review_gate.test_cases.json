@@ -1,0 +1,50 @@
+[
+  {
+    "name": "review markdown exists and is review-mode only",
+    "expected_boundary": "review_mode_boundary"
+  },
+  {
+    "name": "JSON reports parse correctly",
+    "expected_boundary": "json_report_boundary"
+  },
+  {
+    "name": "JSON reports contain no Chinese descriptions",
+    "expected_result": "machine_readable_outputs_clean"
+  },
+  {
+    "name": "Markdown review may contain Chinese descriptions",
+    "expected_result": "markdown_contains_chinese"
+  },
+  {
+    "name": "publish_ready false is required",
+    "expected_publish_ready": false
+  },
+  {
+    "name": "manual_review_required true is required",
+    "expected_manual_review_required": true
+  },
+  {
+    "name": "blocked FAQ does not appear in normal draft sections",
+    "expected_result": "blocked_questions_in_normal_draft_empty"
+  },
+  {
+    "name": "risky claim in review markdown returns blocked",
+    "expected_decision": "blocked"
+  },
+  {
+    "name": "FAQPage Schema output is absent",
+    "expected_absent": "FAQPage"
+  },
+  {
+    "name": "Shopify FAQ Block output is absent",
+    "expected_absent": "shopify_faq_block"
+  },
+  {
+    "name": "final FAQ page output is absent",
+    "expected_absent": "final_faq_page"
+  },
+  {
+    "name": "missing report file returns needs_review or blocked",
+    "expected_decisions": ["needs_review", "blocked"]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "brand_id": "friendredlight",
+  "decision": "needs_review",
+  "risk_level": "medium",
+  "checked_files": {
+    "faq_drafts_review.md": true,
+    "faq_draft_generation_report.json": true,
+    "blocked_faq_drafts_report.json": true,
+    "faq_draft_review_checklist.md": true,
+    "brands/friendredlight/claim_blacklist.md": true,
+    "docs/SOURCE_STATUS_POLICY.md": true,
+    "publishing/modes.yml": true,
+    "validation/rules.yml": true
+  },
+  "review_mode_boundary": {
+    "faq_drafts_review_exists": true,
+    "markdown_may_include_chinese": true,
+    "states_review_mode_only": true,
+    "claims_final_customer_facing": false
+  },
+  "json_report_boundary": {
+    "generation_report_parses": true,
+    "blocked_report_parses": true,
+    "json_reports_contain_chinese": false,
+    "publish_ready_false": true,
+    "manual_review_required_true": true
+  },
+  "blocked_faq_boundary": {
+    "blocked_candidate_ids": [
+      "frl_faq_010"
+    ],
+    "blocked_questions_in_normal_draft": [],
+    "blocked_entries_reported": 1
+  },
+  "claim_safety_boundary": {
+    "matched_risk_terms": [],
+    "risky_terms_found": false
+  },
+  "output_boundary": {
+    "forbidden_outputs_found": [],
+    "faqpage_schema_absent": true,
+    "shopify_faq_block_absent": true,
+    "final_faq_page_absent": true
+  },
+  "bilingual_boundary": {
+    "markdown_contains_chinese": true,
+    "json_reports_contain_chinese": false,
+    "machine_readable_outputs_clean": true
+  },
+  "matched_risk_terms": [],
+  "missing_files": [],
+  "manual_review_required": true,
+  "publish_ready": false,
+  "notes": [
+    "FAQ Draft Review Gate checks review-mode outputs only.",
+    "It does not generate new FAQ drafts, FAQPage Schema, Shopify FAQ Block, final FAQ pages or automatic publishing."
+  ]
+}

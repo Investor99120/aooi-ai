@@ -75,6 +75,21 @@ In Phase 5B, the draft generator still does not generate a final FAQ page, FAQPa
 中文描述：
 Phase 5B 中，draft generator 仍然不会生成最终 FAQ 页面、FAQPage Schema、Shopify FAQ Block，不会自动发布，也不会连接 Shopify API。
 
+FAQ Draft Review Gate is implemented in Phase 5B.1.
+
+中文描述：
+FAQ Draft Review Gate 在 Phase 5B.1 实现。
+
+Its role is to validate review-mode FAQ drafts, check JSON reports, ensure blocked FAQs did not enter normal drafts, confirm no FAQPage Schema was generated, confirm no Shopify FAQ Block was generated, confirm no final FAQ page was generated, and keep `publish_ready` false.
+
+中文描述：
+它的作用是验证 review-mode FAQ 草稿、检查 JSON 报告、确认 blocked FAQ 没有进入正常草稿、确认没有生成 FAQPage Schema、确认没有生成 Shopify FAQ Block、确认没有生成最终 FAQ 页面，并保持 `publish_ready` 为 false。
+
+It does not generate new FAQ drafts, FAQPage Schema, Shopify FAQ Block, auto-publish, or connect to Shopify API.
+
+中文描述：
+它不会生成新的 FAQ 草稿、FAQPage Schema、Shopify FAQ Block，不会自动发布，也不会连接 Shopify API。
+
 FriendRedLight is only the first case, not hard-coded logic.
 
 中文描述：
@@ -107,4 +122,13 @@ Run the FAQ Draft Generator:
 
 ```bash
 node engines/faq_generator/faq_draft_generator.js friendredlight
+```
+
+Run the FAQ Draft Review Gate:
+
+中文描述：
+运行 FAQ Draft Review Gate：
+
+```bash
+node engines/faq_generator/faq_draft_review_gate.js friendredlight
 ```

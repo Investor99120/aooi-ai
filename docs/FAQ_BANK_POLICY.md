@@ -150,6 +150,8 @@ FAQ Bank Validator
 ↓
 FAQ Draft Generator
 ↓
+FAQ Draft Review Gate
+↓
 Claim Validator
 ↓
 Source Status Validator
@@ -170,3 +172,8 @@ In Phase 5B, FAQ Draft Generator creates review-mode FAQ drafts only. It does no
 
 中文描述：
 Phase 5B 中，FAQ Draft Generator 只创建 review-mode FAQ 草稿，不生成最终 FAQ 页面、FAQPage Schema 或 Shopify FAQ 模块。
+
+In Phase 5B.1, FAQ Draft Review Gate only checks review-mode FAQ drafts and reports. It does not generate new FAQ drafts, FAQPage Schema, Shopify FAQ Blocks, final FAQ pages or automatic publishing.
+
+中文描述：
+Phase 5B.1 中，FAQ Draft Review Gate 只检查 review-mode FAQ 草稿和报告。它不会生成新的 FAQ 草稿、FAQPage Schema、Shopify FAQ 模块、最终 FAQ 页面或自动发布。
