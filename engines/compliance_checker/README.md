@@ -26,6 +26,7 @@ It does not:
 - publish anything
 - scrape external data
 - verify product facts
+- convert `unverified` or `needs_owner_confirmation` facts into approved customer-facing claims
 - replace legal, regulatory, or owner review
 
 ## Brand Rules
@@ -49,6 +50,10 @@ The default policy is conservative:
 - file loading failures return `needs_review`, not `pass`
 
 Adapters should treat `blocked` and `needs_review` as stop signals unless a human reviewer explicitly approves the content.
+
+A `pass` decision only means no known rule-based claim risk was detected. It does not mean the copy is legally approved.
+
+Publishing adapters must refuse to export `blocked` outputs and should route `needs_review` outputs to manual review queues.
 
 ## CLI Usage
 
