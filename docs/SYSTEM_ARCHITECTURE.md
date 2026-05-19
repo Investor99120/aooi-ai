@@ -81,6 +81,16 @@ Publishing-specific output belongs in `adapters/{platform}/` and `outputs/{brand
 
 No adapter should own brand truth. No reusable engine should hard-code FriendRedLight.
 
+## Output Review Boundary
+
+The project follows the Bilingual Review Output Rule for human-readable review materials.
+
+When engines or adapters generate English customer-facing copy, strategy text, documentation summaries, SEO/GEO explanations, page copy, FAQ drafts, brand descriptions, content briefs, or adapter output previews, they should place a Chinese explanation immediately after the English text for owner review clarity.
+
+This rule must not be applied inside code files, JSON, YAML, JavaScript, TypeScript, Liquid, HTML, CSS, schema JSON-LD, CLI output, test cases, or other machine-readable files. Structured data formats must remain clean and valid.
+
+Adapter outputs should use Chinese descriptions only in internal review notes unless an output mode is explicitly set to bilingual review. Final customer-facing exports should remain in the target market language by default.
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.

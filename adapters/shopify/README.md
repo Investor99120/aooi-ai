@@ -31,3 +31,9 @@ The adapter should consume brand profiles, product facts, claim rules, localisat
 Generated files should go to `outputs/{brand}/shopify/`.
 
 All output must be manually reviewed before publication.
+
+## Bilingual Review Output Rule
+
+Shopify adapter previews may include Chinese descriptions only as internal review notes for the owner. Final customer-facing Shopify copy should remain in the target market language by default unless the output mode is explicitly set to bilingual review.
+
+Do not add Chinese descriptions inside Liquid, HTML, CSS, JSON-LD, schema, JavaScript, YAML or other machine-readable export formats.

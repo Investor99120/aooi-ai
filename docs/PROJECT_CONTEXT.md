@@ -75,6 +75,28 @@ AI content production is not scarce. What is scarce is structured understanding 
 - Uncertain product parameters must be marked `unverified` or `needs_owner_confirmation`.
 - Keep FriendRedLight customer-facing outputs in UK English.
 
+## Bilingual Review Output Rule
+
+Purpose: the owner reviews strategy and English copy in Chinese. English output should be paired with a Chinese explanation for review clarity, while machine-readable and code outputs must remain clean and valid.
+
+When generating English customer-facing copy, strategy text, documentation summaries, SEO/GEO explanations, page copy, FAQ drafts, brand descriptions, content briefs, or adapter output previews, add a Chinese explanation or description immediately after the English text.
+
+Example:
+
+English:
+FriendRedLight is designed for calm home wellness routines.
+
+中文描述：
+FriendRedLight 旨在融入安静、舒适的家庭健康护理日常。
+
+Important exceptions:
+
+- Do not add Chinese descriptions inside code files.
+- Do not add Chinese descriptions inside JSON, YAML, JavaScript, TypeScript, Liquid, HTML, CSS, schema JSON-LD, CLI output, test cases, or machine-readable files.
+- Do not alter structured data formats.
+- Do not add Chinese text to customer-facing export files unless the output mode is explicitly set to bilingual review.
+- For adapter outputs, use Chinese descriptions only in internal review notes, not in final customer-facing copy by default.
+
 ## First-Stage Outcome
 
 The current stage should produce documentation and configuration only: brand facts, product facts, claim rules, UK localisation rules, semantic maps, reusable framework documents, and platform architecture notes.

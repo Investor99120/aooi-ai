@@ -81,6 +81,12 @@ The command prints JSON to the terminal.
 - `manual_review_required`: whether a human must review before export
 - `notes`: implementation notes and conservative review reasons
 
+## Human-Readable Review Outputs
+
+Project documentation and review summaries follow the Bilingual Review Output Rule: when English customer-facing copy, strategy text, SEO/GEO explanations, FAQ drafts, brand descriptions, content briefs, or adapter output previews are written for owner review, add a Chinese explanation immediately after the English text.
+
+This rule does not apply to Claim Validator JSON output, CLI output, test cases, JavaScript code, structured data, or other machine-readable files. Adapter outputs should place Chinese descriptions in internal review notes only, not in final customer-facing copy by default.
+
 ## Current Risk Categories
 
 - banned medical claim verbs

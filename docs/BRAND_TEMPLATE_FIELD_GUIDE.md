@@ -69,6 +69,10 @@ Required sections:
 
 Defines target-market language, tone, lifestyle scenarios, trust language and conversion phrasing.
 
+Human-readable review outputs should follow the Bilingual Review Output Rule: English strategy text, page copy, FAQ drafts, brand descriptions, content briefs and adapter output previews should be paired with a Chinese explanation immediately after the English text.
+
+Do not apply this rule inside template YAML, JSON, schema JSON-LD, code, test cases or other machine-readable files. Do not add Chinese text to final customer-facing export files unless the output mode is explicitly set to bilingual review.
+
 ## semantic_map.template.yml
 
 Defines the brand's entity system and content architecture.
