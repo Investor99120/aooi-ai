@@ -85,7 +85,21 @@ Run a specific brand:
 node engines/schema_generator/schema_generator.js friendredlight
 ```
 
+Run a dry run without writing schema candidate files:
+
+中文描述：
+运行 dry-run，不写入 schema candidate 文件：
+
+```bash
+node engines/schema_generator/schema_generator.js friendredlight --dry-run
+```
+
 The command prints a summary JSON to the terminal and writes schema candidate files to `outputs/{brand}/jsonld/`.
 
 中文描述：
 命令会在终端输出 summary JSON，并把 schema 候选文件写入 `outputs/{brand}/jsonld/`。
+
+Normal mode writes schema candidate files and review reports. Dry-run mode writes review reports only and does not write schema candidate files.
+
+中文描述：
+普通模式会写入 schema candidate 文件和审核报告。Dry-run 模式只写审核报告，不写 schema candidate 文件。

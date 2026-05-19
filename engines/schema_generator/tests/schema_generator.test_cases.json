@@ -38,5 +38,44 @@
   {
     "name": "generated files require manual review",
     "expected_manual_review_required": true
+  },
+  {
+    "name": "dry-run does not write schema files",
+    "mode": "dry_run",
+    "expected_behaviour": "reports_only"
+  },
+  {
+    "name": "normal mode writes schema candidates and reports",
+    "mode": "normal",
+    "expected_outputs": [
+      "organization.schema.json",
+      "brand.schema.json",
+      "website.schema.json",
+      "schema_generation_report.json",
+      "blocked_fields_report.json"
+    ]
+  },
+  {
+    "name": "blocked fields appear in blocked_fields_report",
+    "expected_report": "blocked_fields_report.json"
+  },
+  {
+    "name": "excluded schema types are listed",
+    "expected_excluded_schema_types": [
+      "Product",
+      "FAQPage",
+      "HowTo",
+      "Article",
+      "OfferShippingDetails",
+      "MerchantReturnPolicy"
+    ]
+  },
+  {
+    "name": "publish_ready remains false unless all gates pass",
+    "expected_publish_ready": false
+  },
+  {
+    "name": "schema review checklist exists",
+    "expected_file": "schema_review_checklist.md"
   }
 ]
