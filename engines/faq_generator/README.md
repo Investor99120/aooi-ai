@@ -20,6 +20,16 @@ Its role is to validate FAQ Bank structure, check source-status discipline, run 
 中文描述：
 它的作用是验证 FAQ Bank 结构、检查 source_status 纪律、对 `answer_draft` 运行或复用 Claim Validator、发现 eligibility 冲突，并生成 `faq_bank_validation_report.json`。
 
+FAQ Draft Generator is implemented in Phase 5B.
+
+中文描述：
+FAQ Draft Generator 在 Phase 5B 实现。
+
+Its role is to read FAQ Bank, read FAQ Bank validation report, generate review-mode FAQ drafts, run or reuse Claim Validator, respect Source Status Policy, generate review markdown and JSON reports, and keep `publish_ready` false.
+
+中文描述：
+它的作用是读取 FAQ Bank、读取 FAQ Bank validation report、生成 review-mode FAQ 草稿、运行或复用 Claim Validator、遵守 Source Status Policy、生成审核 Markdown 和 JSON 报告，并保持 `publish_ready` 为 false。
+
 ## Future Inputs
 
 Future FAQ Generator must read:
@@ -60,6 +70,11 @@ In Phase 5A.1, the validator still does not generate final FAQ, FAQPage Schema, 
 中文描述：
 Phase 5A.1 中，validator 仍然不会生成最终 FAQ、FAQPage Schema、Shopify FAQ Block 或可发布输出。
 
+In Phase 5B, the draft generator still does not generate a final FAQ page, FAQPage Schema, Shopify FAQ Block, auto-publish, or connect to Shopify API.
+
+中文描述：
+Phase 5B 中，draft generator 仍然不会生成最终 FAQ 页面、FAQPage Schema、Shopify FAQ Block，不会自动发布，也不会连接 Shopify API。
+
 FriendRedLight is only the first case, not hard-coded logic.
 
 中文描述：
@@ -83,4 +98,13 @@ Run a specific brand:
 
 ```bash
 node engines/faq_generator/faq_bank_validator.js friendredlight
+```
+
+Run the FAQ Draft Generator:
+
+中文描述：
+运行 FAQ Draft Generator：
+
+```bash
+node engines/faq_generator/faq_draft_generator.js friendredlight
 ```

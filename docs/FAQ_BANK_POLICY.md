@@ -157,9 +157,16 @@ Source Status Validator
 Publishing Safety Policy
 ↓
 Manual Review
+↓
+Future Export
 ```
 
 In Phase 5A.1, FAQ Bank Validator only checks structure, source status, claim risk, eligibility conflicts, manual review requirements and decision values. It does not generate FAQ drafts, FAQPage Schema, Shopify FAQ blocks or final customer-facing FAQ output.
 
 中文描述：
 Phase 5A.1 中，FAQ Bank Validator 只检查结构、source status、claim 风险、eligibility 冲突、人工审核要求和 decision 值。它不会生成 FAQ 草稿、FAQPage Schema、Shopify FAQ 模块或最终用户可见 FAQ 输出。
+
+In Phase 5B, FAQ Draft Generator creates review-mode FAQ drafts only. It does not generate final FAQ pages, FAQPage Schema or Shopify FAQ Blocks.
+
+中文描述：
+Phase 5B 中，FAQ Draft Generator 只创建 review-mode FAQ 草稿，不生成最终 FAQ 页面、FAQPage Schema 或 Shopify FAQ 模块。

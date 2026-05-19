@@ -1,0 +1,44 @@
+{
+  "brand_id": "friendredlight",
+  "decision": "needs_review",
+  "risk_level": "medium",
+  "total_faq_candidates": 10,
+  "drafts_generated": 9,
+  "blocked_drafts": 1,
+  "needs_review_drafts": 7,
+  "draft_candidate_ids": [
+    "frl_faq_001",
+    "frl_faq_002",
+    "frl_faq_003",
+    "frl_faq_004",
+    "frl_faq_005",
+    "frl_faq_006",
+    "frl_faq_007",
+    "frl_faq_008",
+    "frl_faq_009"
+  ],
+  "blocked_candidate_ids": [
+    "frl_faq_010"
+  ],
+  "claim_validator_summary": {
+    "pass": 6,
+    "needs_review": 3
+  },
+  "source_status_summary": {
+    "owner_defined": 5,
+    "needs_owner_confirmation": 5
+  },
+  "publishing_mode": "review_mode",
+  "manual_review_required": true,
+  "publish_ready": false,
+  "generated_files": [
+    "outputs/friendredlight/faq/faq_drafts_review.md",
+    "outputs/friendredlight/faq/blocked_faq_drafts_report.json",
+    "outputs/friendredlight/faq/faq_draft_review_checklist.md",
+    "outputs/friendredlight/faq/faq_draft_generation_report.json"
+  ],
+  "notes": [
+    "FAQ Draft Generator created review-mode drafts only.",
+    "No final FAQ page, FAQPage Schema, Shopify FAQ Block or automatic publishing was generated."
+  ]
+}

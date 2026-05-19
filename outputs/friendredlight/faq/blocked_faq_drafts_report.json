@@ -1,0 +1,26 @@
+{
+  "brand_id": "friendredlight",
+  "blocked_entries": [
+    {
+      "id": "frl_faq_010",
+      "question": "Does FriendRedLight ship in the UK?",
+      "reason": [
+        "decision is blocked"
+      ],
+      "claim_validator_decision": "not_run",
+      "source_status": "needs_owner_confirmation",
+      "recommended_next_action": [
+        "keep output in review mode",
+        "manual review required",
+        "revise answer_draft and rerun Claim Validator",
+        "confirm source facts before export",
+        "compliance review required",
+        "do not generate normal review draft"
+      ]
+    }
+  ],
+  "notes": [
+    "Blocked FAQ candidates are not included in normal review drafts.",
+    "No FAQPage Schema, Shopify FAQ Block, final FAQ page or automatic publishing is generated in Phase 5B."
+  ]
+}
