@@ -1,0 +1,96 @@
+{
+  "test_cases": [
+    {
+      "name": "manifest includes existing Shopify clean output",
+      "input": "shopify_faq_block_clean.md",
+      "expected": {
+        "included_in_manifest": true
+      }
+    },
+    {
+      "name": "manifest includes existing Shopify review output",
+      "input": "shopify_faq_block_review.md",
+      "expected": {
+        "included_in_manifest": true
+      }
+    },
+    {
+      "name": "manifest includes adapter report blocked report checklist and review gate report",
+      "input": "outputs/{brand}/shopify/",
+      "expected": {
+        "total_files_expected": 6
+      }
+    },
+    {
+      "name": "manifest report JSON parses correctly",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "json_parse_ok": true
+      }
+    },
+    {
+      "name": "manifest report contains no Chinese descriptions",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "contains_chinese": false
+      }
+    },
+    {
+      "name": "manifest markdown may contain Chinese descriptions for owner review",
+      "input": "shopify_manual_package_manifest.md",
+      "expected": {
+        "contains_chinese_allowed": true
+      }
+    },
+    {
+      "name": "publish_ready remains false",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "publish_ready": false
+      }
+    },
+    {
+      "name": "manual_review_required remains true",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "manual_review_required": true
+      }
+    },
+    {
+      "name": "no Shopify API is used",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "shopify_api_used": false
+      }
+    },
+    {
+      "name": "no auto publishing is used",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "auto_publish_used": false
+      }
+    },
+    {
+      "name": "no live theme modification is used",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "live_theme_modified": false
+      }
+    },
+    {
+      "name": "no FAQPage Schema or Product Schema is generated",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "faqpage_schema_generated": false,
+        "product_schema_generated": false
+      }
+    },
+    {
+      "name": "manifest does not create final Shopify pages",
+      "input": "shopify_manual_package_manifest_report.json",
+      "expected": {
+        "creates_new_shopify_content": false
+      }
+    }
+  ]
+}

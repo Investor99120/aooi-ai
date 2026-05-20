@@ -88,6 +88,15 @@ Run the Shopify Manual Review Gate:
 node adapters/shopify/shopify_manual_review_gate.js friendredlight
 ```
 
+Run the Shopify Manual Package Manifest Builder:
+
+中文描述：
+运行 Shopify Manual Package Manifest Builder：
+
+```bash
+node adapters/shopify/shopify_manual_package_manifest_builder.js friendredlight
+```
+
 ## Safety Boundaries
 
 Clean Shopify output must remain in the target-market language only, with no Chinese review descriptions.
@@ -133,3 +142,20 @@ It does not generate new Shopify content, connect to Shopify API, auto-publish, 
 
 中文描述：
 它不会生成新的 Shopify 内容，不会连接 Shopify API，不会自动发布，不会修改线上主题，不会生成最终 Shopify 页面，也不会生成 FAQPage Schema 或 Product Schema。
+
+## Phase 6C Manual Package Manifest
+
+Shopify Manual Package Manifest is implemented in Phase 6C.
+
+中文描述：
+Shopify Manual Package Manifest 在 Phase 6C 实现。
+
+Its role is to create a read-only delivery manifest for existing Shopify manual-copy outputs, review outputs, reports, blocked item reports, checklists and review gate reports.
+
+中文描述：
+它的作用是为已有 Shopify 人工复制输出、审核输出、报告、blocked item report、checklist 和 review gate report 创建只读交付清单。
+
+It does not create new Shopify content, connect to Shopify API, auto-publish, modify live theme, generate final Shopify page, generate FAQPage Schema or generate Product Schema.
+
+中文描述：
+它不会创建新的 Shopify 内容，不会连接 Shopify API，不会自动发布，不会修改线上主题，不会生成最终 Shopify 页面，也不会生成 FAQPage Schema 或 Product Schema。

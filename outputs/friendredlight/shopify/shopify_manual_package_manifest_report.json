@@ -1,0 +1,115 @@
+{
+  "brand_id": "friendredlight",
+  "decision": "needs_review",
+  "risk_level": "low",
+  "package_source": "outputs/friendredlight/shopify/",
+  "manifest_file": "outputs/friendredlight/shopify/shopify_manual_package_manifest.md",
+  "included_files": [
+    {
+      "key": "clean_manual_copy_candidate",
+      "path": "outputs/friendredlight/shopify/shopify_faq_block_clean.md",
+      "purpose": "Clean UK English manual-copy candidate for future human Shopify entry",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": false,
+      "may_contain_chinese": false,
+      "contains_chinese": false,
+      "json_parse_ok": null,
+      "issues": []
+    },
+    {
+      "key": "owner_review_output",
+      "path": "outputs/friendredlight/shopify/shopify_faq_block_review.md",
+      "purpose": "Owner review output with bilingual notes allowed",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": false,
+      "may_contain_chinese": true,
+      "contains_chinese": true,
+      "json_parse_ok": null,
+      "issues": []
+    },
+    {
+      "key": "adapter_output_report",
+      "path": "outputs/friendredlight/shopify/shopify_faq_output_report.json",
+      "purpose": "Machine-readable adapter output report",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": true,
+      "may_contain_chinese": false,
+      "contains_chinese": false,
+      "json_parse_ok": true,
+      "issues": []
+    },
+    {
+      "key": "blocked_items_report",
+      "path": "outputs/friendredlight/shopify/shopify_faq_blocked_items_report.json",
+      "purpose": "Machine-readable blocked and excluded items report",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": true,
+      "may_contain_chinese": false,
+      "contains_chinese": false,
+      "json_parse_ok": true,
+      "issues": []
+    },
+    {
+      "key": "manual_publish_checklist",
+      "path": "outputs/friendredlight/shopify/shopify_manual_publish_checklist.md",
+      "purpose": "Human manual publish checklist for future owner review",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": false,
+      "may_contain_chinese": true,
+      "contains_chinese": true,
+      "json_parse_ok": null,
+      "issues": []
+    },
+    {
+      "key": "manual_review_gate_report",
+      "path": "outputs/friendredlight/shopify/shopify_manual_review_gate_report.json",
+      "purpose": "Machine-readable Phase 6B review gate report",
+      "exists": true,
+      "customer_facing": false,
+      "machine_readable": true,
+      "may_contain_chinese": false,
+      "contains_chinese": false,
+      "json_parse_ok": true,
+      "issues": []
+    }
+  ],
+  "package_summary": {
+    "total_files_expected": 6,
+    "total_files_found": 6,
+    "machine_readable_files": 3,
+    "human_review_files": 3,
+    "files_with_issues": 0
+  },
+  "safety_summary": {
+    "publish_ready": false,
+    "manual_review_required": true,
+    "shopify_api_used": false,
+    "auto_publish_used": false,
+    "live_theme_modified": false,
+    "faqpage_schema_generated": false,
+    "product_schema_generated": false,
+    "creates_new_shopify_content": false,
+    "read_only_manifest_only": true
+  },
+  "boundary_issues": [],
+  "manual_review_required": true,
+  "publish_ready": false,
+  "shopify_api_used": false,
+  "auto_publish_used": false,
+  "live_theme_modified": false,
+  "faqpage_schema_generated": false,
+  "product_schema_generated": false,
+  "generated_files": [
+    "outputs/friendredlight/shopify/shopify_manual_package_manifest.md",
+    "outputs/friendredlight/shopify/shopify_manual_package_manifest_report.json"
+  ],
+  "notes": [
+    "Phase 6C creates a read-only manifest for existing Shopify manual-review outputs only.",
+    "It does not create new Shopify content, connect to Shopify API, auto-publish, modify live themes, generate final Shopify pages, FAQPage Schema or Product Schema."
+  ]
+}

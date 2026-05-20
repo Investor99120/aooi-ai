@@ -96,6 +96,11 @@ Phase 6B Shopify Manual Review Gate validates Shopify review outputs and manual-
 中文描述：
 Phase 6B 的 Shopify Manual Review Gate 用于验证 Shopify 审核输出和人工复制候选内容。它不会创建新的 Shopify 内容，不连接 Shopify API，不自动发布，不修改线上主题，也不生成最终 Shopify 页面。
 
+Phase 6C Shopify Manual Package Manifest creates a read-only delivery manifest for existing Shopify manual-copy outputs, review outputs, reports, blocked item reports, checklists and review gate reports. It does not create new Shopify content, connect to Shopify API, auto-publish, modify live themes, or generate final Shopify pages.
+
+中文描述：
+Phase 6C 的 Shopify Manual Package Manifest 为已有 Shopify 人工复制输出、审核输出、报告、blocked item report、checklist 和 review gate report 创建只读交付清单。它不会创建新的 Shopify 内容，不连接 Shopify API，不自动发布，不修改线上主题，也不生成最终 Shopify 页面。
+
 ## F. Bilingual Review Boundary
 
 Review Mode may include Chinese descriptions. Export Mode and final customer-facing exports should remain in the target market language by default.

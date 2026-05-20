@@ -164,6 +164,8 @@ Shopify Adapter Review Output
 ↓
 Shopify Manual Review Gate
 ↓
+Shopify Manual Package Manifest
+↓
 Manual Review
 ↓
 Future Manual Publish / Future FAQPage Schema
@@ -198,3 +200,8 @@ In Phase 6B, Shopify Manual Review Gate validates Shopify review output only. It
 
 中文描述：
 Phase 6B 中，Shopify Manual Review Gate 只验证 Shopify review output，不生成新内容、不自动发布、不连接 Shopify API，也不修改线上主题。
+
+In Phase 6C, Shopify Manual Package Manifest creates a read-only delivery manifest for existing Shopify manual review assets only. It does not generate new Shopify content, auto-publish, connect to Shopify API or modify live themes.
+
+中文描述：
+Phase 6C 中，Shopify Manual Package Manifest 只为已有 Shopify 人工审核资产创建只读交付清单，不生成新的 Shopify 内容、不自动发布、不连接 Shopify API，也不修改线上主题。
