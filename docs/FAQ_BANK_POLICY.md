@@ -150,23 +150,23 @@ FAQ Bank Validator
 ↓
 FAQ Draft Generator
 ↓
+Claim Validator
+↓
+Source Status Validator
+↓
 FAQ Draft Review Gate
 ↓
 FAQ Export Candidate Builder
+↓
+Publishing Safety Policy
 ↓
 Shopify Adapter Review Output
 ↓
 Shopify Manual Review Gate
 ↓
-Claim Validator
-↓
-Source Status Validator
-↓
-Publishing Safety Policy
-↓
 Manual Review
 ↓
-Future Shopify Adapter / FAQPage Schema
+Future Manual Publish / Future FAQPage Schema
 ```
 
 In Phase 5A.1, FAQ Bank Validator only checks structure, source status, claim risk, eligibility conflicts, manual review requirements and decision values. It does not generate FAQ drafts, FAQPage Schema, Shopify FAQ blocks or final customer-facing FAQ output.
