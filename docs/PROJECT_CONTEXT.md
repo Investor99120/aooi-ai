@@ -100,4 +100,9 @@ Important exceptions:
 
 ## Current Stage
 
-Phase 3B is in progress. The project has completed Phase 1, Phase 1.5, Phase 2, Phase 2.1 and Phase 3A. The current focus is the Claim Validator as the first lightweight executable compliance checker.
+Current next phase: Phase 7A Dashboard Blueprint.
+
+No UI implementation yet. No Shopify API. No auto-publishing.
+
+中文描述：
+当前下一阶段是 Phase 7A Dashboard Blueprint。此阶段不实现 UI，不连接 Shopify API，也不自动发布。

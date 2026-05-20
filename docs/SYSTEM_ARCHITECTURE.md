@@ -65,6 +65,14 @@ aooi.com AI SEO/GEO Operating System
 │  ├─ static export
 │  └─ manual export
 │
+├─ Internal Review Dashboard
+│  ├─ file-based review layer
+│  ├─ brand facts review
+│  ├─ validator report review
+│  ├─ schema candidate review
+│  ├─ FAQ pipeline review
+│  └─ Shopify manual package review
+│
 └─ Feedback Loop Engine
    ├─ Search Console signals
    ├─ AI answer audits
@@ -86,6 +94,11 @@ No adapter should own brand truth. No reusable engine should hard-code FriendRed
 The project follows the Bilingual Review Output Rule for human-readable review materials. The full rule is defined in `docs/PROJECT_CONTEXT.md`.
 
 In architecture terms, bilingual explanations are allowed only for human-readable owner review materials. They must not be added to code, structured data, CLI output, test cases or machine-readable files. Final customer-facing exports should remain in the target market language by default unless an output mode is explicitly set to bilingual review.
+
+Internal Review Dashboard is a future read-only review layer after Shopify Manual Package Manifest. It must read existing files and reports without publishing, connecting to Shopify API or modifying live themes.
+
+中文描述：
+Internal Review Dashboard 是 Shopify Manual Package Manifest 之后的未来只读审核层。它必须读取现有文件和报告，不发布、不连接 Shopify API，也不修改线上主题。
 
 ## Brand Onboarding Flow
 
@@ -121,4 +134,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Phase 3B is in progress. The project has completed Phase 1, Phase 1.5, Phase 2, Phase 2.1 and Phase 3A. The current focus is the Claim Validator as the first lightweight executable compliance checker.
+Current next phase: Phase 7A Dashboard Blueprint.
+
+No UI implementation yet. No Shopify API. No auto-publishing.
+
+中文描述：
+当前下一阶段是 Phase 7A Dashboard Blueprint。此阶段不实现 UI，不连接 Shopify API，也不自动发布。
