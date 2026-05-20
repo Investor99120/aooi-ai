@@ -1,0 +1,64 @@
+{
+  "test_cases": [
+    {
+      "name": "prompt entry requires id",
+      "expected": "missing id returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires prompt",
+      "expected": "missing prompt returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires prompt_type",
+      "expected": "missing prompt_type returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires market",
+      "expected": "missing market returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires language",
+      "expected": "missing language returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires intent_cluster",
+      "expected": "missing intent_cluster returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires funnel_stage",
+      "expected": "missing funnel_stage returns needs_review or blocked"
+    },
+    {
+      "name": "prompt entry requires source_status",
+      "expected": "missing source_status returns needs_review or blocked"
+    },
+    {
+      "name": "source_status needs_research cannot become verified automatically",
+      "expected": "needs_research remains needs_review until evidence is gathered"
+    },
+    {
+      "name": "monitoring_eligible candidate does not mean monitored",
+      "expected": "candidate status is planning only"
+    },
+    {
+      "name": "competitor_context needs_research cannot become market fact",
+      "expected": "competitor planning remains unverified"
+    },
+    {
+      "name": "manual_review_required defaults true",
+      "expected": true
+    },
+    {
+      "name": "no AI visibility claim can be made from prompt candidate only",
+      "expected": "visibility claims require future monitoring data"
+    },
+    {
+      "name": "no medicalised prompt should become content without claim review",
+      "expected": "claim review is required before content generation"
+    },
+    {
+      "name": "JSON test cases contain no Chinese descriptions",
+      "expected": true
+    }
+  ]
+}

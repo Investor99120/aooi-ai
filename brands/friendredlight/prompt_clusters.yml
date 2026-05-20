@@ -1,0 +1,93 @@
+brand_id: friendredlight
+source_of_truth_notice: "Prompt clusters are planning assets only. They do not include search volume, AI visibility or market share data."
+clusters:
+  - cluster_id: red_light_education
+    description: "Explains red light, near-infrared light, wavelength basics and non-medical home wellness context."
+    funnel_stage: TOFU
+    primary_intent: informational
+    emotional_driver: curiosity_and_basic_understanding
+    claim_risk_level: medium
+    recommended_content_assets: [glossary, beginner_guide, wavelength_guide]
+    future_monitoring_priority: medium
+    source_status: owner_defined
+    manual_review_required: true
+  - cluster_id: home_use_safety
+    description: "Covers safety, home-use considerations and pre-use checks without medical reassurance."
+    funnel_stage: MOFU
+    primary_intent: safety
+    emotional_driver: safety_and_trust
+    claim_risk_level: medium
+    recommended_content_assets: [safety_guide, faq, usage_checklist]
+    future_monitoring_priority: high
+    source_status: owner_defined
+    manual_review_required: true
+  - cluster_id: uk_market_research
+    description: "Captures UK-focused category and local-market research prompts."
+    funnel_stage: MOFU
+    primary_intent: local_market
+    emotional_driver: local_trust
+    claim_risk_level: medium
+    recommended_content_assets: [uk_buying_guide, brand_positioning_page, comparison_brief]
+    future_monitoring_priority: high
+    source_status: needs_research
+    manual_review_required: true
+  - cluster_id: product_comparison
+    description: "Covers comparisons between device formats, product types and evaluation criteria."
+    funnel_stage: MOFU
+    primary_intent: comparison
+    emotional_driver: decision_confidence
+    claim_risk_level: medium
+    recommended_content_assets: [comparison_guide, product_fit_guide, faq]
+    future_monitoring_priority: high
+    source_status: owner_defined
+    manual_review_required: true
+  - cluster_id: routine_and_lifestyle
+    description: "Maps prompts around evening routines, after-work wind-down, home office routines and Sunday reset."
+    funnel_stage: TOFU
+    primary_intent: routine_based
+    emotional_driver: desire_for_consistency
+    claim_risk_level: low
+    recommended_content_assets: [routine_guide, seasonal_guide, lifestyle_brief]
+    future_monitoring_priority: medium
+    source_status: owner_defined
+    manual_review_required: true
+  - cluster_id: trust_and_claim_boundaries
+    description: "Clarifies non-medical positioning, trust signals and claim-safe language."
+    funnel_stage: MOFU
+    primary_intent: trust_objection
+    emotional_driver: safety_and_trust
+    claim_risk_level: high
+    recommended_content_assets: [claim_safe_faq, trust_guide, compliance_notes]
+    future_monitoring_priority: high
+    source_status: owner_defined
+    manual_review_required: true
+  - cluster_id: purchase_decision
+    description: "Captures pre-purchase questions, product-fit moments and buying decision prompts."
+    funnel_stage: BOFU
+    primary_intent: product_fit
+    emotional_driver: decision_confidence
+    claim_risk_level: medium
+    recommended_content_assets: [buying_guide, checklist, product_fit_guide]
+    future_monitoring_priority: high
+    source_status: needs_research
+    manual_review_required: true
+  - cluster_id: post_purchase_usage
+    description: "Covers usage timing, session length and consistency prompts that require verified product guidance."
+    funnel_stage: post_purchase
+    primary_intent: how_to
+    emotional_driver: consistency_and_confidence
+    claim_risk_level: medium
+    recommended_content_assets: [usage_guide, product_manual_support, faq]
+    future_monitoring_priority: medium
+    source_status: needs_owner_confirmation
+    manual_review_required: true
+  - cluster_id: competitor_alternatives
+    description: "Maps competitor alternative prompts as planning candidates without claiming market position."
+    funnel_stage: BOFU
+    primary_intent: alternative
+    emotional_driver: comparison_confidence
+    claim_risk_level: medium
+    recommended_content_assets: [comparison_brief, alternative_guide, monitoring_plan]
+    future_monitoring_priority: high
+    source_status: needs_research
+    manual_review_required: true

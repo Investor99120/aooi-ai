@@ -100,9 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 7B minimal file-based internal dashboard in progress or completed.
+Current Stage: Phase 8A Prompt Universe Foundation.
 
-No Shopify API. No auto-publishing. No database.
+This phase defines prompt universe structure, prompt clusters, competitor prompt planning and AI visibility metric drafts.
 
 中文描述：
-当前阶段是 Phase 7B 最小化文件读取内部 dashboard。此阶段不连接 Shopify API，不自动发布，也不创建数据库。
+当前阶段是 Phase 8A Prompt Universe Foundation。此阶段定义 prompt universe 结构、prompt clusters、竞品 prompt planning 和 AI visibility 指标草案。
+
+It does not run AI monitoring, scrape external data, publish content or call Shopify API.
+
+中文描述：
+此阶段不运行 AI 监测，不抓取外部数据，不发布内容，也不调用 Shopify API。

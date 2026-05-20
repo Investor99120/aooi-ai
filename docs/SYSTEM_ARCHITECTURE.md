@@ -73,6 +73,14 @@ aooi.com AI SEO/GEO Operating System
 │  ├─ FAQ pipeline review
 │  └─ Shopify manual package review
 │
+├─ Prompt Universe Engine
+│  ├─ prompt candidates
+│  ├─ prompt clusters
+│  ├─ competitor prompt map
+│  ├─ future AI answer monitoring
+│  ├─ future visibility scoring
+│  └─ future content opportunity scoring
+│
 └─ Feedback Loop Engine
    ├─ Search Console signals
    ├─ AI answer audits
@@ -99,6 +107,11 @@ Internal Review Dashboard is a read-only review layer after Shopify Manual Packa
 
 中文描述：
 Internal Review Dashboard 是 Shopify Manual Package Manifest 之后的只读审核层。它读取现有文件和报告，不发布、不连接 Shopify API，也不修改线上主题。
+
+Prompt Universe is a future AI visibility foundation layer. In Phase 8A it defines prompt candidates, prompt clusters and competitor prompt maps only. It does not run AI monitoring, scrape external data or publish content.
+
+中文描述：
+Prompt Universe 是未来 AI visibility 的基础层。Phase 8A 只定义 prompt candidates、prompt clusters 和 competitor prompt maps，不运行 AI 监测、不抓取外部数据，也不发布内容。
 
 ## Brand Onboarding Flow
 
@@ -134,9 +147,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 7B minimal file-based internal dashboard in progress or completed.
+Current Stage: Phase 8A Prompt Universe Foundation.
 
-No Shopify API. No auto-publishing. No database.
+No AI monitoring. No scraping. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 7B 最小化文件读取内部 dashboard。此阶段不连接 Shopify API，不自动发布，也不创建数据库。
+当前阶段是 Phase 8A Prompt Universe Foundation。此阶段不运行 AI 监测，不抓取外部数据，不连接 Shopify API，也不自动发布。

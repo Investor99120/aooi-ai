@@ -91,6 +91,27 @@ Each data source should be displayed with:
 | `publishing/modes.yml` | Publishing mode rules | YAML | machine-readable | no | no |
 | `docs/PUBLISHING_SAFETY_POLICY.md` | Publishing safety policy | Markdown | human-readable | yes | no |
 
+## G. Prompt Universe Data
+
+| File | Purpose | File type | Readability | Chinese allowed | Customer-facing |
+| --- | --- | --- | --- | --- | --- |
+| `brands/{brand}/prompt_universe.yml` | AI-search prompt candidates | YAML | machine-readable | no | no |
+| `brands/{brand}/prompt_clusters.yml` | Prompt cluster map | YAML | machine-readable | no | no |
+| `brands/{brand}/competitor_prompt_map.yml` | Competitor prompt planning map | YAML | machine-readable | no | no |
+| `docs/PROMPT_UNIVERSE_POLICY.md` | Prompt Universe policy | Markdown | human-readable | yes | no |
+| `docs/PROMPT_UNIVERSE_FIELD_GUIDE.md` | Prompt Universe field guide | Markdown | human-readable | yes | no |
+| `docs/AI_VISIBILITY_METRICS_DRAFT.md` | Future AI visibility metric definitions | Markdown | human-readable | yes | no |
+
+Prompt candidates are not AI visibility proof.
+
+中文描述：
+Prompt candidates 不是 AI 可见度证明。
+
+Prompt candidates are not final SEO content.
+
+中文描述：
+Prompt candidates 不是最终 SEO 内容。
+
 ## Dashboard Handling Notes
 
 Machine-readable files should be parsed and displayed as structured status cards or tables.
