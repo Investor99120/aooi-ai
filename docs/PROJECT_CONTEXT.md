@@ -100,9 +100,9 @@ Important exceptions:
 
 ## Current Stage
 
-Current next phase: Phase 7A Dashboard Blueprint.
+Current Stage: Phase 7B minimal file-based internal dashboard in progress or completed.
 
-No UI implementation yet. No Shopify API. No auto-publishing.
+No Shopify API. No auto-publishing. No database.
 
 中文描述：
-当前下一阶段是 Phase 7A Dashboard Blueprint。此阶段不实现 UI，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 7B 最小化文件读取内部 dashboard。此阶段不连接 Shopify API，不自动发布，也不创建数据库。

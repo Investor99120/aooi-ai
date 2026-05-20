@@ -95,10 +95,10 @@ The project follows the Bilingual Review Output Rule for human-readable review m
 
 In architecture terms, bilingual explanations are allowed only for human-readable owner review materials. They must not be added to code, structured data, CLI output, test cases or machine-readable files. Final customer-facing exports should remain in the target market language by default unless an output mode is explicitly set to bilingual review.
 
-Internal Review Dashboard is a future read-only review layer after Shopify Manual Package Manifest. It must read existing files and reports without publishing, connecting to Shopify API or modifying live themes.
+Internal Review Dashboard is a read-only review layer after Shopify Manual Package Manifest. It reads existing files and reports without publishing, connecting to Shopify API or modifying live themes.
 
 中文描述：
-Internal Review Dashboard 是 Shopify Manual Package Manifest 之后的未来只读审核层。它必须读取现有文件和报告，不发布、不连接 Shopify API，也不修改线上主题。
+Internal Review Dashboard 是 Shopify Manual Package Manifest 之后的只读审核层。它读取现有文件和报告，不发布、不连接 Shopify API，也不修改线上主题。
 
 ## Brand Onboarding Flow
 
@@ -134,9 +134,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current next phase: Phase 7A Dashboard Blueprint.
+Current Stage: Phase 7B minimal file-based internal dashboard in progress or completed.
 
-No UI implementation yet. No Shopify API. No auto-publishing.
+No Shopify API. No auto-publishing. No database.
 
 中文描述：
-当前下一阶段是 Phase 7A Dashboard Blueprint。此阶段不实现 UI，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 7B 最小化文件读取内部 dashboard。此阶段不连接 Shopify API，不自动发布，也不创建数据库。

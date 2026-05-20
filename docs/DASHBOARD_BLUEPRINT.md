@@ -382,6 +382,11 @@ Phase 7B can implement a minimal internal dashboard, but it should remain read-o
 中文描述：
 Phase 7B 可以实现最小内部 dashboard，但第一版应保持只读。
 
+Phase 7B is implemented as a minimal file-based dashboard.
+
+中文描述：
+Phase 7B 实现为最小化文件读取 dashboard。
+
 Recommended direction:
 
 中文描述：

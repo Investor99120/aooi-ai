@@ -88,3 +88,15 @@ The dashboard must treat `publish_ready: false` as the expected normal state in 
 
 中文描述：
 在当前阶段，dashboard 必须把 `publish_ready: false` 视为正常预期状态。
+
+## E. Phase 7B UI Boundary
+
+Phase 7B UI cannot publish, connect Shopify, modify live theme or generate schema.
+
+中文描述：
+Phase 7B UI 不能发布、不能连接 Shopify、不能修改主题、不能生成 schema。
+
+The first implementation is a minimal file-based internal dashboard. It reads existing files and reports only.
+
+中文描述：
+第一版实现是最小化文件读取内部 dashboard。它只读取已有文件和报告。
