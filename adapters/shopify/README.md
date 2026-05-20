@@ -79,6 +79,15 @@ Run a specific brand:
 node adapters/shopify/shopify_faq_review_output_builder.js friendredlight
 ```
 
+Run the Shopify Manual Review Gate:
+
+中文描述：
+运行 Shopify Manual Review Gate：
+
+```bash
+node adapters/shopify/shopify_manual_review_gate.js friendredlight
+```
+
 ## Safety Boundaries
 
 Clean Shopify output must remain in the target-market language only, with no Chinese review descriptions.
@@ -107,3 +116,20 @@ Do not add Chinese descriptions inside Liquid, HTML, CSS, JSON-LD, schema, JavaS
 
 中文描述：
 不要在 Liquid、HTML、CSS、JSON-LD、schema、JavaScript、YAML、JSON 或其他机器可读导出格式中加入中文说明。
+
+## Phase 6B Manual Review Gate
+
+Shopify Manual Review Gate is implemented in Phase 6B.
+
+中文描述：
+Shopify Manual Review Gate 在 Phase 6B 实现。
+
+Its role is to validate Shopify clean manual-copy candidate, validate Shopify review output, check JSON reports, ensure blocked FAQ did not enter clean Shopify output, confirm no Shopify API was used, confirm no auto-publishing was used, confirm no live theme was modified, confirm no FAQPage Schema or Product Schema was generated and keep `publish_ready` false.
+
+中文描述：
+它的作用是验证 Shopify clean manual-copy candidate、验证 Shopify review output、检查 JSON 报告、确保 blocked FAQ 没有进入 clean Shopify output、确认没有使用 Shopify API、没有自动发布、没有修改线上主题、没有生成 FAQPage Schema 或 Product Schema，并保持 `publish_ready` 为 false。
+
+It does not generate new Shopify content, connect to Shopify API, auto-publish, modify live theme, generate final Shopify page, generate FAQPage Schema or generate Product Schema.
+
+中文描述：
+它不会生成新的 Shopify 内容，不会连接 Shopify API，不会自动发布，不会修改线上主题，不会生成最终 Shopify 页面，也不会生成 FAQPage Schema 或 Product Schema。

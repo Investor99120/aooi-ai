@@ -91,6 +91,11 @@ Phase 6A Shopify Adapter Review Output only generates manual-review outputs and 
 中文描述：
 Phase 6A 的 Shopify Adapter Review Output 只生成审核输出和人工复制候选内容，不连接 Shopify API，不自动发布，不修改线上主题，也不创建最终 Shopify 页面。
 
+Phase 6B Shopify Manual Review Gate validates Shopify review outputs and manual-copy candidates. It does not create new Shopify content, connect to Shopify API, auto-publish, modify live themes, or generate final Shopify pages.
+
+中文描述：
+Phase 6B 的 Shopify Manual Review Gate 用于验证 Shopify 审核输出和人工复制候选内容。它不会创建新的 Shopify 内容，不连接 Shopify API，不自动发布，不修改线上主题，也不生成最终 Shopify 页面。
+
 ## F. Bilingual Review Boundary
 
 Review Mode may include Chinese descriptions. Export Mode and final customer-facing exports should remain in the target market language by default.

@@ -1,0 +1,128 @@
+{
+  "test_cases": [
+    {
+      "name": "clean Shopify output exists",
+      "input": "shopify_faq_block_clean.md",
+      "expected": {
+        "exists": true
+      }
+    },
+    {
+      "name": "clean Shopify output contains no Chinese descriptions",
+      "input": "shopify_faq_block_clean.md",
+      "expected": {
+        "contains_chinese_descriptions": false
+      }
+    },
+    {
+      "name": "review Shopify output may contain Chinese descriptions",
+      "input": "shopify_faq_block_review.md",
+      "expected": {
+        "contains_chinese_descriptions_allowed": true
+      }
+    },
+    {
+      "name": "JSON reports parse correctly",
+      "input": [
+        "shopify_faq_output_report.json",
+        "shopify_faq_blocked_items_report.json",
+        "shopify_manual_review_gate_report.json"
+      ],
+      "expected": {
+        "json_parse_ok": true
+      }
+    },
+    {
+      "name": "JSON reports contain no Chinese descriptions",
+      "input": [
+        "shopify_faq_output_report.json",
+        "shopify_faq_blocked_items_report.json",
+        "shopify_manual_review_gate_report.json"
+      ],
+      "expected": {
+        "contains_chinese_descriptions": false
+      }
+    },
+    {
+      "name": "publish_ready must remain false",
+      "input": "shopify_faq_output_report.json",
+      "expected": {
+        "publish_ready": false
+      }
+    },
+    {
+      "name": "manual_review_required must remain true",
+      "input": "shopify_faq_output_report.json",
+      "expected": {
+        "manual_review_required": true
+      }
+    },
+    {
+      "name": "shopify_api_used must remain false",
+      "input": "shopify_faq_output_report.json",
+      "expected": {
+        "shopify_api_used": false
+      }
+    },
+    {
+      "name": "auto_publish_used must remain false",
+      "input": "shopify_faq_output_report.json",
+      "expected": {
+        "auto_publish_used": false
+      }
+    },
+    {
+      "name": "live_theme_modified must remain false",
+      "input": "shopify_faq_output_report.json",
+      "expected": {
+        "live_theme_modified": false
+      }
+    },
+    {
+      "name": "FAQPage Schema must not be generated",
+      "input": "outputs/{brand}/shopify/",
+      "expected": {
+        "faqpage_schema_generated": false
+      }
+    },
+    {
+      "name": "Product Schema must not be generated",
+      "input": "outputs/{brand}/shopify/",
+      "expected": {
+        "product_schema_generated": false
+      }
+    },
+    {
+      "name": "final Shopify page must not be generated",
+      "input": "outputs/{brand}/shopify/",
+      "expected": {
+        "final_shopify_page_generated": false
+      }
+    },
+    {
+      "name": "blocked FAQ must not appear in clean Shopify output",
+      "input": "shopify_faq_block_clean.md",
+      "expected": {
+        "blocked_items_found_in_clean_output": []
+      }
+    },
+    {
+      "name": "risky claim in clean output returns blocked",
+      "input": "clean_output_with_risky_claim",
+      "expected": {
+        "decision": "blocked",
+        "risk_level": "high"
+      }
+    },
+    {
+      "name": "missing required file returns needs_review or blocked",
+      "input": "missing_required_file",
+      "expected": {
+        "decision": [
+          "needs_review",
+          "blocked"
+        ]
+      }
+    }
+  ]
+}

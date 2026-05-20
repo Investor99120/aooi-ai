@@ -156,6 +156,8 @@ FAQ Export Candidate Builder
 ↓
 Shopify Adapter Review Output
 ↓
+Shopify Manual Review Gate
+↓
 Claim Validator
 ↓
 Source Status Validator
@@ -191,3 +193,8 @@ In Phase 6A, Shopify Adapter Review Output creates Shopify review output and man
 
 中文描述：
 Phase 6A 中，Shopify Adapter Review Output 只生成 Shopify 审核输出和人工复制候选内容，不生成 Shopify Block，不自动发布，也不连接 Shopify API。
+
+In Phase 6B, Shopify Manual Review Gate validates Shopify review output only. It does not generate new content, auto-publish, connect to Shopify API or modify live themes.
+
+中文描述：
+Phase 6B 中，Shopify Manual Review Gate 只验证 Shopify review output，不生成新内容、不自动发布、不连接 Shopify API，也不修改线上主题。
