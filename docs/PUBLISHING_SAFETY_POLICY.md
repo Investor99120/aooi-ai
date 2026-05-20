@@ -86,6 +86,11 @@ Shopify is a publishing adapter only. Aooi must not modify live Shopify themes a
 中文描述：
 Shopify 只是 publishing adapter。Aooi 不能自动修改线上 Shopify theme，不能自动发布，Shopify 输出应进入 `outputs/{brand}/shopify/`。草稿创建只能在未来阶段通过 validation 后开放。最终发布必须人工完成，除非未来阶段明确批准。
 
+Phase 6A Shopify Adapter Review Output only generates manual-review outputs and manual-copy candidates. It does not connect to Shopify API, does not auto-publish, does not modify live themes and does not create final Shopify pages.
+
+中文描述：
+Phase 6A 的 Shopify Adapter Review Output 只生成审核输出和人工复制候选内容，不连接 Shopify API，不自动发布，不修改线上主题，也不创建最终 Shopify 页面。
+
 ## F. Bilingual Review Boundary
 
 Review Mode may include Chinese descriptions. Export Mode and final customer-facing exports should remain in the target market language by default.

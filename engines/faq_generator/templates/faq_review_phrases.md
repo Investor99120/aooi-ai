@@ -32,3 +32,6 @@ answer_reviewable: 该回答使用保守 wellness 语言，可作为审核草稿
 export_review_intro: 这是 owner 审核版本，不是最终导出文件。
 export_review_boundary: 中文说明不能进入最终用户可见导出内容。
 export_approval_note: 这份清单用于人工批准 FAQ export candidate，确认它不是最终 FAQ 页面、不是 FAQPage Schema、不是 Shopify FAQ Block，并确认 clean export candidate 中没有中文描述、医疗化 claim、假评价、未验证产品规格、物流、保修或认证承诺。
+shopify_review_intro: 这是 Shopify owner 审核版本，不是最终 Shopify 输出。
+shopify_review_boundary: 中文说明不能进入最终 Shopify 用户可见输出。
+shopify_manual_publish_note: 这份清单用于人工确认 Shopify manual-copy candidate，确认没有使用 Shopify API、没有自动发布、没有修改线上主题，也没有生成 FAQPage Schema、Product Schema 或最终 Shopify 页面。

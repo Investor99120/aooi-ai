@@ -1,0 +1,32 @@
+{
+  "brand_id": "example_brand",
+  "decision": "needs_review",
+  "risk_level": "medium",
+  "source_package": "outputs/example_brand/faq/export_candidate/",
+  "clean_output_file": "outputs/example_brand/shopify/shopify_faq_block_clean.md",
+  "review_output_file": "outputs/example_brand/shopify/shopify_faq_block_review.md",
+  "total_export_candidates": 2,
+  "shopify_clean_items": 2,
+  "blocked_items": 1,
+  "needs_review_items": 3,
+  "manual_review_required": true,
+  "publish_ready": false,
+  "shopify_api_used": false,
+  "auto_publish_used": false,
+  "live_theme_modified": false,
+  "faqpage_schema_generated": false,
+  "product_schema_generated": false,
+  "generated_files": [
+    "outputs/example_brand/shopify/shopify_faq_block_clean.md",
+    "outputs/example_brand/shopify/shopify_faq_block_review.md",
+    "outputs/example_brand/shopify/shopify_faq_blocked_items_report.json",
+    "outputs/example_brand/shopify/shopify_manual_publish_checklist.md",
+    "outputs/example_brand/shopify/shopify_faq_output_report.json"
+  ],
+  "notes": [
+    "Shopify FAQ output is a manual-copy candidate only.",
+    "No Shopify API was used.",
+    "No auto-publishing or live theme modification was performed.",
+    "No FAQPage Schema, Product Schema or final Shopify page was generated."
+  ]
+}

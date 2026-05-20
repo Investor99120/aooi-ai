@@ -154,6 +154,8 @@ FAQ Draft Review Gate
 ↓
 FAQ Export Candidate Builder
 ↓
+Shopify Adapter Review Output
+↓
 Claim Validator
 ↓
 Source Status Validator
@@ -184,3 +186,8 @@ In Phase 5C, FAQ Export Candidate Builder creates an export candidate pack only.
 
 中文描述：
 Phase 5C 中，FAQ Export Candidate Builder 只创建 FAQ Export Candidate Pack，不生成最终 FAQ 页面、FAQPage Schema 或 Shopify FAQ 模块。
+
+In Phase 6A, Shopify Adapter Review Output creates Shopify review output and manual-copy candidates only. It does not generate Shopify Blocks, does not auto-publish and does not connect to Shopify API.
+
+中文描述：
+Phase 6A 中，Shopify Adapter Review Output 只生成 Shopify 审核输出和人工复制候选内容，不生成 Shopify Block，不自动发布，也不连接 Shopify API。
