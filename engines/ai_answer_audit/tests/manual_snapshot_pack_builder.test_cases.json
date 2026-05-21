@@ -1,0 +1,112 @@
+{
+  "test_cases": [
+    {
+      "name": "builder requires priority_prompt_list",
+      "expected": {
+        "missing_file_blocks_pass": true
+      }
+    },
+    {
+      "name": "builder requires prompt_universe.yml",
+      "expected": {
+        "missing_file_blocks_pass": true
+      }
+    },
+    {
+      "name": "selects 5 prompt candidates",
+      "expected": {
+        "selected_prompt_count": 5
+      }
+    },
+    {
+      "name": "selects 3 AI surfaces",
+      "expected": {
+        "selected_surface_count": 3
+      }
+    },
+    {
+      "name": "creates 15 snapshot templates",
+      "expected": {
+        "snapshot_template_count": 15
+      }
+    },
+    {
+      "name": "templates contain no real AI answers",
+      "expected": {
+        "contains_real_ai_answers": false
+      }
+    },
+    {
+      "name": "templates keep contains_real_ai_answer false",
+      "expected": {
+        "contains_real_ai_answer": false
+      }
+    },
+    {
+      "name": "templates keep answer_snapshot empty",
+      "expected": {
+        "answer_snapshot": ""
+      }
+    },
+    {
+      "name": "templates keep manual_review_required true",
+      "expected": {
+        "manual_review_required": true
+      }
+    },
+    {
+      "name": "report keeps visibility_score_generated false",
+      "expected": {
+        "visibility_score_generated": false
+      }
+    },
+    {
+      "name": "report keeps ai_platform_calls_used_by_system false",
+      "expected": {
+        "ai_platform_calls_used_by_system": false
+      }
+    },
+    {
+      "name": "report keeps scraping_used_by_system false",
+      "expected": {
+        "scraping_used_by_system": false
+      }
+    },
+    {
+      "name": "report keeps publish_ready false",
+      "expected": {
+        "publish_ready": false
+      }
+    },
+    {
+      "name": "no SEO content generated",
+      "expected": {
+        "seo_content_generated": false
+      }
+    },
+    {
+      "name": "no Shopify API used",
+      "expected": {
+        "shopify_api_used": false
+      }
+    },
+    {
+      "name": "JSON files contain no Chinese descriptions",
+      "expected": {
+        "json_contains_chinese": false
+      }
+    },
+    {
+      "name": "Markdown files may contain Chinese descriptions",
+      "expected": {
+        "markdown_chinese_allowed": true
+      }
+    },
+    {
+      "name": "does not enter AI visibility report phase",
+      "expected": {
+        "ai_visibility_report_generated": false
+      }
+    }
+  ]
+}

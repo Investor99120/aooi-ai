@@ -39,6 +39,13 @@ Phase 8D may summarise manually provided snapshots, but it still does not genera
 中文描述：
 Phase 8D 可以总结人工提供的回答快照，但仍然不生成最终 AI visibility score。任何来自人工快照的提及或引用计数都只是初步审计观察，不是统计可靠的可见度指标。
 
+## Phase 8E Boundary
+
+Phase 8E creates manual snapshot collection templates only. It does not collect real AI answers by itself, does not generate visibility scores and does not turn prompt candidates into measured visibility metrics.
+
+中文描述：
+Phase 8E 只创建人工 snapshot 采集模板。它不会自行采集真实 AI 回答，不生成可见度分数，也不会把 prompt candidates 变成已测量的 visibility metrics。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.

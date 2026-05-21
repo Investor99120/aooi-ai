@@ -1,0 +1,38 @@
+{
+  "brand_id": "friendredlight",
+  "phase": "8E",
+  "batch_id": "friendredlight_manual_audit_batch_001",
+  "selected_prompt_count": 5,
+  "selected_surface_count": 3,
+  "snapshot_template_count": 15,
+  "contains_real_ai_answers": false,
+  "ai_platform_calls_used_by_system": false,
+  "scraping_used_by_system": false,
+  "visibility_score_generated": false,
+  "manual_review_required": true,
+  "selected_surfaces": [
+    "chatgpt",
+    "gemini",
+    "perplexity"
+  ],
+  "template_files": [
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_005_chatgpt.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_005_gemini.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_005_perplexity.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_004_chatgpt.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_004_gemini.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_004_perplexity.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_013_chatgpt.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_013_gemini.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_013_perplexity.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_003_chatgpt.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_003_gemini.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_003_perplexity.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_016_chatgpt.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_016_gemini.snapshot.template.json",
+    "outputs/friendredlight/ai_answer_audit/manual_snapshot_pack/snapshot_templates/frl_prompt_016_perplexity.snapshot.template.json"
+  ],
+  "notes": [
+    "Snapshot templates are empty. They do not contain real AI answers."
+  ]
+}

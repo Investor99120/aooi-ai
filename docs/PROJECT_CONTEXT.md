@@ -100,14 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 8D Manual AI Answer Audit Framework.
+Current Stage: Phase 8E Manual Audit Snapshot Pack.
 
-This phase validates manually provided AI answer snapshots and summarises manual audit observations.
-
-中文描述：
-当前阶段是 Phase 8D Manual AI Answer Audit Framework。此阶段校验人工提供的 AI 回答快照，并总结人工审计观察。
-
-It does not call AI platforms, scrape external data, generate a final AI visibility score, publish content or call Shopify API.
+This phase creates manual snapshot collection templates and a small prompt-surface batch for future human testing.
 
 中文描述：
-此阶段不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8E Manual Audit Snapshot Pack。此阶段创建人工 snapshot 采集模板，并为未来人工测试准备一小批 prompt-surface 组合。
+
+It does not call AI platforms, scrape external data, collect real AI answers by itself, generate a final AI visibility score, publish content or call Shopify API.
+
+中文描述：
+此阶段不调用 AI 平台，不抓取外部数据，不自行采集真实 AI 回答，不生成最终 AI visibility score，不发布内容，也不调用 Shopify API。

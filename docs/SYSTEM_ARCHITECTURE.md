@@ -118,6 +118,11 @@ Manual AI Answer Audit is a review-mode layer for future human-provided answer s
 中文描述：
 Manual AI Answer Audit 是面向未来人工提供 AI 回答快照的 review-mode 层。它校验并总结人工粘贴的 AI 回答，但不调用 AI 平台、不抓取外部数据、不运行自动 monitoring，也不生成最终 visibility score。
 
+Manual Audit Snapshot Pack is a preparation layer for future human testing. It creates empty prompt-surface templates and collection instructions, but it does not collect real AI answers or measure visibility.
+
+中文描述：
+Manual Audit Snapshot Pack 是未来人工测试的准备层。它创建空白 prompt-surface 模板和采集说明，但不采集真实 AI 回答，也不测量 visibility。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -152,9 +157,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8D Manual AI Answer Audit Framework.
+Current Stage: Phase 8E Manual Audit Snapshot Pack.
 
-Manual snapshots only. No AI platform calls. No scraping. No Shopify API. No auto-publishing.
+Empty manual snapshot templates only. No AI platform calls. No scraping. No real AI answers collected by the system. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8D Manual AI Answer Audit Framework。此阶段只处理人工 snapshots，不调用 AI 平台，不抓取外部数据，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8E Manual Audit Snapshot Pack。此阶段只创建空白人工 snapshot 模板，不调用 AI 平台，不抓取外部数据，不由系统采集真实 AI 回答，不连接 Shopify API，也不自动发布。

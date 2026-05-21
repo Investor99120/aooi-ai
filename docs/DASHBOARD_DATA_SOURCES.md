@@ -153,6 +153,22 @@ Manual snapshots are human-provided. Reports are review-only. Phase 8D does not 
 中文描述：
 manual snapshots 由人工提供。报告仅用于 review。Phase 8D 不运行自动 AI 调用，也不生成最终 visibility score。
 
+## J. AI Answer Audit Snapshot Pack Data
+
+| File | Purpose | File type | Readability | Chinese allowed | Customer-facing |
+| --- | --- | --- | --- | --- | --- |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/manual_snapshot_collection_plan.md` | Manual snapshot collection plan | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/selected_prompt_surface_matrix.md` | Selected prompt and surface matrix | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/manual_snapshot_batch_manifest.json` | Manual snapshot batch manifest | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/snapshot_templates/` | Empty snapshot template folder | JSON folder | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/manual_snapshot_collection_checklist.md` | Manual collection checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_pack/manual_snapshot_pack_report.json` | Manual snapshot pack report | JSON | machine-readable | no | no |
+
+Snapshot templates are empty by default. The system does not collect real AI answers. JSON files are machine-readable and must not include Chinese descriptions. Markdown files may include Chinese descriptions.
+
+中文描述：
+snapshot templates 默认是空白的。系统不会采集真实 AI 回答。JSON 文件是机器可读文件，不得包含中文描述；Markdown 文件可以包含中文说明。
+
 ## Dashboard Handling Notes
 
 Machine-readable files should be parsed and displayed as structured status cards or tables.
