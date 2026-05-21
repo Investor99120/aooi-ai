@@ -101,6 +101,9 @@ Each data source should be displayed with:
 | `docs/PROMPT_UNIVERSE_POLICY.md` | Prompt Universe policy | Markdown | human-readable | yes | no |
 | `docs/PROMPT_UNIVERSE_FIELD_GUIDE.md` | Prompt Universe field guide | Markdown | human-readable | yes | no |
 | `docs/AI_VISIBILITY_METRICS_DRAFT.md` | Future AI visibility metric definitions | Markdown | human-readable | yes | no |
+| `outputs/{brand}/prompt_universe/prompt_universe_validation_report.json` | Prompt Universe validation report | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/prompt_universe_blocked_items_report.json` | Prompt Universe blocked items report | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/prompt_universe_review_checklist.md` | Prompt Universe review checklist | Markdown | human-readable | yes | no |
 
 Prompt candidates are not AI visibility proof.
 
@@ -111,6 +114,11 @@ Prompt candidates are not final SEO content.
 
 中文描述：
 Prompt candidates 不是最终 SEO 内容。
+
+Prompt Universe JSON reports are machine-readable and must not include Chinese descriptions. The review checklist may include Chinese descriptions for owner review.
+
+中文描述：
+Prompt Universe JSON 报告是机器可读文件，不得包含中文描述。review checklist 可以包含中文说明，方便 owner 审核。
 
 ## Dashboard Handling Notes
 

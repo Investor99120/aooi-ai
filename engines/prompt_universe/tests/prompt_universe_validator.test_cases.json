@@ -1,0 +1,164 @@
+{
+  "test_cases": [
+    {
+      "name": "missing prompt id returns blocked",
+      "input": {
+        "prompt": "What should I check before buying?"
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "missing prompt text returns blocked",
+      "input": {
+        "id": "prompt_missing_text"
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "missing source_status returns blocked",
+      "input": {
+        "id": "prompt_missing_source",
+        "prompt": "What is red light therapy?"
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "monitoring_eligible candidate does not mean monitored",
+      "input": {
+        "monitoring_eligible": "candidate"
+      },
+      "expected": {
+        "monitored": false
+      }
+    },
+    {
+      "name": "content_generation_eligible needs_review cannot export content",
+      "input": {
+        "content_generation_eligible": "needs_review"
+      },
+      "expected": {
+        "export_ready": false
+      }
+    },
+    {
+      "name": "needs_research cannot become verified automatically",
+      "input": {
+        "source_status": "needs_research"
+      },
+      "expected": {
+        "verified": false
+      }
+    },
+    {
+      "name": "competitor_context needs_research cannot become market fact",
+      "input": {
+        "competitor_context": "needs_research"
+      },
+      "expected": {
+        "market_fact": false
+      }
+    },
+    {
+      "name": "medicalised prompt returns needs_review or blocked",
+      "input": {
+        "prompt": "Is this a medical device?"
+      },
+      "expected": {
+        "decision_values": ["needs_review", "blocked"]
+      }
+    },
+    {
+      "name": "prompt candidate cannot claim AI visibility",
+      "input": {
+        "owner_notes": "AI visibility verified"
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "prompt candidate cannot claim search volume",
+      "input": {
+        "owner_notes": "Search volume is proven."
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "prompt candidate cannot claim AI ranking",
+      "input": {
+        "owner_notes": "Brand is ranked first in AI answers."
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "prompt_clusters require source_status",
+      "input": {
+        "cluster_id": "cluster_without_source"
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "competitor_prompt_map cannot claim share of voice",
+      "input": {
+        "reason_for_monitoring": "Competitor share of voice is confirmed."
+      },
+      "expected": {
+        "decision": "blocked"
+      }
+    },
+    {
+      "name": "YAML machine-readable files should contain no Chinese descriptions",
+      "expected": {
+        "contains_chinese": false
+      }
+    },
+    {
+      "name": "JSON reports should contain no Chinese descriptions",
+      "expected": {
+        "contains_chinese": false
+      }
+    },
+    {
+      "name": "no AI platform call allowed",
+      "expected": {
+        "ai_platform_calls_used": false
+      }
+    },
+    {
+      "name": "no scraping allowed",
+      "expected": {
+        "scraping_used": false
+      }
+    },
+    {
+      "name": "no Shopify API allowed",
+      "expected": {
+        "shopify_api_used": false
+      }
+    },
+    {
+      "name": "no SEO content generated",
+      "expected": {
+        "seo_content_generated": false
+      }
+    },
+    {
+      "name": "manual_review_required remains true",
+      "expected": {
+        "manual_review_required": true
+      }
+    }
+  ]
+}

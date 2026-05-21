@@ -115,3 +115,24 @@ No prompt candidate can become customer-facing copy without claim review, source
 
 中文描述：
 任何 prompt candidate 未经过 claim review、source status review 和人工批准，都不能变成用户可见文案。
+
+## Validator Output Fields
+
+Phase 8B Prompt Universe Validator writes:
+
+中文描述：
+Phase 8B Prompt Universe Validator 会写入：
+
+- `prompt_universe_validation_report.json`
+- `prompt_universe_blocked_items_report.json`
+- `prompt_universe_review_checklist.md`
+
+JSON reports are machine-readable and must not include Chinese descriptions.
+
+中文描述：
+JSON 报告是机器可读文件，不得包含中文描述。
+
+The review checklist is human-readable and may include Chinese explanations.
+
+中文描述：
+review checklist 是人类可读文件，可以包含中文说明。

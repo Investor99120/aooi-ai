@@ -100,14 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 8A Prompt Universe Foundation.
+Current Stage: Phase 8B Prompt Universe Validator.
 
-This phase defines prompt universe structure, prompt clusters, competitor prompt planning and AI visibility metric drafts.
-
-中文描述：
-当前阶段是 Phase 8A Prompt Universe Foundation。此阶段定义 prompt universe 结构、prompt clusters、竞品 prompt planning 和 AI visibility 指标草案。
-
-It does not run AI monitoring, scrape external data, publish content or call Shopify API.
+This phase validates prompt universe assets, prompt clusters, competitor prompt maps, source_status discipline, claim risk boundaries and monitoring eligibility boundaries.
 
 中文描述：
-此阶段不运行 AI 监测，不抓取外部数据，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8B Prompt Universe Validator。此阶段验证 prompt universe 资产、prompt clusters、competitor prompt maps、source_status 纪律、claim 风险边界和 monitoring eligibility 边界。
+
+It does not run AI answer monitoring, call AI platforms, scrape external data, publish content or call Shopify API.
+
+中文描述：
+此阶段不运行 AI answer monitoring，不调用 AI 平台，不抓取外部数据，不发布内容，也不调用 Shopify API。

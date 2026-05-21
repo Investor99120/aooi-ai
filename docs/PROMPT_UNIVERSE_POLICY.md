@@ -145,3 +145,25 @@ Final customer-facing content should remain in the target-market language unless
 
 中文描述：
 最终用户可见内容应保持目标市场语言，除非未来 output mode 明确允许 bilingual review。
+
+## J. Prompt Universe Validator
+
+Prompt Universe Validator is implemented in Phase 8B.
+
+中文描述：
+Prompt Universe Validator 在 Phase 8B 实现。
+
+It validates prompt universe assets before they can become future AI monitoring or content opportunity scoring candidates.
+
+中文描述：
+它在 prompt universe 资产进入未来 AI monitoring 或 content opportunity scoring 候选流程之前进行验证。
+
+The validator checks required fields, source_status discipline, claim risk terms, monitoring eligibility boundaries, content generation eligibility boundaries, competitor context boundaries and machine-readable file safety.
+
+中文描述：
+validator 会检查必填字段、source_status 纪律、claim 风险词、monitoring eligibility 边界、content generation eligibility 边界、竞品语境边界和机器可读文件安全。
+
+The validator does not call AI platforms, scrape external data, run AI answer monitoring, generate SEO content, publish or connect to Shopify API.
+
+中文描述：
+validator 不调用 AI 平台，不抓取外部数据，不运行 AI answer monitoring，不生成 SEO 内容，不发布，也不连接 Shopify API。

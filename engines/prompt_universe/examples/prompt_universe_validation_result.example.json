@@ -1,0 +1,58 @@
+{
+  "brand_id": "example_brand",
+  "decision": "needs_review",
+  "risk_level": "medium",
+  "checked_files": {
+    "brands/example_brand/prompt_universe.yml": {
+      "exists": true,
+      "error": null
+    }
+  },
+  "prompt_summary": {
+    "total_prompts": 3,
+    "pass": 2,
+    "needs_review": 1,
+    "blocked": 0
+  },
+  "cluster_summary": {
+    "total_clusters": 2,
+    "needs_review": 0,
+    "blocked": 0
+  },
+  "competitor_prompt_summary": {
+    "total_prompt_angles": 1,
+    "needs_review": 0,
+    "blocked": 0
+  },
+  "source_status_summary": {
+    "owner_defined": 3,
+    "needs_research": 1
+  },
+  "monitoring_eligibility_summary": {
+    "candidate": 3
+  },
+  "content_generation_eligibility_summary": {
+    "needs_review": 2,
+    "candidate": 1
+  },
+  "matched_risk_terms": [
+    "medical device"
+  ],
+  "missing_fields": [],
+  "competitor_boundary_findings": [],
+  "machine_readable_boundary": {
+    "pass": true,
+    "files": {}
+  },
+  "manual_review_required": true,
+  "ai_platform_calls_used": false,
+  "scraping_used": false,
+  "shopify_api_used": false,
+  "auto_publish_used": false,
+  "seo_content_generated": false,
+  "faqpage_schema_generated": false,
+  "product_schema_generated": false,
+  "notes": [
+    "Prompt candidates are planning assets only and do not prove AI visibility."
+  ]
+}
