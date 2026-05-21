@@ -167,3 +167,20 @@ The validator does not call AI platforms, scrape external data, run AI answer mo
 
 中文描述：
 validator 不调用 AI 平台，不抓取外部数据，不运行 AI answer monitoring，不生成 SEO 内容，不发布，也不连接 Shopify API。
+
+## K. Prompt Monitoring Readiness Pack
+
+Prompt Monitoring Readiness Pack is implemented in Phase 8C.
+
+中文描述：
+Prompt Monitoring Readiness Pack 在 Phase 8C 实现。
+
+It prepares future manual AI answer audit assets, including priority prompt lists, AI surface matrix, manual answer snapshot templates, mention extraction fields, citation recording fields and risk annotation fields.
+
+中文描述：
+它为未来人工 AI answer audit 准备资产，包括 priority prompt lists、AI surface matrix、manual answer snapshot templates、mention extraction fields、citation recording fields 和 risk annotation fields。
+
+The readiness pack does not run AI answer monitoring, call AI platforms, scrape external data, store real AI answers, measure visibility, generate SEO content, publish or connect to Shopify API.
+
+中文描述：
+readiness pack 不运行 AI answer monitoring，不调用 AI 平台，不抓取外部数据，不存储真实 AI 回答，不测量 visibility，不生成 SEO 内容，不发布，也不连接 Shopify API。

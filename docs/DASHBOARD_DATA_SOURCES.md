@@ -120,6 +120,24 @@ Prompt Universe JSON reports are machine-readable and must not include Chinese d
 中文描述：
 Prompt Universe JSON 报告是机器可读文件，不得包含中文描述。review checklist 可以包含中文说明，方便 owner 审核。
 
+## H. Prompt Monitoring Readiness Data
+
+| File | Purpose | File type | Readability | Chinese allowed | Customer-facing |
+| --- | --- | --- | --- | --- | --- |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/priority_prompt_list.md` | Future monitoring prompt candidate list | Markdown | human-readable | yes | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/ai_surface_matrix.md` | Future AI surface testing matrix | Markdown | human-readable | yes | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/manual_answer_snapshot_template.md` | Future manual AI answer snapshot template | Markdown | human-readable | yes | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/mention_extraction_template.json` | Mention extraction template | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/citation_recording_template.json` | Citation recording template | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/risk_annotation_template.json` | Risk annotation template | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/prompt_monitoring_readiness_report.json` | Monitoring readiness report | JSON | machine-readable | no | no |
+| `outputs/{brand}/prompt_universe/monitoring_readiness/prompt_monitoring_readiness_checklist.md` | Monitoring readiness checklist | Markdown | human-readable | yes | no |
+
+No real AI answers are stored in Phase 8C, and no AI visibility has been measured.
+
+中文描述：
+Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
+
 ## Dashboard Handling Notes
 
 Machine-readable files should be parsed and displayed as structured status cards or tables.

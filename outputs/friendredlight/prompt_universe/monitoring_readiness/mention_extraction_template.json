@@ -1,0 +1,20 @@
+{
+  "brand_id": "friendredlight",
+  "template_type": "mention_extraction_template",
+  "phase": "8C",
+  "contains_real_ai_answer": false,
+  "fields": {
+    "prompt_id": "",
+    "ai_surface": "",
+    "brand_mentioned": null,
+    "brand_recommended": null,
+    "brand_position": null,
+    "competitors_mentioned": [],
+    "share_of_voice_candidate": null,
+    "answer_framing": "",
+    "notes": []
+  },
+  "ai_platform_calls_used": false,
+  "scraping_used": false,
+  "manual_review_required": true
+}

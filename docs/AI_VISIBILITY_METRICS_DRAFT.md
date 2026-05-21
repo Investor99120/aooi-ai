@@ -25,6 +25,13 @@ Future data source: AI answer snapshots.
 
 Current status: not implemented.
 
+## Phase 8C Boundary
+
+Phase 8C prepares templates that may support future measurement, but it still does not measure AI visibility, store real AI answers or generate visibility scores.
+
+中文描述：
+Phase 8C 会准备未来可能用于测量的模板，但仍然不测量 AI visibility，不存储真实 AI 回答，也不生成 visibility score。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.
