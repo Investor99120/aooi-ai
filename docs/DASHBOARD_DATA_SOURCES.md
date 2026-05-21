@@ -138,6 +138,21 @@ No real AI answers are stored in Phase 8C, and no AI visibility has been measure
 中文描述：
 Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 
+## I. AI Answer Audit Data
+
+| File | Purpose | File type | Readability | Chinese allowed | Customer-facing |
+| --- | --- | --- | --- | --- | --- |
+| `outputs/{brand}/ai_answer_audit/manual_snapshots/` | Future manually provided AI answer snapshots | JSON folder | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_report.json` | Manual AI answer audit report | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_summary.md` | Manual AI answer audit summary | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_blocked_items_report.json` | Blocked manual audit items | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_checklist.md` | Manual audit checklist | Markdown | human-readable | yes | no |
+
+Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
+
+中文描述：
+manual snapshots 由人工提供。报告仅用于 review。Phase 8D 不运行自动 AI 调用，也不生成最终 visibility score。
+
 ## Dashboard Handling Notes
 
 Machine-readable files should be parsed and displayed as structured status cards or tables.

@@ -100,14 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 8C Prompt Monitoring Readiness Pack.
+Current Stage: Phase 8D Manual AI Answer Audit Framework.
 
-This phase prepares future manual AI answer audit assets, including prompt lists, AI surface matrix, snapshot templates, mention extraction templates, citation templates and risk annotation templates.
-
-中文描述：
-当前阶段是 Phase 8C Prompt Monitoring Readiness Pack。此阶段准备未来人工 AI answer audit 所需的 prompt lists、AI surface matrix、snapshot templates、mention extraction templates、citation templates 和 risk annotation templates。
-
-It does not run AI answer monitoring, call AI platforms, scrape external data, measure visibility, publish content or call Shopify API.
+This phase validates manually provided AI answer snapshots and summarises manual audit observations.
 
 中文描述：
-此阶段不运行 AI answer monitoring，不调用 AI 平台，不抓取外部数据，不测量 visibility，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8D Manual AI Answer Audit Framework。此阶段校验人工提供的 AI 回答快照，并总结人工审计观察。
+
+It does not call AI platforms, scrape external data, generate a final AI visibility score, publish content or call Shopify API.
+
+中文描述：
+此阶段不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不发布内容，也不调用 Shopify API。

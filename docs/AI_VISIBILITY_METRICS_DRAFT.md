@@ -32,6 +32,13 @@ Phase 8C prepares templates that may support future measurement, but it still do
 中文描述：
 Phase 8C 会准备未来可能用于测量的模板，但仍然不测量 AI visibility，不存储真实 AI 回答，也不生成 visibility score。
 
+## Phase 8D Boundary
+
+Phase 8D may summarise manually provided snapshots, but it still does not generate a final AI visibility score. Any mention or citation counts from manual snapshots are preliminary audit observations, not statistically reliable visibility metrics.
+
+中文描述：
+Phase 8D 可以总结人工提供的回答快照，但仍然不生成最终 AI visibility score。任何来自人工快照的提及或引用计数都只是初步审计观察，不是统计可靠的可见度指标。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.
