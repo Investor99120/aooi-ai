@@ -46,6 +46,13 @@ Phase 8E creates manual snapshot collection templates only. It does not collect 
 中文描述：
 Phase 8E 只创建人工 snapshot 采集模板。它不会自行采集真实 AI 回答，不生成可见度分数，也不会把 prompt candidates 变成已测量的 visibility metrics。
 
+## Phase 8F Boundary
+
+Phase 8F validates manually imported AI answer snapshots before they can be used for future observation reports. It does not generate final visibility scores, does not treat AI answers as verified facts and does not convert AI answer text into customer-facing claims.
+
+中文描述：
+Phase 8F 会校验人工导入的 AI 回答快照，确认它们能否进入未来 observation report。它不生成最终 visibility score，不把 AI 回答当作 verified fact，也不会把 AI 回答文本转成用户可见 claim。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.

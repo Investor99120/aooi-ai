@@ -123,6 +123,11 @@ Manual Audit Snapshot Pack is a preparation layer for future human testing. It c
 中文描述：
 Manual Audit Snapshot Pack 是未来人工测试的准备层。它创建空白 prompt-surface 模板和采集说明，但不采集真实 AI 回答，也不测量 visibility。
 
+Manual Snapshot Import Gate is a review-mode import boundary for human-provided AI answer snapshots. It validates required fields, confirms no system AI platform calls or scraping were used, prevents AI answers from being treated as verified facts, aggregates `claim_risk_notes` and matched risk terms, and decides whether snapshots can enter future observation reports.
+
+中文描述：
+Manual Snapshot Import Gate 是人工 AI 回答快照的 review-mode 导入边界。它校验必填字段，确认系统没有调用 AI 平台或抓取外部数据，防止 AI 回答被当作 verified fact，聚合 `claim_risk_notes` 与风险词，并判断 snapshots 是否可以进入未来 observation report。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -157,9 +162,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8E Manual Audit Snapshot Pack.
+Current Stage: Phase 8F Manual Snapshot Import Gate.
 
-Empty manual snapshot templates only. No AI platform calls. No scraping. No real AI answers collected by the system. No Shopify API. No auto-publishing.
+Manual snapshot import validation only. No AI platform calls. No scraping. No final AI visibility score. No SEO content generation. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8E Manual Audit Snapshot Pack。此阶段只创建空白人工 snapshot 模板，不调用 AI 平台，不抓取外部数据，不由系统采集真实 AI 回答，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8F Manual Snapshot Import Gate。此阶段只进行人工 snapshot 导入校验，不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不生成 SEO 内容，不连接 Shopify API，也不自动发布。

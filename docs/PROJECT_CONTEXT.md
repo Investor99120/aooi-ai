@@ -100,14 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 8E Manual Audit Snapshot Pack.
+Current Stage: Phase 8F Manual Snapshot Import Gate.
 
-This phase creates manual snapshot collection templates and a small prompt-surface batch for future human testing.
-
-中文描述：
-当前阶段是 Phase 8E Manual Audit Snapshot Pack。此阶段创建人工 snapshot 采集模板，并为未来人工测试准备一小批 prompt-surface 组合。
-
-It does not call AI platforms, scrape external data, collect real AI answers by itself, generate a final AI visibility score, publish content or call Shopify API.
+This phase validates manually imported AI answer snapshots, checks whether snapshots can enter future observation reports, and aggregates `claim_risk_notes` and matched risk terms.
 
 中文描述：
-此阶段不调用 AI 平台，不抓取外部数据，不自行采集真实 AI 回答，不生成最终 AI visibility score，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8F Manual Snapshot Import Gate。此阶段校验人工导入的 AI 回答快照，检查这些 snapshots 是否可以进入未来 observation report，并聚合 `claim_risk_notes` 和命中的风险词。
+
+It does not call AI platforms, scrape external data, generate a final AI visibility score, publish content or call Shopify API.
+
+中文描述：
+此阶段不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不发布内容，也不调用 Shopify API。

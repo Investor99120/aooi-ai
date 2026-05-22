@@ -147,11 +147,19 @@ Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 | `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_summary.md` | Manual AI answer audit summary | Markdown | human-readable | yes | no |
 | `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_blocked_items_report.json` | Blocked manual audit items | JSON | machine-readable | no | no |
 | `outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_checklist.md` | Manual audit checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_import_gate_report.json` | Manual Snapshot Import Gate report | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_import_blocked_items_report.json` | Manual Snapshot Import Gate blocked and needs-review items | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_snapshot_import_checklist.md` | Manual Snapshot Import Gate checklist | Markdown | human-readable | yes | no |
 
 Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
 
 中文描述：
 manual snapshots 由人工提供。报告仅用于 review。Phase 8D 不运行自动 AI 调用，也不生成最终 visibility score。
+
+Manual Snapshot Import Gate reports validate manually imported snapshots. Reports are review-only. They do not generate visibility scores and do not prove population-level AI visibility.
+
+中文描述：
+Manual Snapshot Import Gate 报告用于校验人工导入的 snapshots。报告仅用于 review，不生成 visibility score，也不证明总体层面的 AI visibility。
 
 ## J. AI Answer Audit Snapshot Pack Data
 
