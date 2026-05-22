@@ -1,0 +1,34 @@
+{
+  "audit_id": "manual_audit_batch_001_frl_prompt_003_gemini",
+  "brand_id": "friendredlight",
+  "prompt_id": "frl_prompt_003",
+  "prompt_text": "How does red and near-infrared light fit into a home wellness routine?",
+  "ai_surface": "gemini",
+  "test_date": "2026-05-21",
+  "test_location_or_market": "UK",
+  "answer_snapshot": "Red and near-infrared (NIR) light therapy, scientifically known as photobiomodulation, is a highly versatile tool for at-home wellness. Because it is non-invasive and passive, it is incredibly easy to \"habit stack\" alongside your existing daily routines.\n\nTo integrate it effectively, it is helpful to understand the distinct roles of the different wavelengths:\n\nRed Light (approx. 600–700 nm): This light is primarily absorbed by the surface of the skin. It is highly effective for overall skin wellness, boosting collagen production, and promoting cellular turnover.\n\nNear-Infrared Light (approx. 700–1100 nm): These wavelengths are invisible to the naked eye and penetrate much deeper into the body, reaching muscles, connective tissues, and joints. It is primarily used for reducing inflammation and accelerating physical recovery.\n\nDepending on your specific goals, here is how you can map these therapies into a daily schedule:\n\n1. The Morning Skin Wellness Protocol\n\nBecause red light stimulates mitochondrial function (cellular energy), many people incorporate a 10 to 15-minute session into their morning routine. You can position a targeted light device near you while drinking your morning coffee, checking emails, or meditating. It directly supports skin health and provides a gentle, stimulating start to the day.\n\n2. Post-Workout or Mid-Day Recovery\n\nFor deeper tissue repair and systemic wellness, near-infrared wavelengths are the priority. Utilizing a full-body red light therapy mat is one of the most efficient ways to address recovery. Lying on a mat for 15 to 20 minutes immediately following a workout—or simply as a midday reset—allows the NIR light to penetrate deeply to ease muscle soreness and joint inflammation. Because mats require zero active effort, this time can easily double as a period for breathwork or a quick power nap.\n\n3. The Evening Wind-Down\n\nUnlike the blue light emitted by phones and monitors, which disrupts circadian rhythms and melatonin production, red light has a soothing effect. Incorporating a brief, ambient session in the evening can signal to your nervous system that it is time to relax, making it a great addition to a pre-sleep routine.\n\nBest Practices for At-Home Use\n\nConsistency is Key: The biological benefits of light therapy are cumulative. Committing to a daily or every-other-day schedule yields much better results than long, sporadic sessions.\n\nDirect Exposure: For optimal absorption—especially when targeting deep tissue recovery—the light needs to be exposed directly to bare skin. Clothing will block the wavelengths.\n\nMind the Dosage: Follow the specific time and distance guidelines for your device. More time does not necessarily equal better results, as the cells can only absorb so much light energy in one sitting.\n\nAre you looking to target a specific wellness goal with light therapy right now, such as optimizing your physical recovery time or focusing primarily on skin health?",
+  "brand_mentioned": false,
+  "brand_recommended": false,
+  "brand_position": null,
+  "competitors_mentioned": [],
+  "citations": [],
+  "source_urls": [],
+  "answer_framing": "Gemini frames red and near-infrared light as an at-home photobiomodulation wellness routine, with skincare, post-workout recovery and evening wind-down use cases.",
+  "claim_risk_notes": [
+    "The answer uses higher-risk scientific and physiological claims including photobiomodulation, collagen production, cellular turnover, inflammation, tissue repair, muscle soreness, joint inflammation, circadian rhythms and melatonin production.",
+    "The answer states that NIR light is used for reducing inflammation and accelerating physical recovery, which should remain review-only and must not be converted into customer-facing product claims without claim validation and source review.",
+    "The answer includes strong benefit language such as biological benefits are cumulative and yields much better results; these should not be reused as verified claims."
+  ],
+  "brand_understanding_notes": [
+    "FriendRedLight was not mentioned.",
+    "No competitor brands were mentioned.",
+    "The answer provides useful category framing but contains stronger health-related and scientific claims than the ChatGPT snapshot.",
+    "This snapshot should be reviewed carefully before using its language for any content opportunity."
+  ],
+  "manual_reviewer": "owner",
+  "review_status": "needs_review",
+  "contains_real_ai_answer": true,
+  "ai_platform_calls_used_by_system": false,
+  "scraping_used_by_system": false,
+  "manual_review_required": true
+}

@@ -30,9 +30,9 @@
     }
   },
   "snapshot_summary": {
-    "snapshots_found": 0,
-    "snapshots_valid": 0,
-    "snapshots_needs_review": 0,
+    "snapshots_found": 3,
+    "snapshots_valid": 2,
+    "snapshots_needs_review": 1,
     "snapshots_blocked": 0
   },
   "mention_summary": {
@@ -42,10 +42,12 @@
     "citations_present": 0
   },
   "risk_summary": {
-    "matched_risk_terms": [],
+    "matched_risk_terms": [
+      "cure"
+    ],
     "wrong_brand_description_risk": 0,
     "invented_authority_risk": 0,
-    "medical_claim_risk": 0,
+    "medical_claim_risk": 1,
     "unverified_fact_risk": 0
   },
   "monitoring_boundary": {
@@ -65,6 +67,6 @@
   "manual_review_required": true,
   "publish_ready": false,
   "notes": [
-    "No manual snapshots found. Manual audit report is a readiness shell only."
+    "Manual snapshots were summarised as review-only observations."
   ]
 }

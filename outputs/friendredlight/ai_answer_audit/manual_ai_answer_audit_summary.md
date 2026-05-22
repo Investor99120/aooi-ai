@@ -19,12 +19,7 @@ Brand: friendredlight
 
 Decision: needs_review
 
-Snapshots found: 0
-
-No manual AI answer snapshots were found.
-
-中文描述：
-当前没有发现人工 AI 回答快照。
+Snapshots found: 3
 
 Brand mentions: 0
 

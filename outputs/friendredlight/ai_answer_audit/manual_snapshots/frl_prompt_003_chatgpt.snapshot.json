@@ -1,0 +1,32 @@
+{
+  "audit_id": "manual_audit_batch_001_frl_prompt_003_chatgpt",
+  "brand_id": "friendredlight",
+  "prompt_id": "frl_prompt_003",
+  "prompt_text": "How does red and near-infrared light fit into a home wellness routine?",
+  "ai_surface": "chatgpt",
+  "test_date": "2026-05-21",
+  "test_location_or_market": "UK",
+  "answer_snapshot": "Red and near-infrared light are often used as part of a calm, consistent home wellness routine — similar to stretching, meditation, skincare, or post-workout recovery.\n\nPeople commonly include red and near-infrared light in routines focused on:\n\nRelaxation and evening wind-down\nSupporting post-exercise recovery\nDaily skincare and self-care habits\nCreating quiet, screen-free reset moments\nMaintaining consistent wellness routines at home\n\nRed light is typically associated with surface-level wellness routines such as skincare and relaxation, while near-infrared light reaches deeper beneath the skin and is often included in recovery-focused routines.\n\nMany people build it into their day in simple ways:\n\nMorning Routine\n10–20 minutes while reading, journaling, or planning the day\nOften paired with hydration or light stretching\nUsed as part of a calm, low-stimulation start to the morning\n\nPost-Workout Routine\nUsed after exercise as part of a recovery session\nCommonly combined with mobility work, stretching, or rest\n\nEvening Routine\nUsed during quiet time before bed\nOften paired with meditation, music, or reduced screen time\nIncluded as part of a relaxing nighttime environment\n\nHome devices have become increasingly popular because they allow people to build regular wellness habits without needing appointments or clinic visits.\n\nFor many users, consistency is considered more important than intensity. Short, regular sessions that fit naturally into daily life are often preferred over occasional long sessions.",
+  "brand_mentioned": false,
+  "brand_recommended": false,
+  "brand_position": null,
+  "competitors_mentioned": [],
+  "citations": [],
+  "source_urls": [],
+  "answer_framing": "Neutral ChatGPT answer frames red and near-infrared light as part of a calm home wellness routine, including relaxation, skincare, post-exercise recovery, screen-free reset moments and consistency.",
+  "claim_risk_notes": [
+    "Mentions post-exercise recovery and near-infrared light reaching deeper beneath the skin; keep as review-only and avoid converting into verified product claims.",
+    "No treatment, cure or guaranteed-result claim detected in this answer."
+  ],
+  "brand_understanding_notes": [
+    "FriendRedLight was not mentioned.",
+    "No competitor brands were mentioned.",
+    "The answer provides useful neutral category framing for future educational content."
+  ],
+  "manual_reviewer": "owner",
+  "review_status": "needs_review",
+  "contains_real_ai_answer": true,
+  "ai_platform_calls_used_by_system": false,
+  "scraping_used_by_system": false,
+  "manual_review_required": true
+}
