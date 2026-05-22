@@ -35,6 +35,16 @@ It confirms `answer_snapshot` is filled, `contains_real_ai_answer` is true, no s
 中文描述：
 它会确认 `answer_snapshot` 已填写、`contains_real_ai_answer` 为 true、系统没有调用 AI 平台、没有抓取外部数据、AI 回答没有被当作 verified fact，并聚合 `claim_risk_notes` 与风险词，同时保持 `publish_ready` 为 false。
 
+Manual AI Visibility Observation Report is implemented in Phase 8G.
+
+中文描述：
+Manual AI Visibility Observation Report 在 Phase 8G 实现。
+
+It summarises manually collected AI answer snapshots, observes brand mention, recommendation, competitor and citation presence, compares AI surface framing, summarises claim risk observations, and classifies whether a prompt is a visibility sample or content opportunity sample.
+
+中文描述：
+它总结人工采集的 AI 回答快照，观察品牌提及、推荐、竞品和引用情况，对比不同 AI surface 的 framing，总结 claim risk observations，并判断某个 prompt 更像 visibility sample 还是 content opportunity sample。
+
 ## Boundaries
 
 It does not call AI platforms.
@@ -72,6 +82,11 @@ The Phase 8F import gate does not call AI platforms, scrape external data, run a
 中文描述：
 Phase 8F import gate 不调用 AI 平台、不抓取外部数据、不运行自动 monitoring、不生成 AI visibility score、不生成 SEO 内容、不发布，也不连接 Shopify API。
 
+The Phase 8G observation report does not generate final visibility scores, generate share of voice scores, treat AI answers as verified facts, generate customer-facing claims, generate SEO content, publish or connect Shopify API.
+
+中文描述：
+Phase 8G observation report 不生成最终 visibility score，不生成 share of voice score，不把 AI 回答当作 verified fact，不生成用户可见 claim，不生成 SEO 内容，不发布，也不连接 Shopify API。
+
 ## CLI Usage
 
 Validate manually provided snapshots:
@@ -108,4 +123,13 @@ Run the manual snapshot import gate:
 
 ```bash
 node engines/ai_answer_audit/manual_snapshot_import_gate.js friendredlight
+```
+
+Build the manual AI visibility observation report:
+
+中文描述：
+生成 manual AI visibility observation report：
+
+```bash
+node engines/ai_answer_audit/manual_visibility_observation_report_builder.js friendredlight
 ```

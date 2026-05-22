@@ -1,0 +1,201 @@
+{
+  "brand_id": "friendredlight",
+  "phase": "8G",
+  "report_type": "manual_ai_visibility_observation",
+  "decision": "needs_review",
+  "source_files": {
+    "outputs/{brand}/ai_answer_audit/manual_snapshots/*.snapshot.json": {
+      "exists": true,
+      "snapshots_loaded": 3
+    },
+    "outputs/{brand}/ai_answer_audit/manual_snapshot_import_gate_report.json": {
+      "exists": true,
+      "decision": "needs_review"
+    },
+    "outputs/{brand}/ai_answer_audit/manual_snapshot_import_blocked_items_report.json": {
+      "exists": true,
+      "blocked_items": 0
+    },
+    "outputs/{brand}/ai_answer_audit/manual_ai_answer_audit_report.json": {
+      "exists": true,
+      "decision": "needs_review"
+    },
+    "brands/friendredlight/prompt_universe.yml": {
+      "exists": true,
+      "path": "brands/friendredlight/prompt_universe.yml"
+    },
+    "brands/friendredlight/prompt_clusters.yml": {
+      "exists": true,
+      "path": "brands/friendredlight/prompt_clusters.yml"
+    },
+    "docs/AI_VISIBILITY_METRICS_DRAFT.md": {
+      "exists": true,
+      "path": "docs/AI_VISIBILITY_METRICS_DRAFT.md"
+    }
+  },
+  "observation_scope": {
+    "manual_observation_only": true,
+    "snapshots_observed": 3,
+    "prompt_ids_observed": [
+      "frl_prompt_003"
+    ],
+    "ai_surfaces_observed": [
+      "chatgpt",
+      "gemini",
+      "perplexity"
+    ],
+    "statistically_representative": false,
+    "population_level_claim": false
+  },
+  "visibility_observation": {
+    "brand_mentions": 0,
+    "brand_recommendations": 0,
+    "brand_positions_observed": [],
+    "competitor_mentions": 0,
+    "citations_present": 0,
+    "source_urls_present": 0,
+    "final_visibility_score_generated": false,
+    "share_of_voice_score_generated": false,
+    "recommendation_score_generated": false
+  },
+  "prompt_observations": [
+    {
+      "prompt_id": "frl_prompt_003",
+      "prompt_text": "How does red and near-infrared light fit into a home wellness routine?",
+      "surfaces_observed": [
+        "chatgpt",
+        "gemini",
+        "perplexity"
+      ],
+      "brand_mentioned_on_surfaces": [],
+      "brand_recommended_on_surfaces": [],
+      "competitors_mentioned": [],
+      "citations_present": false,
+      "observation_classification": "content_opportunity_sample",
+      "reason": "The brand was not mentioned or recommended across observed surfaces, while the answers produced useful category framing."
+    }
+  ],
+  "surface_framing_summary": [
+    {
+      "ai_surface": "chatgpt",
+      "framing": "Neutral ChatGPT answer frames red and near-infrared light as part of a calm home wellness routine, including relaxation, skincare, post-exercise recovery, screen-free reset moments and consistency.",
+      "claim_risk_level": "medium-low",
+      "observation_notes": [
+        "Lower-risk routine framing focused on calm home wellness, relaxation, skincare, post-exercise recovery, screen-free reset moments and consistency."
+      ]
+    },
+    {
+      "ai_surface": "gemini",
+      "framing": "Gemini frames red and near-infrared light as an at-home photobiomodulation wellness routine, with skincare, post-workout recovery and evening wind-down use cases.",
+      "claim_risk_level": "high",
+      "observation_notes": [
+        "Higher-risk physiological and scientific language appeared, including photobiomodulation, collagen production, cellular turnover, inflammation, tissue repair and melatonin."
+      ]
+    },
+    {
+      "ai_surface": "perplexity",
+      "framing": "Perplexity frames red and near-infrared light as a practical home wellness habit for skin support, post-exercise recovery, relaxation, safety-aware use and expectation management.",
+      "claim_risk_level": "medium-high",
+      "observation_notes": [
+        "Practical setup, safety and benefit-related language appeared, including skin support, recovery, pregnancy and light-sensitive medications."
+      ]
+    }
+  ],
+  "risk_observation": {
+    "snapshots_with_claim_risk_notes": 3,
+    "total_claim_risk_notes": 8,
+    "high_risk_surfaces": [
+      "gemini"
+    ],
+    "medium_risk_surfaces": [
+      "perplexity"
+    ],
+    "lower_risk_surfaces": [
+      "chatgpt"
+    ],
+    "risk_notes_summary": [
+      {
+        "audit_id": "manual_audit_batch_001_frl_prompt_003_chatgpt",
+        "prompt_id": "frl_prompt_003",
+        "ai_surface": "chatgpt",
+        "claim_risk_notes": [
+          "Mentions post-exercise recovery and near-infrared light reaching deeper beneath the skin; keep as review-only and avoid converting into verified product claims.",
+          "No treatment, cure or guaranteed-result claim detected in this answer."
+        ],
+        "matched_risk_terms": [
+          "cure",
+          "treat"
+        ]
+      },
+      {
+        "audit_id": "manual_audit_batch_001_frl_prompt_003_gemini",
+        "prompt_id": "frl_prompt_003",
+        "ai_surface": "gemini",
+        "claim_risk_notes": [
+          "The answer uses higher-risk scientific and physiological claims including photobiomodulation, collagen production, cellular turnover, inflammation, tissue repair, muscle soreness, joint inflammation, circadian rhythms and melatonin production.",
+          "The answer states that NIR light is used for reducing inflammation and accelerating physical recovery, which should remain review-only and must not be converted into customer-facing product claims without claim validation and source review.",
+          "The answer includes strong benefit language such as biological benefits are cumulative and yields much better results; these should not be reused as verified claims."
+        ],
+        "matched_risk_terms": [
+          "inflammation",
+          "reducing inflammation",
+          "joint inflammation",
+          "collagen production",
+          "cellular turnover",
+          "melatonin",
+          "soreness",
+          "tissue repair"
+        ]
+      },
+      {
+        "audit_id": "manual_audit_batch_001_frl_prompt_003_perplexity",
+        "prompt_id": "frl_prompt_003",
+        "ai_surface": "perplexity",
+        "claim_risk_notes": [
+          "The answer mentions muscle recovery, soreness, joint comfort, reduced redness, hair and scalp support, sleep and light-sensitive medications; these should remain review-only and must not be converted into verified product claims without claim validation and source review.",
+          "The answer includes safety-related guidance for eye conditions, skin conditions, pregnancy and light-sensitive medications; this should not be reused as medical advice.",
+          "The answer is relatively balanced because it says effects can be subtle and research is still evolving."
+        ],
+        "matched_risk_terms": [
+          "treat",
+          "soreness",
+          "pregnancy",
+          "light-sensitive medications"
+        ]
+      }
+    ],
+    "source": "manual_snapshot_import_gate_report",
+    "ai_answers_are_not_verified_facts": true,
+    "customer_facing_claims_must_not_be_generated_from_ai_answers": true
+  },
+  "content_signal_observation": {
+    "content_opportunity_detected": true,
+    "content_opportunity_type": [
+      "FAQ",
+      "educational guide",
+      "Shopify product-page routine section",
+      "email education flow",
+      "social video script"
+    ],
+    "content_gap_diagnosis_generated": false,
+    "content_opportunity_score_generated": false
+  },
+  "boundary_status": {
+    "ai_platform_calls_used_by_system": false,
+    "scraping_used_by_system": false,
+    "automated_monitoring_run": false,
+    "final_visibility_score_generated": false,
+    "share_of_voice_score_generated": false,
+    "recommendation_score_generated": false,
+    "seo_content_generated": false,
+    "shopify_api_used": false,
+    "auto_publish_used": false,
+    "customer_facing_claims_generated": false,
+    "ai_answers_treated_as_verified_fact": false
+  },
+  "manual_review_required": true,
+  "publish_ready": false,
+  "notes": [
+    "Manual AI visibility observations are review-only and must not be treated as final visibility metrics, population-level findings, verified facts or customer-facing claims."
+  ]
+}

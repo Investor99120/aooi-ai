@@ -128,6 +128,11 @@ Manual Snapshot Import Gate is a review-mode import boundary for human-provided 
 中文描述：
 Manual Snapshot Import Gate 是人工 AI 回答快照的 review-mode 导入边界。它校验必填字段，确认系统没有调用 AI 平台或抓取外部数据，防止 AI 回答被当作 verified fact，聚合 `claim_risk_notes` 与风险词，并判断 snapshots 是否可以进入未来 observation report。
 
+Manual AI Visibility Observation Report is a review-only observation layer over imported manual snapshots. It observes mentions, recommendations, competitor presence, citations and AI surface framing, but it does not generate final visibility scores, statistically representative metrics, customer-facing claims or content gap diagnosis.
+
+中文描述：
+Manual AI Visibility Observation Report 是基于人工导入 snapshots 的 review-only 观察层。它观察品牌提及、推荐、竞品出现、引用和 AI surface framing，但不生成最终 visibility score、不生成统计代表性指标、不生成用户可见 claim，也不生成 content gap diagnosis。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -162,9 +167,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8F Manual Snapshot Import Gate.
+Current Stage: Phase 8G Manual AI Visibility Observation Report.
 
-Manual snapshot import validation only. No AI platform calls. No scraping. No final AI visibility score. No SEO content generation. No Shopify API. No auto-publishing.
+Manual AI visibility observation only. No AI platform calls. No scraping. No final AI visibility score. No SEO content generation. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8F Manual Snapshot Import Gate。此阶段只进行人工 snapshot 导入校验，不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不生成 SEO 内容，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8G Manual AI Visibility Observation Report。此阶段只进行人工 AI visibility observation，不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不生成 SEO 内容，不连接 Shopify API，也不自动发布。

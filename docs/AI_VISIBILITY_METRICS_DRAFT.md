@@ -53,6 +53,13 @@ Phase 8F validates manually imported AI answer snapshots before they can be used
 中文描述：
 Phase 8F 会校验人工导入的 AI 回答快照，确认它们能否进入未来 observation report。它不生成最终 visibility score，不把 AI 回答当作 verified fact，也不会把 AI 回答文本转成用户可见 claim。
 
+## Phase 8G Boundary
+
+Phase 8G generates a review-only manual AI visibility observation report from imported manual snapshots. It may summarise observed mentions, recommendations, citations, competitor presence and surface framing, but it still does not generate final visibility scores, statistically representative metrics or customer-facing claims.
+
+中文描述：
+Phase 8G 会基于导入的人工快照生成 review-only AI visibility observation report。它可以总结观察到的品牌提及、推荐、引用、竞品出现和不同 AI surface 的 framing，但仍然不生成最终 visibility score、不生成统计代表性指标，也不生成用户可见 claim。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.

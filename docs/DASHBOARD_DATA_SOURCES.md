@@ -150,6 +150,9 @@ Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 | `outputs/{brand}/ai_answer_audit/manual_snapshot_import_gate_report.json` | Manual Snapshot Import Gate report | JSON | machine-readable | no | no |
 | `outputs/{brand}/ai_answer_audit/manual_snapshot_import_blocked_items_report.json` | Manual Snapshot Import Gate blocked and needs-review items | JSON | machine-readable | no | no |
 | `outputs/{brand}/ai_answer_audit/manual_snapshot_import_checklist.md` | Manual Snapshot Import Gate checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_visibility_observation_report.json` | Manual AI Visibility Observation report | JSON | machine-readable | no | no |
+| `outputs/{brand}/ai_answer_audit/manual_visibility_observation_summary.md` | Manual AI Visibility Observation summary | Markdown | human-readable | yes | no |
+| `outputs/{brand}/ai_answer_audit/manual_visibility_observation_checklist.md` | Manual AI Visibility Observation checklist | Markdown | human-readable | yes | no |
 
 Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
 
@@ -160,6 +163,11 @@ Manual Snapshot Import Gate reports validate manually imported snapshots. Report
 
 中文描述：
 Manual Snapshot Import Gate 报告用于校验人工导入的 snapshots。报告仅用于 review，不生成 visibility score，也不证明总体层面的 AI visibility。
+
+Observation reports are review-only. They do not generate final visibility scores and do not prove population-level AI visibility. They are suitable for a future Dashboard AI Audit View.
+
+中文描述：
+Observation reports 仅用于 review，不生成最终 visibility score，也不证明总体层面的 AI visibility。它们适合未来 Dashboard AI Audit View 读取。
 
 ## J. AI Answer Audit Snapshot Pack Data
 
