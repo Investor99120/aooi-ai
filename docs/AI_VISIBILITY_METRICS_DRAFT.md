@@ -67,6 +67,13 @@ Phase 8H diagnoses content gaps from review-only manual AI visibility observatio
 中文描述：
 Phase 8H 基于 review-only AI visibility observations 诊断内容缺口。它可以识别缺失的品牌自有内容资产和未来内容候选，但不生成最终 SEO 内容、不生成内容机会评分、不生成 visibility score，也不生成用户可见 claim。
 
+## Phase 8I Boundary
+
+Phase 8I scores content opportunity candidates from review-only content gap diagnosis reports. It may prioritise asset candidates and provide future adapter routing hints, but it does not generate SEO content, customer-facing copy, final visibility scores or publishable outputs.
+
+中文描述：
+Phase 8I 会基于 review-only content gap diagnosis 给内容机会候选资产评分。它可以排序候选资产并提供未来 adapter routing hints，但不生成 SEO 内容、不生成用户可见文案、不生成最终 visibility score，也不生成可发布内容。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.

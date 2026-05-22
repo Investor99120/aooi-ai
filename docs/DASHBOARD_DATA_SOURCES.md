@@ -156,6 +156,9 @@ Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 | `outputs/{brand}/content_gap/content_gap_diagnosis_report.json` | Content Gap Diagnosis report | JSON | machine-readable | no | no |
 | `outputs/{brand}/content_gap/content_gap_diagnosis_summary.md` | Content Gap Diagnosis summary | Markdown | human-readable | yes | no |
 | `outputs/{brand}/content_gap/content_gap_review_checklist.md` | Content Gap Diagnosis review checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/content_opportunity/content_opportunity_score_report.json` | Content Opportunity Score report | JSON | machine-readable | no | no |
+| `outputs/{brand}/content_opportunity/content_opportunity_score_summary.md` | Content Opportunity Score summary | Markdown | human-readable | yes | no |
+| `outputs/{brand}/content_opportunity/content_opportunity_review_checklist.md` | Content Opportunity Score review checklist | Markdown | human-readable | yes | no |
 
 Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
 
@@ -176,6 +179,11 @@ Content Gap Diagnosis reports are review-only. They do not generate customer-fac
 
 中文描述：
 Content Gap Diagnosis 报告仅用于 review，不生成用户可见内容，也不生成内容机会评分。它们适合未来 Dashboard Content Gap View 读取。
+
+Content Opportunity Score reports are review-only. They score candidate assets only and do not generate customer-facing content. They are suitable for a future Dashboard Opportunity View.
+
+中文描述：
+Content Opportunity Score 报告仅用于 review，只给候选资产评分，不生成用户可见内容。它们适合未来 Dashboard Opportunity View 读取。
 
 ## J. AI Answer Audit Snapshot Pack Data
 

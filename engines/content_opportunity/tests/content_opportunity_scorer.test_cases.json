@@ -1,0 +1,150 @@
+{
+  "test_cases": [
+    {
+      "name": "reads Phase 8H content gap report",
+      "expected": {
+        "source_phase": "8H"
+      }
+    },
+    {
+      "name": "requires recommended asset candidates",
+      "expected": {
+        "asset_candidates_scored_min": 1
+      }
+    },
+    {
+      "name": "scores FAQ cluster",
+      "expected": {
+        "asset_type": "FAQ cluster"
+      }
+    },
+    {
+      "name": "scores Educational guide",
+      "expected": {
+        "asset_type": "Educational guide"
+      }
+    },
+    {
+      "name": "scores Shopify product-page routine section",
+      "expected": {
+        "asset_type": "Shopify product-page routine section"
+      }
+    },
+    {
+      "name": "scores Email education flow",
+      "expected": {
+        "asset_type": "Email education flow"
+      }
+    },
+    {
+      "name": "scores Social video brief without generating script",
+      "expected": {
+        "asset_type": "Social video brief",
+        "social_video_script_generated": false
+      }
+    },
+    {
+      "name": "scores Citation-ready source page without generating article",
+      "expected": {
+        "asset_type": "Citation-ready source page",
+        "seo_content_generated": false
+      }
+    },
+    {
+      "name": "scores Claim-safe terminology page",
+      "expected": {
+        "asset_type": "Claim-safe terminology page"
+      }
+    },
+    {
+      "name": "scores Product routine support block",
+      "expected": {
+        "asset_type": "Product routine support block"
+      }
+    },
+    {
+      "name": "does not generate SEO content",
+      "expected": {
+        "seo_content_generated": false
+      }
+    },
+    {
+      "name": "does not generate customer-facing copy",
+      "expected": {
+        "customer_facing_copy_generated": false
+      }
+    },
+    {
+      "name": "does not generate Shopify copy",
+      "expected": {
+        "shopify_copy_generated": false
+      }
+    },
+    {
+      "name": "does not generate email copy",
+      "expected": {
+        "email_body_generated": false
+      }
+    },
+    {
+      "name": "does not generate social video script",
+      "expected": {
+        "social_video_script_generated": false
+      }
+    },
+    {
+      "name": "does not generate video storyboard",
+      "expected": {
+        "video_storyboard_generated": false
+      }
+    },
+    {
+      "name": "does not call video factory",
+      "expected": {
+        "video_factory_called": false
+      }
+    },
+    {
+      "name": "does not generate final visibility score",
+      "expected": {
+        "final_visibility_score_generated": false
+      }
+    },
+    {
+      "name": "does not treat AI answer as verified fact",
+      "expected": {
+        "ai_answers_treated_as_verified_fact": false
+      }
+    },
+    {
+      "name": "JSON reports contain no Chinese descriptions",
+      "expected": {
+        "json_contains_chinese": false
+      }
+    },
+    {
+      "name": "Markdown summaries may contain Chinese descriptions",
+      "expected": {
+        "markdown_chinese_allowed": true
+      }
+    },
+    {
+      "name": "no Shopify API used",
+      "expected": {
+        "shopify_api_used": false
+      }
+    },
+    {
+      "name": "no auto publishing",
+      "expected": {
+        "auto_publish_used": false
+      }
+    },
+    {
+      "name": "does not enter Phase 8J",
+      "expected": {
+        "phase_8j_generated": false
+      }
+    }
+  ]
+}

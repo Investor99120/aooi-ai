@@ -138,6 +138,11 @@ Content Gap Diagnosis is a review-only diagnosis layer after manual visibility o
 中文描述：
 Content Gap Diagnosis 是 manual visibility observation 之后的 review-only 诊断层。它识别缺失的品牌自有教育内容资产、routine content gap、citation-ready source 需求和 claim-safe framing 要求，但不生成最终 SEO 内容、用户可见文案、内容机会评分或 Shopify 输出。
 
+Content Opportunity Scorer is a review-only prioritisation layer after Content Gap Diagnosis. It scores candidate assets and provides future adapter routing hints, but it does not generate SEO content, customer-facing copy, Shopify copy, email copy, social video scripts, video storyboards, Video Factory jobs or Action Packs.
+
+中文描述：
+Content Opportunity Scorer 是 Content Gap Diagnosis 之后的 review-only 优先级排序层。它给候选资产评分并提供未来 adapter routing hints，但不生成 SEO 内容、用户可见文案、Shopify 文案、Email 文案、社媒视频脚本、视频分镜、视频工厂任务或 Action Pack。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -172,9 +177,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8H Content Gap Diagnosis.
+Current Stage: Phase 8I Content Opportunity Scorer.
 
-Content gap diagnosis only. No AI platform calls. No scraping. No final SEO content. No content opportunity score. No final AI visibility score. No Shopify API. No auto-publishing.
+Content opportunity scoring only. No AI platform calls. No scraping. No final SEO content. No customer-facing copy. No social video scripts. No Video Factory calls. No final AI visibility score. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8H Content Gap Diagnosis。此阶段只进行内容缺口诊断，不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成内容机会评分，不生成最终 AI visibility score，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8I Content Opportunity Scorer。此阶段只进行内容机会评分，不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见文案，不生成社媒视频脚本，不调用视频工厂，不生成最终 AI visibility score，不连接 Shopify API，也不自动发布。

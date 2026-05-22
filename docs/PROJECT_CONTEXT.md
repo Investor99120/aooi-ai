@@ -100,14 +100,14 @@ Important exceptions:
 
 ## Current Stage
 
-Current Stage: Phase 8H Content Gap Diagnosis.
+Current Stage: Phase 8I Content Opportunity Scorer.
 
-This phase diagnoses content gaps from manual AI visibility observations, identifies missing brand-owned content assets, carries forward claim risk constraints, and prepares future content opportunity scoring.
-
-中文描述：
-当前阶段是 Phase 8H Content Gap Diagnosis。此阶段基于人工 AI visibility observations 诊断内容缺口，识别缺失的品牌自有内容资产，延续 claim risk constraints，并为未来内容机会评分做准备。
-
-It does not call AI platforms, scrape external data, generate final SEO content, generate customer-facing claims, publish content or call Shopify API.
+This phase scores content asset candidates from Phase 8H, prioritises future asset production, and provides future adapter routing hints.
 
 中文描述：
-此阶段不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见 claim，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8I Content Opportunity Scorer。此阶段为 Phase 8H 的候选内容资产评分，排序未来资产生产优先级，并提供未来 adapter routing hints。
+
+It does not call AI platforms, scrape external data, generate final SEO content, generate customer-facing claims, generate social video scripts, call video factory, publish content or call Shopify API.
+
+中文描述：
+此阶段不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见 claim，不生成社媒视频脚本，不调用视频工厂，不发布内容，也不调用 Shopify API。
