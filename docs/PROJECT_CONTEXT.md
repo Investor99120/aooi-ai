@@ -97,17 +97,21 @@ Important exceptions:
 - Do not alter structured data formats.
 - Do not add Chinese text to customer-facing export files unless the output mode is explicitly set to bilingual review.
 - For adapter outputs, use Chinese descriptions only in internal review notes, not in final customer-facing copy by default.
+- From Phase 8J, internal Markdown review docs should add Chinese bracket annotations after English titles, terms and explanations where useful for owner review.
+- Markdown can include bilingual owner review notes.
+- Machine-readable files must remain English-only.
+- Customer-facing outputs must remain target-market language only.
 
 ## Current Stage
 
-Current Stage: Phase 8I Content Opportunity Scorer.
+Current Stage: Phase 8J Action Pack Router（行动包路由器）.
 
-This phase scores content asset candidates from Phase 8H, prioritises future asset production, and provides future adapter routing hints.
-
-中文描述：
-当前阶段是 Phase 8I Content Opportunity Scorer。此阶段为 Phase 8H 的候选内容资产评分，排序未来资产生产优先级，并提供未来 adapter routing hints。
-
-It does not call AI platforms, scrape external data, generate final SEO content, generate customer-facing claims, generate social video scripts, call video factory, publish content or call Shopify API.
+This phase routes content asset candidates from Phase 8I, maps candidates to future adapter targets, and protects the Social Video / Video Factory boundary.
 
 中文描述：
-此阶段不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见 claim，不生成社媒视频脚本，不调用视频工厂，不发布内容，也不调用 Shopify API。
+当前阶段是 Phase 8J Action Pack Router（行动包路由器）。此阶段路由 Phase 8I 的内容资产候选，将候选资产映射到未来适配器目标，并保护社媒视频与视频工厂边界。
+
+It does not call AI platforms, scrape external data, generate final SEO content, generate customer-facing claims, generate social video scripts, generate storyboards, generate prompts, call Video Factory, publish content or call Shopify API.
+
+中文描述：
+此阶段不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见 claim，不生成社媒视频脚本，不生成分镜，不生成提示词，不调用视频工厂，不发布内容，也不调用 Shopify API。

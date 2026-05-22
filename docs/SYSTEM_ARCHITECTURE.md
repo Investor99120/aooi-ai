@@ -143,6 +143,16 @@ Content Opportunity Scorer is a review-only prioritisation layer after Content G
 中文描述：
 Content Opportunity Scorer 是 Content Gap Diagnosis 之后的 review-only 优先级排序层。它给候选资产评分并提供未来 adapter routing hints，但不生成 SEO 内容、用户可见文案、Shopify 文案、Email 文案、社媒视频脚本、视频分镜、视频工厂任务或 Action Pack。
 
+Action Pack Router is a review-only routing layer after Content Opportunity Scorer. It maps scored candidates to future adapter targets and first-batch routing, but it does not generate FAQ content, Shopify copy, Email copy, Social Video scripts, storyboards, image prompts, video prompts, Video Factory jobs or publishable outputs.
+
+中文描述：
+Action Pack Router 是 Content Opportunity Scorer 之后的 review-only 路由层。它把已评分候选资产映射到未来适配器目标和第一批路由，但不生成 FAQ 内容、Shopify 文案、Email 文案、社媒视频脚本、分镜、图片提示词、视频提示词、视频工厂任务或可发布输出。
+
+Markdown can include bilingual owner review notes. Machine-readable files must remain English-only. Customer-facing outputs must remain target-market language only.
+
+中文描述：
+Markdown 可包含双语 owner 审核说明。机器可读文件必须保持纯英文。用户可见输出必须保持目标市场语言。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -177,9 +187,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8I Content Opportunity Scorer.
+Current Stage: Phase 8J Action Pack Router（行动包路由器）.
 
-Content opportunity scoring only. No AI platform calls. No scraping. No final SEO content. No customer-facing copy. No social video scripts. No Video Factory calls. No final AI visibility score. No Shopify API. No auto-publishing.
+Action pack routing only. No AI platform calls. No scraping. No final SEO content. No customer-facing copy. No FAQ content. No Shopify copy. No Email copy. No Social Video scripts. No storyboards. No prompts. No Video Factory calls. No final AI visibility score. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8I Content Opportunity Scorer。此阶段只进行内容机会评分，不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见文案，不生成社媒视频脚本，不调用视频工厂，不生成最终 AI visibility score，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8J Action Pack Router（行动包路由器）。此阶段只进行行动包路由，不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成用户可见文案，不生成 FAQ 内容，不生成 Shopify 文案，不生成 Email 文案，不生成社媒视频脚本，不生成分镜，不生成提示词，不调用视频工厂，不生成最终 AI visibility score，不连接 Shopify API，也不自动发布。

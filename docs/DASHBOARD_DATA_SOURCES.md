@@ -159,6 +159,9 @@ Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 | `outputs/{brand}/content_opportunity/content_opportunity_score_report.json` | Content Opportunity Score report | JSON | machine-readable | no | no |
 | `outputs/{brand}/content_opportunity/content_opportunity_score_summary.md` | Content Opportunity Score summary | Markdown | human-readable | yes | no |
 | `outputs/{brand}/content_opportunity/content_opportunity_review_checklist.md` | Content Opportunity Score review checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/action_pack/action_pack_router_report.json` | Action Pack Router report | JSON | machine-readable | no | no |
+| `outputs/{brand}/action_pack/action_pack_router_summary.md` | Action Pack Router summary | Markdown | human-readable | yes | no |
+| `outputs/{brand}/action_pack/action_pack_review_checklist.md` | Action Pack Router review checklist | Markdown | human-readable | yes | no |
 
 Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
 
@@ -184,6 +187,16 @@ Content Opportunity Score reports are review-only. They score candidate assets o
 
 中文描述：
 Content Opportunity Score 报告仅用于 review，只给候选资产评分，不生成用户可见内容。它们适合未来 Dashboard Opportunity View 读取。
+
+Action Pack Router reports are review-only. They route candidate assets only. They do not generate customer-facing content. They do not call Video Factory. They are suitable for a future Dashboard Action Pack View.
+
+中文描述：
+Action Pack Router 报告仅用于 review。它们只路由候选资产，不生成用户可见内容，不调用视频工厂，适合未来 Dashboard Action Pack View 读取。
+
+Markdown can include bilingual owner review notes. Machine-readable files must remain English-only. Customer-facing outputs must remain target-market language only.
+
+中文描述：
+Markdown 可包含双语 owner 审核说明。机器可读文件必须保持纯英文。用户可见输出必须保持目标市场语言。
 
 ## J. AI Answer Audit Snapshot Pack Data
 

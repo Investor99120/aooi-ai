@@ -1,0 +1,88 @@
+{
+  "brand_id": "friendredlight",
+  "phase": "8J",
+  "report_type": "action_pack_router",
+  "decision": "needs_review",
+  "routing_scope": {
+    "routing_only": true,
+    "source_phase": "8I",
+    "asset_candidates_routed": 8,
+    "first_batch_candidates": [
+      "FAQ cluster",
+      "Claim-safe terminology page",
+      "Product routine support block"
+    ],
+    "deferred_candidates": [
+      "Citation-ready source page",
+      "Social video brief",
+      "Educational guide"
+    ],
+    "statistically_representative": false,
+    "population_level_claim": false
+  },
+  "routing_method": {
+    "uses_opportunity_scores": true,
+    "uses_content_gap_diagnosis": true,
+    "uses_manual_visibility_observation": true,
+    "review_only": true
+  },
+  "action_routes": [
+    {
+      "asset_type": "FAQ cluster",
+      "source_score": 87,
+      "priority_tier": "high",
+      "route_to": [
+        "future_faq_adapter",
+        "future_manual_review_gate"
+      ],
+      "routing_reason": "High-priority asset suitable for future FAQ development after manual review.",
+      "allowed_next_steps": [
+        "prepare future FAQ adapter input",
+        "manual review"
+      ],
+      "not_allowed_now": [
+        "generate FAQ answer body",
+        "publish FAQ",
+        "create FAQPage Schema"
+      ],
+      "adapter_status": "future_only",
+      "content_generated": false,
+      "manual_review_required": true,
+      "publish_ready": false
+    }
+  ],
+  "video_factory_boundary": {
+    "social_video_brief_is_candidate_only": true,
+    "video_factory_called": false,
+    "social_video_script_generated": false,
+    "storyboard_generated": false,
+    "image_prompt_generated": false,
+    "video_prompt_generated": false,
+    "editing_plan_generated": false,
+    "video_api_job_generated": false,
+    "content_generated": false
+  },
+  "boundary_status": {
+    "routing_only": true,
+    "content_generated": false,
+    "customer_facing_copy_generated": false,
+    "faq_content_generated": false,
+    "shopify_copy_generated": false,
+    "email_copy_generated": false,
+    "social_video_script_generated": false,
+    "storyboard_generated": false,
+    "image_prompt_generated": false,
+    "video_prompt_generated": false,
+    "video_factory_called": false,
+    "final_visibility_score_generated": false,
+    "shopify_api_used": false,
+    "auto_publish_used": false,
+    "ai_answers_treated_as_verified_fact": false,
+    "action_pack_generated": false
+  },
+  "manual_review_required": true,
+  "publish_ready": false,
+  "notes": [
+    "Action Pack Router is review-only and routes candidate assets to future adapter targets without generating content or production outputs."
+  ]
+}
