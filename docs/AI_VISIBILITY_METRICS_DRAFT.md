@@ -60,6 +60,13 @@ Phase 8G generates a review-only manual AI visibility observation report from im
 中文描述：
 Phase 8G 会基于导入的人工快照生成 review-only AI visibility observation report。它可以总结观察到的品牌提及、推荐、引用、竞品出现和不同 AI surface 的 framing，但仍然不生成最终 visibility score、不生成统计代表性指标，也不生成用户可见 claim。
 
+## Phase 8H Boundary
+
+Phase 8H diagnoses content gaps from review-only manual AI visibility observations. It may identify missing brand-owned content assets and future content candidates, but it does not generate final SEO content, content opportunity scores, visibility scores or customer-facing claims.
+
+中文描述：
+Phase 8H 基于 review-only AI visibility observations 诊断内容缺口。它可以识别缺失的品牌自有内容资产和未来内容候选，但不生成最终 SEO 内容、不生成内容机会评分、不生成 visibility score，也不生成用户可见 claim。
+
 ### Recommendation Rate
 
 What it means: how often the brand is actively recommended, not merely mentioned.

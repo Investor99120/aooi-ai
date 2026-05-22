@@ -1,0 +1,124 @@
+{
+  "test_cases": [
+    {
+      "name": "reads Phase 8G observation report",
+      "expected": {
+        "source_observation_phase": "8G"
+      }
+    },
+    {
+      "name": "requires manual visibility observation report",
+      "expected": {
+        "required_input": "manual_visibility_observation_report.json"
+      }
+    },
+    {
+      "name": "classifies zero brand mention with strong framing as content gap",
+      "expected": {
+        "content_gap_detected": true
+      }
+    },
+    {
+      "name": "detects brand-owned educational asset gap",
+      "expected": {
+        "primary_gap_type": "brand_owned_educational_asset_gap"
+      }
+    },
+    {
+      "name": "detects routine-based content gap",
+      "expected": {
+        "secondary_gap_types_contains": "routine_based_content_gap"
+      }
+    },
+    {
+      "name": "detects citation-ready source gap",
+      "expected": {
+        "secondary_gap_types_contains": "citation_ready_source_gap"
+      }
+    },
+    {
+      "name": "carries forward claim_risk_notes",
+      "expected": {
+        "risk_notes_carried_forward_min": 1
+      }
+    },
+    {
+      "name": "Gemini high-risk terms are not converted into claims",
+      "expected": {
+        "customer_facing_claims_generated": false
+      }
+    },
+    {
+      "name": "Perplexity safety language is not reused as advice",
+      "expected": {
+        "customer_facing_claims_generated": false
+      }
+    },
+    {
+      "name": "recommended assets are candidates only",
+      "expected": {
+        "customer_facing_content_generated": false
+      }
+    },
+    {
+      "name": "no SEO content generated",
+      "expected": {
+        "seo_content_generated": false
+      }
+    },
+    {
+      "name": "no Shopify content generated",
+      "expected": {
+        "shopify_content_generated": false
+      }
+    },
+    {
+      "name": "no email copy generated",
+      "expected": {
+        "email_copy_generated": false
+      }
+    },
+    {
+      "name": "no social video script generated",
+      "expected": {
+        "social_video_script_generated": false
+      }
+    },
+    {
+      "name": "no content opportunity score generated",
+      "expected": {
+        "content_opportunity_score_generated": false
+      }
+    },
+    {
+      "name": "no final visibility score generated",
+      "expected": {
+        "final_visibility_score_generated": false
+      }
+    },
+    {
+      "name": "no AI answers treated as verified facts",
+      "expected": {
+        "ai_answers_treated_as_verified_fact": false
+      }
+    },
+    {
+      "name": "JSON reports contain no Chinese descriptions",
+      "expected": {
+        "json_contains_chinese": false
+      }
+    },
+    {
+      "name": "Markdown summaries may contain Chinese descriptions",
+      "expected": {
+        "markdown_chinese_allowed": true
+      }
+    },
+    {
+      "name": "does not enter Phase 8I",
+      "expected": {
+        "phase_8i_generated": false
+      }
+    }
+  ]
+}

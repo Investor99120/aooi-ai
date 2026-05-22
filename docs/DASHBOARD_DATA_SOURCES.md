@@ -153,6 +153,9 @@ Phase 8C 不存储真实 AI 回答，也不测量 AI visibility。
 | `outputs/{brand}/ai_answer_audit/manual_visibility_observation_report.json` | Manual AI Visibility Observation report | JSON | machine-readable | no | no |
 | `outputs/{brand}/ai_answer_audit/manual_visibility_observation_summary.md` | Manual AI Visibility Observation summary | Markdown | human-readable | yes | no |
 | `outputs/{brand}/ai_answer_audit/manual_visibility_observation_checklist.md` | Manual AI Visibility Observation checklist | Markdown | human-readable | yes | no |
+| `outputs/{brand}/content_gap/content_gap_diagnosis_report.json` | Content Gap Diagnosis report | JSON | machine-readable | no | no |
+| `outputs/{brand}/content_gap/content_gap_diagnosis_summary.md` | Content Gap Diagnosis summary | Markdown | human-readable | yes | no |
+| `outputs/{brand}/content_gap/content_gap_review_checklist.md` | Content Gap Diagnosis review checklist | Markdown | human-readable | yes | no |
 
 Manual snapshots are human-provided. Reports are review-only. Phase 8D does not run automated AI calls and does not generate a final visibility score.
 
@@ -168,6 +171,11 @@ Observation reports are review-only. They do not generate final visibility score
 
 中文描述：
 Observation reports 仅用于 review，不生成最终 visibility score，也不证明总体层面的 AI visibility。它们适合未来 Dashboard AI Audit View 读取。
+
+Content Gap Diagnosis reports are review-only. They do not generate customer-facing content and do not generate content opportunity scores. They are suitable for a future Dashboard Content Gap View.
+
+中文描述：
+Content Gap Diagnosis 报告仅用于 review，不生成用户可见内容，也不生成内容机会评分。它们适合未来 Dashboard Content Gap View 读取。
 
 ## J. AI Answer Audit Snapshot Pack Data
 

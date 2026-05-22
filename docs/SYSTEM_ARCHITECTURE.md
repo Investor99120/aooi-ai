@@ -133,6 +133,11 @@ Manual AI Visibility Observation Report is a review-only observation layer over 
 中文描述：
 Manual AI Visibility Observation Report 是基于人工导入 snapshots 的 review-only 观察层。它观察品牌提及、推荐、竞品出现、引用和 AI surface framing，但不生成最终 visibility score、不生成统计代表性指标、不生成用户可见 claim，也不生成 content gap diagnosis。
 
+Content Gap Diagnosis is a review-only diagnosis layer after manual visibility observation. It identifies missing brand-owned educational assets, routine content gaps, citation-ready source needs and claim-safe framing requirements, but it does not generate final SEO content, customer-facing copy, content opportunity scores or Shopify output.
+
+中文描述：
+Content Gap Diagnosis 是 manual visibility observation 之后的 review-only 诊断层。它识别缺失的品牌自有教育内容资产、routine content gap、citation-ready source 需求和 claim-safe framing 要求，但不生成最终 SEO 内容、用户可见文案、内容机会评分或 Shopify 输出。
+
 ## Brand Onboarding Flow
 
 1. Create `brands/{brand}/brand_profile.yml`.
@@ -167,9 +172,9 @@ Shopify adapter output may include page briefs, FAQ blocks, JSON-LD snippets, pr
 
 ## Current Stage
 
-Current Stage: Phase 8G Manual AI Visibility Observation Report.
+Current Stage: Phase 8H Content Gap Diagnosis.
 
-Manual AI visibility observation only. No AI platform calls. No scraping. No final AI visibility score. No SEO content generation. No Shopify API. No auto-publishing.
+Content gap diagnosis only. No AI platform calls. No scraping. No final SEO content. No content opportunity score. No final AI visibility score. No Shopify API. No auto-publishing.
 
 中文描述：
-当前阶段是 Phase 8G Manual AI Visibility Observation Report。此阶段只进行人工 AI visibility observation，不调用 AI 平台，不抓取外部数据，不生成最终 AI visibility score，不生成 SEO 内容，不连接 Shopify API，也不自动发布。
+当前阶段是 Phase 8H Content Gap Diagnosis。此阶段只进行内容缺口诊断，不调用 AI 平台，不抓取外部数据，不生成最终 SEO 内容，不生成内容机会评分，不生成最终 AI visibility score，不连接 Shopify API，也不自动发布。

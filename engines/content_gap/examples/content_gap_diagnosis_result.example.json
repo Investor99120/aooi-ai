@@ -1,0 +1,95 @@
+{
+  "brand_id": "friendredlight",
+  "phase": "8H",
+  "report_type": "content_gap_diagnosis",
+  "decision": "needs_review",
+  "diagnosis_scope": {
+    "diagnosis_only": true,
+    "source_observation_phase": "8G",
+    "snapshots_observed": 3,
+    "prompt_ids_diagnosed": [
+      "frl_prompt_003"
+    ],
+    "ai_surfaces_observed": [
+      "chatgpt",
+      "gemini",
+      "perplexity"
+    ],
+    "statistically_representative": false,
+    "population_level_claim": false
+  },
+  "content_gap_summary": {
+    "content_gap_detected": true,
+    "primary_gap_type": "brand_owned_educational_asset_gap",
+    "secondary_gap_types": [
+      "routine_based_content_gap",
+      "safe_claim_framing_gap",
+      "citation_ready_source_gap",
+      "product_page_support_gap",
+      "faq_cluster_gap",
+      "email_education_gap",
+      "social_video_brief_gap"
+    ],
+    "reason": "Observed AI surfaces produced stable category framing, but the brand was not mentioned or recommended."
+  },
+  "recommended_asset_candidates": [
+    {
+      "asset_type": "FAQ cluster",
+      "purpose": "Answer routine-based home wellness questions in brand-owned language.",
+      "source_observation": "Observed surfaces answered the routine prompt without mentioning or recommending the brand.",
+      "claim_risk_level": "medium",
+      "source_review_required": true,
+      "manual_review_required": true,
+      "customer_facing_content_generated": false
+    }
+  ],
+  "claim_safety_constraints": {
+    "must_not_use_as_claims": [
+      "photobiomodulation",
+      "collagen production",
+      "cellular turnover",
+      "reducing inflammation",
+      "accelerating physical recovery",
+      "joint inflammation",
+      "melatonin production",
+      "biological benefits are cumulative",
+      "muscle recovery",
+      "soreness",
+      "joint comfort",
+      "reduced redness",
+      "hair and scalp support",
+      "sleep",
+      "light-sensitive medications",
+      "pregnancy"
+    ],
+    "safe_direction_notes": [
+      "Use routine-based language.",
+      "Use wellness framing.",
+      "Avoid treatment language.",
+      "Avoid guaranteed results.",
+      "Keep results variable.",
+      "Require source review before scientific claims."
+    ],
+    "source_review_required": true,
+    "claim_validator_required": true
+  },
+  "boundary_status": {
+    "content_generated": false,
+    "content_opportunity_score_generated": false,
+    "final_visibility_score_generated": false,
+    "seo_content_generated": false,
+    "blog_body_generated": false,
+    "shopify_content_generated": false,
+    "email_copy_generated": false,
+    "social_video_script_generated": false,
+    "shopify_api_used": false,
+    "auto_publish_used": false,
+    "customer_facing_claims_generated": false,
+    "ai_answers_treated_as_verified_fact": false
+  },
+  "manual_review_required": true,
+  "publish_ready": false,
+  "notes": [
+    "Content Gap Diagnosis is review-only and must not be treated as final SEO content, customer-facing copy, content opportunity score or visibility score."
+  ]
+}
