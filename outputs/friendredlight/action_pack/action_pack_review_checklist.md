@@ -1,4 +1,7 @@
-# Action Pack Review Checklist（行动包审核清单）
+# Action Pack Review Checklist
+
+> 中文解释：
+> 行动包审核清单。
 
 - [ ] Confirm routing is based on Phase 8I Content Opportunity Scorer（确认路由基于 Phase 8I 内容机会评分器）
 - [ ] Confirm only candidate assets were routed（确认只路由候选资产）
